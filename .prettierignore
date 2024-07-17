@@ -1,0 +1,16 @@
+.changeset
+.github
+.husky
+.vscode
+
+vite.config.ts
+tsconfig.json
+postcss.config.js
+tailwind.config.js
+.prettierrc.json
+.eslintrc.cjs
+
+dist
+node_modules
+README.md
+pnpm-lock.yaml
