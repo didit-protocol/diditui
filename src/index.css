@@ -7,7 +7,7 @@
 :root {
   --font-inter: 'Inter', sans-serif;
 
-  --colot-primary: 38 103 255;
+  --color-primary: 38 103 255;
   --color-soft: 249 247 249;
   --color-accent: 236 246 119;
 
@@ -38,6 +38,6 @@
     -webkit-font-feature-settings: 'lnum' 1;
   }
   img {
-    @apply text-[8px] text-surfaceMdlo flex justify-center items-center truncate;
+    @apply text-[8px] text-surface-mdlo flex justify-center items-center truncate;
   }
 }

@@ -6,15 +6,30 @@ const meta: Meta<typeof Text> = {
   component: Text,
   argTypes: {
     as: {
-      control: 'radio',
+      control: 'select',
       options: ['h1', 'p', 'span']
     },
     variant: {
-      control: 'radio',
-      options: ['H1', 'H2', 'H3', 'H4', 'H5', 'H6']
+      control: 'select',
+      options: [
+        'H1',
+        'H2',
+        'H3',
+        'H4',
+        'H5',
+        'H6',
+        'P1',
+        'P2',
+        'P3',
+        'Label1',
+        'Label2',
+        'Label3',
+        'Label4',
+        'StyledLabel'
+      ]
     },
     align: {
-      control: 'radio',
+      control: 'select',
       options: ['left', 'center', 'right']
     },
     italic: {
@@ -24,10 +39,15 @@ const meta: Meta<typeof Text> = {
       control: 'boolean'
     }
   },
-  parameters: {
-    layout: 'centered'
-  },
-  tags: ['autodocs']
+  parameters: {},
+  tags: ['autodocs'],
+  decorators: [
+    Story => (
+      <div className="">
+        <Story />
+      </div>
+    )
+  ]
 }
 
 export default meta
@@ -38,6 +58,7 @@ export const Default: Story = {
     as: 'h1',
     variant: 'H1',
     align: 'left',
-    children: 'Your submission under review'
+    children: 'Your submission under review',
+    className: 'text-primary'
   }
 }

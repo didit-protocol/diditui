@@ -3,7 +3,7 @@ import { PolymorphicComponentPropsWithRef, PolymorphicRef } from '@/types'
 import { VariantProps, cva } from 'class-variance-authority'
 import { forwardRef } from 'react'
 
-const textStyles = cva('w-full font-inter text-foreground', {
+const textStyles = cva('w-full font-inter text-foreground capitalize', {
   variants: {
     variant: {
       H1: 'text-[52px] font-medium leading-[95%] tracking-tighter',
@@ -11,7 +11,18 @@ const textStyles = cva('w-full font-inter text-foreground', {
       H3: 'text-[32px] font-medium leading-[105%] tracking-tighter',
       H4: 'text-2xl font-medium leading-[110%] tracking-tight',
       H5: 'text-[15px] font-semibold leading-[95%] tracking-tight',
-      H6: 'text-sm font-medium leading-[90%] tracking-tight'
+      H6: 'text-sm font-medium leading-[90%] tracking-tight',
+
+      P1: 'text-[15px] font-normal leading-[140%] tracking-tight',
+      P2: 'text-[13px] font-normal leading-[140%] tracking-tight',
+      P3: 'text-xs font-normal leading-[150%] tracking-tight',
+
+      Label1: 'text-[13px] font-normal leading-[90%] tracking-tight',
+      Label2: 'text-xs font-normal leading-[90%] tracking-tight',
+      Label3: 'text-[11px] font-normal leading-[140%] tracking-tight',
+      Label4: 'text-[10px] font-normal leading-[140%] tracking-tight',
+
+      StyledLabel: 'uppercase text-[8px] font-medium leading-[125.5%] tracking-widest'
     },
     align: {
       left: 'text-left',
