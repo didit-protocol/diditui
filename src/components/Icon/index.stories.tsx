@@ -23,17 +23,7 @@ const meta: Meta<typeof Icon> = {
     layout: 'centered',
     docs: {
       description: {
-        component: `
-          ### Changing Icon Color
-          To change the color of the icon, you can use Tailwind CSS classes. The icon will take the color of its parent element or any applied class.
-
-          **Example:**
-          \`\`\`jsx
-          <Icon type="info" className="text-primary" />
-          \`\`\`
-
-          In this example, the \`text-primary\` class will set the color of the icon. You can replace \`text-primary\` with any other color class provided by Tailwind CSS or your custom CSS classes.
-        `
+        component: "The icon will inheret the color of it's parent element"
       }
     }
   },

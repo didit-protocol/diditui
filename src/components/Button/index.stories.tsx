@@ -5,6 +5,16 @@ import { Button } from '.'
 const meta: Meta<typeof Button> = {
   title: 'Components/Button',
   component: Button,
+  argTypes: {
+    variant: {
+      control: 'select',
+      options: ['default', 'primary', 'secondary']
+    },
+    size: {
+      control: 'select',
+      options: ['md', 'lg']
+    }
+  },
   parameters: {
     layout: 'centered'
   },
@@ -18,8 +28,9 @@ type Story = StoryObj<typeof meta>
 export const Default: Story = {
   args: {
     children: 'Click me!',
-    colorScheme: 'primary',
-    variant: 'solid',
-    size: 'md'
+    variant: 'primary',
+    size: 'md',
+    icon: 'scan',
+    disabled: false
   }
 }

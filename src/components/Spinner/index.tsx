@@ -27,7 +27,7 @@ const spinnerStyles = cva(['flex items-center justify-center animate-spin'], {
 
 type SpinnerProps = ComponentProps<'span'> & VariantProps<typeof spinnerStyles>
 
-function Spinner({ size, variant, className, ...props }: SpinnerProps) {
+function Spinner({ size, variant = 'default', className, ...props }: SpinnerProps) {
   const path1ClassName = clsx({
     'stroke-foreground/20': variant === 'default',
     'stroke-primary/20': variant === 'primary',

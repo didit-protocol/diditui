@@ -32,14 +32,15 @@ function IconButton({ icon, label, size, className, ...props }: IconButtonProps)
     [
       'flex flex-col items-center justify-center gap-[6px]',
       'opacity-70 hover:opacity-100',
-      'transition-opacity duration-300'
+      'transition-opacity duration-300',
+      'text-surface-hi'
     ],
     className
   )
   return (
     <button className={buttonClassNames} {...props}>
       <div className={cn(iconButtonStyles({ size }))}>
-        <Icon type={icon} size={size} />
+        <Icon className="text-inherit" type={icon} size={size} />
       </div>
       {label && (
         <Text className="text-inherit" variant="P3">

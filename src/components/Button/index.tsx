@@ -1,48 +1,68 @@
 import { cn } from '@/utils'
-import { cva, VariantProps } from 'class-variance-authority'
 import { ComponentProps } from 'react'
+import { Icon } from '../Icon'
+import { IconType } from '@/types'
+import { Spinner } from '../Spinner'
 
-const buttonStyles = cva(
-  ['w-full', 'rounded-md', 'font-semibold', 'focus:outline-none', 'disabled:cursor-not-allowed'],
-  {
-    variants: {
-      variant: {
-        solid: '',
-        outline: '',
-        ghost: 'transition-colors duration-300'
-      },
-      size: {
-        sm: 'px-4 py-2 text-sm',
-        md: 'px-6 py-3 text-base',
-        lg: 'px-8 py-4 text-lg'
-      },
-      colorScheme: {
-        primary: 'bg-blue-500 text-white',
-        secondary: 'bg-gray-500 text-white',
-        danger: 'bg-red-500 text-white'
-      }
-    },
-    compoundVariants: [
-      {
-        variant: 'solid',
-        colorScheme: 'primary',
-        className: 'hover:bg-blue-600'
-      }
-    ],
-    defaultVariants: {
-      variant: 'solid',
-      size: 'md',
-      colorScheme: 'primary'
+type ButtonProps = ComponentProps<'button'> & {
+  variant?: 'default' | 'primary' | 'soft'
+  size?: 'md' | 'lg'
+  icon?: IconType
+  isLoading?: boolean
+}
+
+function Button({
+  size,
+  variant,
+  icon,
+  isLoading,
+  disabled,
+  className,
+  children,
+  ...props
+}: ButtonProps) {
+  const buttonClassNames = cn([
+    'relative w-full min-w-52 flex items-center rounded-full',
+    'transition-all duration-300 hover:opacity-70',
+    {
+      'px-2 py-4': size === 'md',
+      'px-3 py-5': size === 'lg',
+      'bg-transparent border border-foreground text-foreground': variant === 'default',
+      'bg-primary border border-primary text-background': variant === 'primary',
+      '': variant === 'soft',
+      'pointer-events-none': isLoading || disabled,
+      'bg-surface-lo text-surface-mdlo border-surface-lo': disabled
     }
-  }
-)
+  ])
 
-type ButtonProps = ComponentProps<'button'> & VariantProps<typeof buttonStyles>
+  const iconWrapperClassNames = cn([
+    'absolute right-2 p-[7px] rounded-full z-10',
+    {
+      'right-2': size === 'md',
+      'right-3': size === 'lg',
+      'text-foreground': variant === 'default',
+      'bg-background text-primary': variant === 'primary',
+      'bg-transparent text-surface-mdlo': disabled
+    }
+  ])
 
-function Button({ size, variant, colorScheme, className, children, ...props }: ButtonProps) {
+  const iconSize = variant === 'primary' ? 'xs' : 'sm'
+
   return (
-    <button className={cn(buttonStyles({ className, variant, size, colorScheme }))} {...props}>
-      {children}
+    <button className={buttonClassNames} {...props}>
+      <span className="text-sm font-medium leading-[90%] tracking-tight w-full text-center z-20 text-inherit">
+        {children}
+      </span>
+      {icon && !isLoading && (
+        <div className={iconWrapperClassNames}>
+          <Icon type={icon} size={disabled ? 'sm' : iconSize} />
+        </div>
+      )}
+      {isLoading && (
+        <div className={iconWrapperClassNames}>
+          <Spinner size="xs" variant={variant} />
+        </div>
+      )}
     </button>
   )
 }
