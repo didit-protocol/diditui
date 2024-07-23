@@ -1,3 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --font-inter: 'Inter', sans-serif;
+
+  --colot-primary: 38 103 255;
+  --color-soft: 249 247 249;
+  --color-accent: 236 246 119;
+
+  --color-background: 254 254 254;
+  --color-foreground: 26 26 26;
+
+  --color-surface-hi: 75 80 88;
+  --color-surface-md: 157 161 161;
+  --color-surface-mdlo: 196 199 199;
+  --color-surface-lo: 244 244 246;
+  --color-surface-ulo: 248 248 248;
+
+  --color-error: 255 65 65;
+  --color-success: 65 217 127;
+}
+
+@layer base {
+  body {
+    /* For font-smoothing and numeric styles, you'll need custom CSS as there's no direct Tailwind utility */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: auto;
+    font-variant-numeric: lining-nums;
+    font-feature-settings: 'lnum' 1;
+    -moz-font-feature-settings: 'lnum' 1;
+    -moz-font-feature-settings: 'lnum=1';
+    -ms-font-feature-settings: 'lnum' 1;
+    -o-font-feature-settings: 'lnum' 1;
+    -webkit-font-feature-settings: 'lnum' 1;
+  }
+  img {
+    @apply text-[8px] text-surfaceMdlo flex justify-center items-center truncate;
+  }
+}
