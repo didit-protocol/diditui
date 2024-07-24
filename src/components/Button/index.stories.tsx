@@ -31,6 +31,7 @@ export const Default: Story = {
     variant: 'primary',
     size: 'md',
     icon: 'scan',
-    disabled: false
+    disabled: false,
+    isLoading: false
   }
 }

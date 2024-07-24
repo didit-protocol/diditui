@@ -13,6 +13,7 @@ import CheckSvg from '@/assets/icons/check.svg'
 import CopySvg from '@/assets/icons/copy.svg'
 import ConnectSvg from '@/assets/icons/connect.svg'
 import passKeySvg from '@/assets/icons/pass-key.svg'
+import DiditSvg from '@/assets/icons/didit.svg'
 
 type SVGIcon = FC<React.SVGProps<SVGElement>>
 
@@ -25,7 +26,8 @@ export const svgOptions: Record<IconType, SVGIcon> = {
   check: CheckSvg,
   copy: CopySvg,
   connect: ConnectSvg,
-  passKey: passKeySvg
+  passKey: passKeySvg,
+  didit: DiditSvg
 }
 
 const iconStyles = cva(['flex items-center justify-center'], {
