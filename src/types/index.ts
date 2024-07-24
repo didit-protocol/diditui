@@ -11,3 +11,4 @@ export type IconType =
   | 'connect'
   | 'passKey'
   | 'didit'
+  | 'close'

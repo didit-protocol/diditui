@@ -15,7 +15,7 @@ const meta: Meta<typeof IconButton> = {
     },
     size: {
       control: 'select',
-      options: ['sm', 'md', 'lg']
+      options: ['xs', 'sm', 'md', 'lg']
     }
   },
   parameters: {

@@ -10,6 +10,7 @@ const iconButtonStyles = cva(
   {
     variants: {
       size: {
+        xs: 'p-[8px]',
         sm: 'p-[11px]',
         md: 'p-4',
         lg: 'p-5'

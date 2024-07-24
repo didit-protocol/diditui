@@ -14,6 +14,7 @@ import CopySvg from '@/assets/icons/copy.svg'
 import ConnectSvg from '@/assets/icons/connect.svg'
 import passKeySvg from '@/assets/icons/pass-key.svg'
 import DiditSvg from '@/assets/icons/didit.svg'
+import CloseSvg from '@/assets/icons/close.svg'
 
 type SVGIcon = FC<React.SVGProps<SVGElement>>
 
@@ -27,7 +28,8 @@ export const svgOptions: Record<IconType, SVGIcon> = {
   copy: CopySvg,
   connect: ConnectSvg,
   passKey: passKeySvg,
-  didit: DiditSvg
+  didit: DiditSvg,
+  close: CloseSvg
 }
 
 const iconStyles = cva(['flex items-center justify-center'], {
@@ -54,7 +56,7 @@ function Icon({ type = 'scan', size, className, ...props }: IconProps) {
   const IconComponent = svgOptions[type]
 
   return (
-    <span className={cn(iconStyles({ className, size }))} {...props}>
+    <span className={cn(iconStyles({ size, className }))} {...props}>
       <IconComponent className="size-full text-current" />
     </span>
   )
