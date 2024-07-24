@@ -47,10 +47,10 @@ const iconStyles = cva(['flex items-center justify-center'], {
 
 type IconProps = ComponentProps<'span'> &
   VariantProps<typeof iconStyles> & {
-    type: IconType
+    type?: IconType
   }
 
-function Icon({ type, size, className, ...props }: IconProps) {
+function Icon({ type = 'scan', size, className, ...props }: IconProps) {
   const IconComponent = svgOptions[type]
 
   return (

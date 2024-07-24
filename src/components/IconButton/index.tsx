@@ -23,11 +23,11 @@ const iconButtonStyles = cva(
 
 type IconButtonProps = ComponentProps<'button'> &
   VariantProps<typeof iconButtonStyles> & {
-    icon: IconType
+    icon?: IconType
     label?: string
   }
 
-function IconButton({ icon, label, size, className, ...props }: IconButtonProps) {
+function IconButton({ icon = 'scan', label, size, className, ...props }: IconButtonProps) {
   const buttonClassNames = cn(
     [
       'flex flex-col items-center justify-center gap-[6px]',

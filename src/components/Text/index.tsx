@@ -38,7 +38,9 @@ const textStyles = cva('w-full font-inter text-foreground capitalize', {
   },
   defaultVariants: {
     variant: 'H1',
-    align: 'left'
+    align: 'left',
+    italic: false,
+    underline: false
   }
 })
 

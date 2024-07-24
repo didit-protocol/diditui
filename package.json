@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "type": "module",
   "files": [
-    "dist",
+    "dist/**/*",
     "tailwind.config.js"
   ],
   "main": "dist/diditui.umd.js",
@@ -13,7 +13,8 @@
       "import": "./dist/diditui.js",
       "require": "./dist/diditui.umd.js"
     },
-    "./tailwind-config": "./tailwind.config.js"
+    "./tailwind-config": "./tailwind.config.js",
+    "./style.css": "./dist/style.css"
   },
   "private": false,
   "publishConfig": {
