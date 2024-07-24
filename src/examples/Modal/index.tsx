@@ -3,7 +3,7 @@ import { Modal } from '@/components/Modal'
 import { useState } from 'react'
 
 function ModalExample() {
-  const [isOpen, setIsOpen] = useState(true)
+  const [isOpen, setIsOpen] = useState(false)
 
   return (
     <>

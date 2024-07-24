@@ -1,13 +1,13 @@
 import clsx from 'clsx'
-import { CustomFlowbiteTheme, Modal as FlowbiteModal } from 'flowbite-react'
+import { Modal as FlowbiteModal } from 'flowbite-react/components/Modal'
 import { ComponentProps } from 'react'
 import { IconButton } from '../IconButton'
 
-const customTheme: CustomFlowbiteTheme['modal'] = {
+const customTheme = {
   root: {
     base: 'fixed right-0 left-0 bottom-0 z-[1000] h-screen overflow-y-auto overflow-x-hidden md:inset-0 md:h-full border',
     show: {
-      on: clsx('flex bg-background'),
+      on: 'flex bg-background',
       off: 'hidden'
     }
   },
