@@ -24,7 +24,7 @@ type Story = StoryObj<typeof meta>
 export const Default: Story = {
   args: {
     padding: 'md',
-    shadow: false,
+    shadow: true,
     children: (
       <Text variant="H4" as="h4" className="p-10" align="center">
         this is a card

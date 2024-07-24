@@ -33,6 +33,15 @@ export default {
     boxShadow: {
       'card': '0px 16.057px 61.177px 0px rgba(0, 0, 0, 0.03), 0px 9.675px 36.862px 0px rgba(0, 0, 0, 0.02), 0px 5.388px 20.527px 0px rgba(0, 0, 0, 0.02), 0px 2.317px 8.829px 0px rgba(0, 0, 0, 0.01);',
     },
+    keyframes: {
+      'slide-in': {
+        "0%": { opacity: "0", transform: "translateY(-100%)" },
+        "100%": { opacity: "1", transform: "translateY(0)" }
+      }
+    },
+    animation: {
+      'slide-in': "slide-in .20s ease-in-out forwards",
+    },
     screens: {
       'sm': '640px',
       'md': '768px',

@@ -2,7 +2,7 @@ import { cn } from '@/utils'
 import { cva, VariantProps } from 'class-variance-authority'
 import { ComponentProps } from 'react'
 
-const cardStyles = cva(['w-full rounded-[32px] overflow-hidden'], {
+const cardStyles = cva(['w-full rounded-[32px] overflow-hidden bg-background'], {
   variants: {
     padding: {
       none: 'p-0',
