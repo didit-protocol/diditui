@@ -52,6 +52,7 @@ type IconProps = ComponentProps<'span'> &
 
 function Icon({ type, size, className, ...props }: IconProps) {
   const IconComponent = svgOptions[type]
+
   return (
     <span className={cn(iconStyles({ className, size }))} {...props}>
       <IconComponent className="size-full text-current" />

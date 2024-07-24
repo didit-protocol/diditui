@@ -32,7 +32,8 @@ function Button({
       '': variant === 'soft',
       'pointer-events-none': isLoading || disabled,
       'bg-surface-lo text-surface-mdlo border-surface-lo': disabled
-    }
+    },
+    className
   ])
 
   const iconWrapperClassNames = cn([

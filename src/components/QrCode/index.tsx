@@ -1,5 +1,5 @@
 import { cn } from '@/utils'
-import { ComponentProps, ElementType, useMemo } from 'react'
+import { ComponentProps, useMemo } from 'react'
 import { Icon } from '../Icon'
 import { QrCodeUtil } from './generator'
 import { IconType } from '@/types'
@@ -18,13 +18,12 @@ const iconSizeMap = {
 }
 
 function QrCode({ uri, size = 'md', color, iconName = 'didit', className, ...props }: QrCodeProps) {
-  if (!uri) {
-    return null
-  }
-
   const svgSize = typeof size === 'number' ? size : iconSizeMap[size]
 
-  const dots = useMemo(() => QrCodeUtil.generate(uri, svgSize, svgSize / 4, color), [uri, svgSize])
+  const dots = useMemo(
+    () => QrCodeUtil.generate(uri, svgSize, svgSize / 4, color),
+    [uri, svgSize, color]
+  )
 
   const divClassNames = cn(
     ['size-fit', 'flex  items-center justify-center', 'relative overflow-hidden aspect-square'],

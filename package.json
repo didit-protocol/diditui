@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "type": "module",
   "files": [
-    "dist"
+    "dist",
+    "tailwind.config.js"
   ],
   "main": "dist/diditui.umd.js",
   "module": "dist/diditui.js",
@@ -11,7 +12,8 @@
     ".": {
       "import": "./dist/diditui.js",
       "require": "./dist/diditui.umd.js"
-    }
+    },
+    "./tailwind-config": "./tailwind.config.js"
   },
   "private": false,
   "publishConfig": {
@@ -90,6 +92,7 @@
     "@storybook/react-vite": "^8.2.4",
     "@storybook/test": "^8.2.4",
     "@types/node": "^20.14.10",
+    "@types/qrcode": "^1.5.5",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@typescript-eslint/eslint-plugin": "^7.15.0",

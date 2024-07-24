@@ -22,10 +22,8 @@ function getMatrix(value: string, errorCorrectionLevel: QRCodeUtil.QRCodeErrorCo
   )
   const sqrt = Math.sqrt(arr.length)
 
-  // eslint-disable-next-line @typescript-eslint/no-unsafe-return
   return arr.reduce(
     (rows, key, index) =>
-      // eslint-disable-next-line @typescript-eslint/no-unsafe-return
       (index % sqrt === 0 ? rows.push([key]) : rows[rows.length - 1].push(key)) && rows,
     []
   )
@@ -33,7 +31,6 @@ function getMatrix(value: string, errorCorrectionLevel: QRCodeUtil.QRCodeErrorCo
 
 export const QrCodeUtil = {
   generate(uri: string, size: number, logoSize: number, dotColor: string = '#141414') {
-    console.log('size-->', size, logoSize)
     const edgeColor = 'transparent'
     const strokeWidth = 5
     const matrix = getMatrix(uri, 'Q')
@@ -106,7 +103,6 @@ export const QrCodeUtil = {
 
     // Mapping all dots cicles on the same x axis
     circles.forEach(([cx, cy]) => {
-      // eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
       if (circlesToConnect[cx]) {
         circlesToConnect[cx]?.push(cy)
       } else {

@@ -37,6 +37,7 @@ function IconButton({ icon, label, size, className, ...props }: IconButtonProps)
     ],
     className
   )
+
   return (
     <button className={buttonClassNames} {...props}>
       <div className={cn(iconButtonStyles({ size }))}>
