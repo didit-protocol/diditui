@@ -30,6 +30,9 @@ export default {
       error: 'rgb(var(--color-error) / <alpha-value>) /* #FF4141 */',
       success: 'rgb(var(--color-success) / <alpha-value>) /* #41D97F */',
     },
+    boxShadow: {
+      'card': '0px 16.057px 61.177px 0px rgba(0, 0, 0, 0.03), 0px 9.675px 36.862px 0px rgba(0, 0, 0, 0.02), 0px 5.388px 20.527px 0px rgba(0, 0, 0, 0.02), 0px 2.317px 8.829px 0px rgba(0, 0, 0, 0.01);',
+    },
     screens: {
       'sm': '640px',
       'md': '768px',
