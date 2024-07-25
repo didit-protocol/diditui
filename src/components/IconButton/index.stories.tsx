@@ -1,18 +1,21 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
-import { Button } from '.'
+import { IconButton } from '.'
+import { svgOptions } from '../Icon'
 
-const meta: Meta<typeof Button> = {
-  title: 'Components/Button',
-  component: Button,
+const icons = Object.keys(svgOptions)
+
+const meta: Meta<typeof IconButton> = {
+  title: 'Components/IconButton',
+  component: IconButton,
   argTypes: {
-    variant: {
+    icon: {
       control: 'select',
-      options: ['default', 'primary', 'secondary']
+      options: icons
     },
     size: {
       control: 'select',
-      options: ['md', 'lg']
+      options: ['xs', 'sm', 'md', 'lg']
     }
   },
   parameters: {
@@ -27,11 +30,8 @@ type Story = StoryObj<typeof meta>
 
 export const Default: Story = {
   args: {
-    children: 'Click me!',
-    variant: 'primary',
-    size: 'md',
     icon: 'scan',
-    disabled: false,
-    isLoading: false
+    size: 'sm',
+    label: 'Scan QR Code'
   }
 }

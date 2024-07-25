@@ -1,7 +1,9 @@
 import react from '@vitejs/plugin-react'
 import path from 'path'
-import { defineConfig } from 'vite'
+import { defineConfig, PluginOption } from 'vite'
 import dts from 'vite-plugin-dts'
+import svgr from 'vite-plugin-svgr'
+import { visualizer } from "rollup-plugin-visualizer";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -10,19 +12,28 @@ export default defineConfig({
   },
   build: {
     lib: {
-      entry: path.resolve(__dirname, 'src/components/index.ts'),
+      entry: [path.resolve(__dirname, 'src/index.ts')],
       name: 'diditui',
-      fileName: 'diditui'
+      fileName: 'diditui',
     },
     rollupOptions: {
       external: ['react', 'react-dom'],
       output: {
         globals: {
           react: 'React',
-          'react-dom': 'ReactDOM'
+          'react-dom': 'ReactDOM',
         }
-      }
+      },
     }
   },
-  plugins: [react(), dts({ rollupTypes: true })],
+  plugins: [
+    react(),
+    dts({ rollupTypes: true }),
+    svgr({
+      // svgr options: https://react-svgr.com/docs/options/
+      svgrOptions: { exportType: "default", ref: true, svgo: false, titleProp: true },
+      include: "**/*.svg",
+    }),
+    visualizer({ open: false }) as PluginOption,
+  ],
 })

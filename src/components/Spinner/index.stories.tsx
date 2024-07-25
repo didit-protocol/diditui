@@ -1,18 +1,17 @@
 import type { Meta, StoryObj } from '@storybook/react'
+import { Spinner } from '.'
 
-import { Button } from '.'
-
-const meta: Meta<typeof Button> = {
-  title: 'Components/Button',
-  component: Button,
+const meta: Meta<typeof Spinner> = {
+  title: 'Components/Spinner',
+  component: Spinner,
   argTypes: {
     variant: {
       control: 'select',
-      options: ['default', 'primary', 'secondary']
+      options: ['default', 'primary', 'soft', 'accent']
     },
     size: {
       control: 'select',
-      options: ['md', 'lg']
+      options: ['xs', 'sm', 'md', 'lg', 'xl']
     }
   },
   parameters: {
@@ -27,11 +26,7 @@ type Story = StoryObj<typeof meta>
 
 export const Default: Story = {
   args: {
-    children: 'Click me!',
-    variant: 'primary',
-    size: 'md',
-    icon: 'scan',
-    disabled: false,
-    isLoading: false
+    variant: 'default',
+    size: 'md'
   }
 }

@@ -3,15 +3,17 @@
   "version": "0.0.1",
   "type": "module",
   "files": [
-    "dist"
+    "dist/**/*",
+    "tailwind.config.js"
   ],
   "main": "dist/diditui.umd.js",
   "module": "dist/diditui.js",
   "exports": {
     ".": {
       "import": "./dist/diditui.js",
-      "require": "./dist/diditui.umd.js"
-    }
+      "require": "./dist/diditui.umd.cjs"
+    },
+    "./style.css": "./dist/style.css"
   },
   "private": false,
   "publishConfig": {
@@ -21,7 +23,7 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "preview": "vite preview",
-    "storybook": "storybook dev -p 6006",
+    "storybook": "storybook dev -p 6006 --no-open",
     "build-storybook": "storybook build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "lint:fix": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0 --fix",
@@ -72,9 +74,13 @@
   "dependencies": {
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
+    "qrcode": "^1.5.3",
+    "react-modal": "^3.16.1",
     "tailwind-merge": "^2.4.0"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.4",
@@ -89,8 +95,10 @@
     "@storybook/react-vite": "^8.2.4",
     "@storybook/test": "^8.2.4",
     "@types/node": "^20.14.10",
+    "@types/qrcode": "^1.5.5",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
+    "@types/react-modal": "^3.16.3",
     "@typescript-eslint/eslint-plugin": "^7.17.0",
     "@typescript-eslint/parser": "^7.17.0",
     "@vitejs/plugin-react": "^4.3.1",
@@ -104,11 +112,15 @@
     "eslint-plugin-storybook": "^0.8.0",
     "postcss": "^8.4.39",
     "prettier": "3.3.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "rollup-plugin-visualizer": "^5.12.0",
     "storybook": "^8.2.5",
     "tailwindcss": "^3.4.6",
-    "typescript": "^5.2.2",
+    "typescript": "^5.5.4",
     "vite": "^5.3.4",
     "vite-plugin-dts": "^3.9.1",
+    "vite-plugin-svgr": "^4.2.0",
     "vite-tsconfig-paths": "^4.3.2"
   }
 }
