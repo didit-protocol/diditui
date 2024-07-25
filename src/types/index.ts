@@ -12,3 +12,4 @@ export type IconType =
   | 'passKey'
   | 'didit'
   | 'close'
+  | 'diditLogo'
