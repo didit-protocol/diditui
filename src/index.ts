@@ -7,3 +7,7 @@ export * from '@/hooks'
 
 /** Types */
 export type { IconType } from '@/types'
+
+/** TailwindConfig */
+import didituiConfig from '../tailwind.config'
+export { didituiConfig };

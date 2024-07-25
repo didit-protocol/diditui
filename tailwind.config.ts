@@ -1,8 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 
+import { Config } from 'tailwindcss';
 import defaultTheme from 'tailwindcss/defaultTheme';
 
-export default {
+const config: Config = {
   content: [
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
@@ -54,3 +55,5 @@ export default {
   plugins: [],
   diditContent: "'./node_modules/diditui/dist/**/*.{js,ts,jsx,tsx}',",
 }
+
+export default config;

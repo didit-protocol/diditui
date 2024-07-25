@@ -11,9 +11,8 @@
   "exports": {
     ".": {
       "import": "./dist/diditui.js",
-      "require": "./dist/diditui.umd.js"
+      "require": "./dist/diditui.umd.cjs"
     },
-    "./tailwind-config": "./tailwind.config.js",
     "./style.css": "./dist/style.css"
   },
   "private": false,
