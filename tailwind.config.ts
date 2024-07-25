@@ -1,15 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 
-import { Config } from 'tailwindcss';
-import defaultTheme from 'tailwindcss/defaultTheme';
+import { Config } from 'tailwindcss'
+import defaultTheme from 'tailwindcss/defaultTheme'
 
 const config: Config = {
-  content: [
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ['./src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     fontFamily: {
-      inter: ['--font-inter', ...defaultTheme.fontFamily.sans],
+      inter: ['--font-inter', ...defaultTheme.fontFamily.sans]
     },
     colors: {
       transparent: 'transparent',
@@ -29,31 +27,31 @@ const config: Config = {
       'surface-ulo': 'rgb(var(--color-surface-ulo) / <alpha-value>) /* #F8F8F8 */',
 
       error: 'rgb(var(--color-error) / <alpha-value>) /* #FF4141 */',
-      success: 'rgb(var(--color-success) / <alpha-value>) /* #41D97F */',
+      success: 'rgb(var(--color-success) / <alpha-value>) /* #41D97F */'
     },
     boxShadow: {
-      'card': '0px 16.057px 61.177px 0px rgba(0, 0, 0, 0.03), 0px 9.675px 36.862px 0px rgba(0, 0, 0, 0.02), 0px 5.388px 20.527px 0px rgba(0, 0, 0, 0.02), 0px 2.317px 8.829px 0px rgba(0, 0, 0, 0.01);',
+      card: '0px 16.057px 61.177px 0px rgba(0, 0, 0, 0.03), 0px 9.675px 36.862px 0px rgba(0, 0, 0, 0.02), 0px 5.388px 20.527px 0px rgba(0, 0, 0, 0.02), 0px 2.317px 8.829px 0px rgba(0, 0, 0, 0.01);'
     },
     keyframes: {
       'slide-in': {
-        "0%": { opacity: "0", transform: "translateY(-100%)" },
-        "100%": { opacity: "1", transform: "translateY(0)" }
+        '0%': { opacity: '0', transform: 'translateY(-100%)' },
+        '100%': { opacity: '1', transform: 'translateY(0)' }
       }
     },
     animation: {
-      'slide-in': "slide-in .20s ease-in-out forwards",
-      ...defaultTheme.animation,
+      'slide-in': 'slide-in .20s ease-in-out forwards',
+      ...defaultTheme.animation
     },
     screens: {
-      'sm': '640px',
-      'md': '768px',
-      'lg': '1024px',
-      'xl': '1280px',
-      '2xl': '1536px',
-    },
+      sm: '640px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px',
+      '2xl': '1536px'
+    }
   },
   plugins: [],
-  diditContent: "'./node_modules/diditui/dist/**/*.{js,ts,jsx,tsx}',",
+  diditContent: './node_modules/diditui/dist/**/*.{js,ts,jsx,tsx}'
 }
 
-export default config;
+export default config

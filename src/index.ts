@@ -10,4 +10,4 @@ export type { IconType } from '@/types'
 
 /** TailwindConfig */
 import didituiConfig from '../tailwind.config'
-export { didituiConfig };
+export { didituiConfig }

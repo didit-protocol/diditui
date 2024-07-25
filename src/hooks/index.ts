@@ -1,2 +1,2 @@
-export * from "./useMediaQuery";
-export * from "./useMediaQueries";
+export * from './useMediaQuery'
+export * from './useMediaQueries'
