@@ -52,4 +52,5 @@ export default {
     },
   },
   plugins: [],
+  diditContent: "'./node_modules/diditui/dist/**/*.{js,ts,jsx,tsx}',",
 }

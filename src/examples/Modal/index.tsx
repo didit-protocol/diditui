@@ -13,7 +13,7 @@ function ModalExample() {
     <>
       <Button onClick={() => setIsOpen(true)}>Open Modal</Button>
       <Modal isOpen={isOpen} onRequestClose={handleClose}>
-        <div className="max-w-[400px]">
+        <div className="mx-auto max-w-[343px]">
           <Text variant="H4" as="h4" className="p-10" align="center">
             What is included in Didit’s Identity verification solution?
           </Text>

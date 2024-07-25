@@ -1,5 +1,5 @@
 /** Styles */
-import '@/index.css'
+import '@/styles/root.css'
 
 /** Components */
 export * from '@/components'
