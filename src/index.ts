@@ -1,12 +1,15 @@
 /** Styles */
 import '@/styles/root.css'
 
-/** Components */
+/** Types */
+export type { IconType } from '@/types'
+
+/** Components & Hooks */
 export * from '@/components'
 export * from '@/hooks'
 
-/** Types */
-export type { IconType } from '@/types'
+/** Utils */
+export { cn, MediaQuery } from '@/utils'
 
 /** TailwindConfig */
 import didituiConfig from '../tailwind.config'

@@ -1,5 +1,11 @@
 # diditui
 
+## 0.0.3
+
+### Patch Changes
+
+- 93cd350: add didit logo
+
 ## 0.0.2
 
 ### Patch Changes
