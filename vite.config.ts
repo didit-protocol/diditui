@@ -34,6 +34,6 @@ export default defineConfig({
       svgrOptions: { exportType: "default", ref: true, svgo: false, titleProp: true },
       include: "**/*.svg",
     }),
-    visualizer({ open: true }) as PluginOption,
+    visualizer({ open: false }) as PluginOption,
   ],
 })

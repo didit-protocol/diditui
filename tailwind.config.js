@@ -41,6 +41,7 @@ export default {
     },
     animation: {
       'slide-in': "slide-in .20s ease-in-out forwards",
+      ...defaultTheme.animation,
     },
     screens: {
       'sm': '640px',

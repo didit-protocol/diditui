@@ -1,4 +1,9 @@
+/** Styles */
 import '@/index.css'
-export * from '@/components'
 
+/** Components */
+export * from '@/components'
+export * from '@/hooks'
+
+/** Types */
 export type { IconType } from '@/types'
