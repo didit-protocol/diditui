@@ -16,15 +16,8 @@ export default meta
 
 type Story = StoryObj<typeof meta>
 
-let isOpen = true
-
-function onClose() {
-  isOpen = false
-}
-
 export const Default: Story = {
   args: {
-    isOpen,
-    onClose
+    isOpen: true
   }
 }
