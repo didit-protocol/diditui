@@ -21,8 +21,9 @@ function Modal({
   ])
 
   const contentClassNameCard = cn([
-    'relative max-h-[90vh] w-full md:w-fit animate-slide-in rounded-t-[32px] opacity-0',
-    'md:rounded-[32px] overflow-hidden bg-background p-6 shadow-card min-w-[300px]',
+    'relative w-full min-w-[300px] max-h-[90vh] overflow-hidden p-6 rounded-t-[32px]',
+    'bg-background animate-slide-in shadow-card opacity-0',
+    'md:rounded-[32px] !md:w-fit',
     className
   ])
 
