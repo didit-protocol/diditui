@@ -14,7 +14,7 @@ type ButtonProps = ComponentProps<'button'> & {
 function Button({
   size = 'md',
   variant = 'default',
-  icon = 'arrowRight',
+  icon,
   isLoading = false,
   disabled,
   className,
