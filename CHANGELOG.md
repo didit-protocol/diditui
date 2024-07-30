@@ -1,5 +1,11 @@
 # diditui
 
+## 0.0.4
+
+### Patch Changes
+
+- 5d96ecb: export cn for tailwind classes composition
+
 ## 0.0.3
 
 ### Patch Changes
