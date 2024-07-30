@@ -1,5 +1,11 @@
 # diditui
 
+## 0.0.5
+
+### Patch Changes
+
+- 2e4b12b: add button vatriant
+
 ## 0.0.4
 
 ### Patch Changes
