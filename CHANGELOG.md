@@ -1,5 +1,11 @@
 # diditui
 
+## 0.0.6
+
+### Patch Changes
+
+- e10cbfe: add more icons
+
 ## 0.0.5
 
 ### Patch Changes
