@@ -3,7 +3,7 @@ import { PolymorphicComponentPropsWithRef, PolymorphicRef } from '@/types'
 import { VariantProps, cva } from 'class-variance-authority'
 import { forwardRef } from 'react'
 
-const textStyles = cva('w-full font-inter text-foreground capitalize', {
+const textStyles = cva('font-inter', {
   variants: {
     variant: {
       H1: 'text-[52px] font-medium leading-[95%] tracking-tighter',

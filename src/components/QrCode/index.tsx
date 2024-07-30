@@ -6,7 +6,7 @@ import { IconType } from '@/types'
 
 type QrCodeProps = ComponentProps<'div'> & {
   uri: string
-  size?: 'sm' | 'md' | 'lg' | number
+  size?: 'sm' | 'md' | 'lg' | 'xl' | number
   color?: string
   iconName?: IconType
 }
@@ -14,7 +14,8 @@ type QrCodeProps = ComponentProps<'div'> & {
 const iconSizeMap = {
   sm: 120,
   md: 200,
-  lg: 256
+  lg: 256,
+  xl: 320
 }
 
 function QrCode({ uri, size = 'md', color, iconName = 'didit', className, ...props }: QrCodeProps) {

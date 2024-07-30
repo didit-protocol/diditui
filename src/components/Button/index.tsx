@@ -5,7 +5,7 @@ import { IconType } from '@/types'
 import { Spinner } from '../Spinner'
 
 type ButtonProps = ComponentProps<'button'> & {
-  variant?: 'default' | 'primary' | 'soft'
+  variant?: 'default' | 'primary' | 'soft' | 'white'
   size?: 'md' | 'lg'
   icon?: IconType
   isLoading?: boolean
@@ -28,8 +28,9 @@ function Button({
       'px-2 py-4': size === 'md',
       'px-3 py-5': size === 'lg',
       'bg-transparent border border-foreground text-foreground': variant === 'default',
+      'bg-transparent border border-background text-background': variant === 'white',
       'bg-primary border border-primary text-background': variant === 'primary',
-      '': variant === 'soft',
+      'bg-soft border border-soft text-primary': variant === 'soft',
       'pointer-events-none': isLoading || disabled,
       'bg-surface-lo text-surface-mdlo border-surface-lo': disabled
     },
@@ -61,7 +62,7 @@ function Button({
       )}
       {isLoading && (
         <div className={iconWrapperClassNames}>
-          <Spinner size="xs" variant={variant} />
+          <Spinner size="xs" variant={variant === 'white' ? 'soft' : variant} />
         </div>
       )}
     </button>
