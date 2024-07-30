@@ -16,6 +16,9 @@ import passKeySvg from '@/assets/icons/pass-key.svg'
 import DiditSvg from '@/assets/icons/didit.svg'
 import DiditLogoSvg from '@/assets/icons/didit-logo.svg'
 import CloseSvg from '@/assets/icons/close.svg'
+import CarSvg from '@/assets/icons/car.svg'
+import IdCardSvg from '@/assets/icons/id-card.svg'
+import PassportSvg from '@/assets/icons/passport.svg'
 
 type SVGIcon = FC<React.SVGProps<SVGElement>>
 
@@ -31,7 +34,10 @@ export const svgOptions: Record<IconType, SVGIcon> = {
   passKey: passKeySvg,
   didit: DiditSvg,
   close: CloseSvg,
-  diditLogo: DiditLogoSvg
+  diditLogo: DiditLogoSvg,
+  idCard: IdCardSvg,
+  car: CarSvg,
+  passport: PassportSvg
 }
 
 const iconStyles = cva(['flex items-center justify-center'], {
