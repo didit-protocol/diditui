@@ -65,7 +65,7 @@ type IconProps = ComponentProps<'span'> &
   }
 
 function Icon({ type = 'scan', size, className, ...props }: IconProps) {
-  const IconComponent = svgOptions[type]
+  const IconComponent = svgOptions[type] || null
 
   return (
     <span className={cn(iconStyles({ size, className }))} {...props}>
