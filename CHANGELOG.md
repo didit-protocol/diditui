@@ -1,5 +1,11 @@
 # diditui
 
+## 0.0.7
+
+### Patch Changes
+
+- 77dcdc6: add icons
+
 ## 0.0.6
 
 ### Patch Changes
