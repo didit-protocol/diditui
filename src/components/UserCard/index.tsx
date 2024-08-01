@@ -1,34 +1,26 @@
 import { cn } from '@/utils'
-import { cva, VariantProps } from 'class-variance-authority'
 import { ComponentProps } from 'react'
 import { Text } from '../Text'
 import { Icon } from '../Icon'
 
-const userCardStyles = cva(['flex items-center gap-3'], {
-  variants: {
-    size: {
-      xs: '',
-      sm: '',
-      md: '',
-      lg: ''
-    }
-  },
-  defaultVariants: {
-    size: 'sm'
-  }
-})
+type UserCardProps = ComponentProps<'div'> & {
+  name: string
+  label?: string
+  avatar?: string
+  radius?: 'full' | 'md' | 'sm' | 'none'
+}
 
-type UserCardProps = ComponentProps<'div'> &
-  VariantProps<typeof userCardStyles> & {
-    name: string
-    label?: string
-    avatar?: string
-  }
+function UserCard({ name, label, avatar, radius = 'full', className, ...props }: UserCardProps) {
+  const avatarClassNames = cn('w-[36px] h-[36px] overflow-hidden', {
+    'rounded-none': radius === 'none',
+    'rounded-full': radius === 'full',
+    'rounded-md': radius === 'md',
+    'rounded-sm': radius === 'sm'
+  })
 
-function UserCard({ name, label, avatar, size, className, ...props }: UserCardProps) {
   return (
-    <div className={cn(userCardStyles({ size, className }))} {...props}>
-      <div className="w-[36px] h-[36px] rounded-full overflow-hidden">
+    <div className={cn('flex items-center gap-3', className)} {...props}>
+      <div className={avatarClassNames}>
         {!avatar ? (
           <Icon type="didit" className="size-full object-cover" />
         ) : (

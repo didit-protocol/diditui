@@ -5,7 +5,12 @@ import { UserCard } from '.'
 const meta: Meta<typeof UserCard> = {
   title: 'Components/UserCard',
   component: UserCard,
-  argTypes: {},
+  argTypes: {
+    radius: {
+      control: 'select',
+      options: ['none', 'sm', 'md', 'full']
+    }
+  },
   parameters: {
     layout: 'centered'
   },
