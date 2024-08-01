@@ -1,5 +1,11 @@
 # diditui
 
+## 0.0.10
+
+### Patch Changes
+
+- a965152: add icon animation to button
+
 ## 0.0.9
 
 ### Patch Changes
