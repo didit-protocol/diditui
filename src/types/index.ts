@@ -17,4 +17,7 @@ export type IconType =
   | 'car'
   | 'passport'
   | 'closeCircle'
+  | 'closeCircleBold'
   | 'checkCircle'
+  | 'checkCircleBold'
+  | 'refresh'
