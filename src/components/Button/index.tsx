@@ -3,42 +3,72 @@ import { ComponentProps } from 'react'
 import { Icon } from '../Icon'
 import { IconType } from '@/types'
 import { Spinner } from '../Spinner'
+import { cva, VariantProps } from 'class-variance-authority'
 
-type ButtonProps = ComponentProps<'button'> & {
-  variant?: 'default' | 'primary' | 'soft' | 'white'
-  size?: 'md' | 'lg'
-  icon?: IconType
-  isLoading?: boolean
-}
+const buttonStyles = cva(
+  [
+    'group relative w-full min-w-52 flex items-center rounded-full overflow-hidden',
+    'transition-all duration-300'
+  ],
+  {
+    variants: {
+      variant: {
+        default: 'bg-transparent border border-foreground text-foreground',
+        white: 'bg-transparent border border-background text-background',
+        primary: 'bg-primary border border-primary text-background',
+        soft: 'bg-soft border border-soft text-primary'
+      },
+      size: {
+        md: 'px-2 py-4',
+        lg: 'px-3 py-5'
+      },
+      disabled: {
+        true: 'pointer-events-none bg-surface-lo text-surface-mdlo border-surface-lo'
+      },
+      isLoading: {
+        true: 'pointer-events-none'
+      },
+      animate: {
+        true: '',
+        false: 'hover:opacity-70'
+      }
+    },
+    compoundVariants: [
+      {
+        animate: true,
+        variant: 'primary',
+        className: 'hover:text-primary'
+      }
+    ],
+    defaultVariants: {
+      size: 'md',
+      variant: 'default',
+      disabled: false,
+      isLoading: false,
+      animate: false
+    }
+  }
+)
+
+type ButtonProps = ComponentProps<'button'> &
+  VariantProps<typeof buttonStyles> & {
+    icon?: IconType
+  }
 
 function Button({
   size = 'md',
   variant = 'default',
   icon,
   isLoading = false,
+  animate = false,
   disabled,
   className,
   children,
   ...props
 }: ButtonProps) {
-  const buttonClassNames = cn([
-    'relative w-full min-w-52 flex items-center rounded-full',
-    'transition-all duration-300 hover:opacity-70',
-    {
-      'px-2 py-4': size === 'md',
-      'px-3 py-5': size === 'lg',
-      'bg-transparent border border-foreground text-foreground': variant === 'default',
-      'bg-transparent border border-background text-background': variant === 'white',
-      'bg-primary border border-primary text-background': variant === 'primary',
-      'bg-soft border border-soft text-primary': variant === 'soft',
-      'pointer-events-none': isLoading || disabled,
-      'bg-surface-lo text-surface-mdlo border-surface-lo': disabled
-    },
-    className
-  ])
-
   const iconWrapperClassNames = cn([
-    'absolute right-2 p-[7px] rounded-full z-10',
+    'absolute right-2 p-[7px] rounded-full z-20 flex justify-end items-center',
+    'transition-color duration-300',
     {
       'right-2': size === 'md',
       'right-3': size === 'lg',
@@ -48,11 +78,28 @@ function Button({
     }
   ])
 
+  const backgroundClassName = cn([
+    'hidden absolute right-2 size-7',
+    'bg-background rounded-full z-10 transition-all duration-300',
+    'group-hover:w-[calc(100%-4px)] group-hover:right-[2px] group-hover:h-[calc(100%-4px)]',
+    {
+      'right-2': size === 'md',
+      'right-3': size === 'lg',
+      'text-foreground': variant === 'default',
+      'bg-background text-primary': variant === 'primary',
+      'bg-transparent text-surface-mdlo': disabled,
+      block: animate
+    }
+  ])
+
   const iconSize = variant === 'primary' ? 'xs' : 'sm'
 
   return (
-    <button className={buttonClassNames} {...props}>
-      <span className="text-sm font-medium leading-[90%] tracking-tight w-full text-center z-20 text-inherit">
+    <button
+      className={cn(buttonStyles({ variant, size, isLoading, disabled, animate, className }))}
+      {...props}
+    >
+      <span className="text-sm font-medium leading-[90%] tracking-tight w-full text-center z-30 text-inherit">
         {children}
       </span>
       {icon && !isLoading && (
@@ -65,6 +112,7 @@ function Button({
           <Spinner size="xs" variant={variant === 'white' ? 'soft' : variant} />
         </div>
       )}
+      <div className={backgroundClassName} />
     </button>
   )
 }

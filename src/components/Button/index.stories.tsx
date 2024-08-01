@@ -30,8 +30,9 @@ export const Default: Story = {
     children: 'Click me!',
     variant: 'primary',
     size: 'md',
-    icon: 'scan',
+    icon: 'arrowRight',
     disabled: false,
-    isLoading: false
+    isLoading: false,
+    animate: false
   }
 }

@@ -51,6 +51,7 @@ export const QrCodeUtil = {
         const dotSize = cellSize * (QRCODE_MATRIX_MARGIN - i * 2)
         dots.push(
           <rect
+            key={`${x}-${y}-${i}`}
             fill={i === 2 ? dotColor : edgeColor}
             width={i === 0 ? dotSize - strokeWidth : dotSize}
             rx={i === 0 ? (dotSize - strokeWidth) * borderRadius : dotSize * borderRadius}
@@ -158,6 +159,7 @@ export const QrCodeUtil = {
         groups.forEach(([y1, y2]) => {
           dots.push(
             <line
+              key={`${cx}-${y1}-${y2}`}
               x1={cx}
               x2={cx}
               y1={y1}
