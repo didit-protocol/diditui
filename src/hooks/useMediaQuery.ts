@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { useIsomorphicLayoutEffect } from './useIsomorphicLayoutEffect'
 
 /** Hook options. */
-type UseMediaQueryOptions = {
+export type UseMediaQueryOptions = {
   /**
    * The default value to return if the hook is being run on the server.
    * @default false
