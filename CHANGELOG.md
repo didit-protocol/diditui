@@ -1,5 +1,11 @@
 # diditui
 
+## 0.0.8
+
+### Patch Changes
+
+- a1e108b: more icons
+
 ## 0.0.7
 
 ### Patch Changes
