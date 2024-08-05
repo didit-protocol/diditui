@@ -24,6 +24,7 @@ import CloseCircleBoldSvg from '@/assets/icons/close-circle-bold.svg'
 import CheckCircleSvg from '@/assets/icons/check-circle.svg'
 import CheckCircleBoldSvg from '@/assets/icons/check-circle-bold.svg'
 import RefreshSvg from '@/assets/icons/refresh.svg'
+import ChevronLeftSvg from '@/assets/icons/chevron-left.svg'
 
 type SVGIcon = FC<React.SVGProps<SVGElement>>
 
@@ -47,7 +48,8 @@ export const svgOptions: Record<IconType, SVGIcon> = {
   checkCircle: CheckCircleSvg,
   closeCircleBold: CloseCircleBoldSvg,
   checkCircleBold: CheckCircleBoldSvg,
-  refresh: RefreshSvg
+  refresh: RefreshSvg,
+  chevronLeft: ChevronLeftSvg
 }
 
 const iconStyles = cva(['flex items-center justify-center'], {

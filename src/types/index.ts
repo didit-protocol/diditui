@@ -21,3 +21,4 @@ export type IconType =
   | 'checkCircle'
   | 'checkCircleBold'
   | 'refresh'
+  | 'chevronLeft'
