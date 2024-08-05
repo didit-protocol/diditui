@@ -1,5 +1,11 @@
 # diditui
 
+## 0.0.12
+
+### Patch Changes
+
+- a57529b: disable icon button style
+
 ## 0.0.11
 
 ### Patch Changes
