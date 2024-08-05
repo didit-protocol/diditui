@@ -31,10 +31,9 @@ type IconButtonProps = ComponentProps<'button'> &
 function IconButton({ icon = 'scan', label, size, className, ...props }: IconButtonProps) {
   const buttonClassNames = cn(
     [
-      'flex flex-col items-center justify-center gap-[6px]',
-      'opacity-70 hover:opacity-100',
-      'transition-opacity duration-300',
-      'text-surface-hi'
+      'flex flex-col items-center justify-center gap-[6px] text-surface-hi',
+      'opacity-70 hover:opacity-100 transition-opacity duration-300',
+      'disabled:opacity-50 disabled:hover:opacity-50'
     ],
     className
   )
