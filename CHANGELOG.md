@@ -1,5 +1,11 @@
 # diditui
 
+## 0.0.11
+
+### Patch Changes
+
+- 02d43fe: add chevron icon
+
 ## 0.0.10
 
 ### Patch Changes
