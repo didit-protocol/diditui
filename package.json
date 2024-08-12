@@ -86,7 +86,7 @@
     "@changesets/cli": "^2.27.4",
     "@chromatic-com/storybook": "^1.6.1",
     "@manypkg/cli": "^0.21.4",
-    "@storybook/addon-essentials": "^8.2.4",
+    "@storybook/addon-essentials": "^8.2.7",
     "@storybook/addon-interactions": "^8.2.4",
     "@storybook/addon-links": "^8.2.4",
     "@storybook/addon-onboarding": "^8.2.4",
