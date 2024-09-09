@@ -84,7 +84,7 @@
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.4",
-    "@chromatic-com/storybook": "^1.6.1",
+    "@chromatic-com/storybook": "^2.0.0",
     "@manypkg/cli": "^0.21.4",
     "@storybook/addon-essentials": "^8.2.4",
     "@storybook/addon-interactions": "^8.2.4",

@@ -28,8 +28,8 @@ importers:
         specifier: ^2.27.4
         version: 2.27.7
       '@chromatic-com/storybook':
-        specifier: ^1.6.1
-        version: 1.6.1(react@18.3.1)
+        specifier: ^2.0.0
+        version: 2.0.0(react@18.3.1)(storybook@8.2.7(@babel/preset-env@7.24.8(@babel/core@7.24.9)))
       '@manypkg/cli':
         specifier: ^0.21.4
         version: 0.21.4
@@ -849,9 +849,11 @@ packages:
   '@changesets/write@0.3.1':
     resolution: {integrity: sha512-SyGtMXzH3qFqlHKcvFY2eX+6b0NGiFcNav8AFsYwy5l8hejOeoeTDemu5Yjmke2V5jpzY+pBvM0vCCQ3gdZpfw==}
 
-  '@chromatic-com/storybook@1.6.1':
-    resolution: {integrity: sha512-x1x1NB3j4xpfeSWKr96emc+7ZvfsvH+/WVb3XCjkB24PPbT8VZXb3mJSAQMrSzuQ8+eQE9kDogYHH9Fj3tb/Cw==}
+  '@chromatic-com/storybook@2.0.0':
+    resolution: {integrity: sha512-9sG8BVdf4ipEbX9OGNFX/USvnpi3SffEuRiIn1Qzsp/dM263EVdCAPcS9GOAZz6zOgcgaScdyvjTQozBYJrIVA==}
     engines: {node: '>=16.0.0', yarn: '>=1.22.18'}
+    peerDependencies:
+      storybook: ^8.2.0
 
   '@esbuild/aix-ppc64@0.21.5':
     resolution: {integrity: sha512-1SDgH6ZSPTlggy1yI6+Dbkiz8xzpHJEVAlF/AM1tHPLsf5STom9rwtjE4hKAF20FfXXNTFqEYXyJNWh1GiZedQ==}
@@ -5384,12 +5386,13 @@ snapshots:
       human-id: 1.0.2
       prettier: 2.8.8
 
-  '@chromatic-com/storybook@1.6.1(react@18.3.1)':
+  '@chromatic-com/storybook@2.0.0(react@18.3.1)(storybook@8.2.7(@babel/preset-env@7.24.8(@babel/core@7.24.9)))':
     dependencies:
       chromatic: 11.5.6
       filesize: 10.1.4
       jsonfile: 6.1.0
       react-confetti: 6.1.0(react@18.3.1)
+      storybook: 8.2.7(@babel/preset-env@7.24.8(@babel/core@7.24.9))
       strip-ansi: 7.1.0
     transitivePeerDependencies:
       - '@chromatic-com/cypress'
