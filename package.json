@@ -76,7 +76,7 @@
     "clsx": "^2.1.1",
     "qrcode": "^1.5.3",
     "react-modal": "^3.16.1",
-    "tailwind-merge": "^2.4.0"
+    "tailwind-merge": "^2.5.2"
   },
   "peerDependencies": {
     "react": ">=18",
