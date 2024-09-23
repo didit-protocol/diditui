@@ -1,4 +1,13 @@
-# React + TypeScript + Vite
+# Didit new branding ui libary
+
+This libary will be used by all didit web apps: 
+- [x] didit verification
+- [] application console
+- [] didit web app
+
+
+
+## React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
