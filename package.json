@@ -50,13 +50,13 @@
   ],
   "author": "Didit <didit.me>",
   "license": "MIT",
-  "homepage": "https://didit.me",
+  "homepage": "https://docs.didit.me",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Keddib/diditui.git"
+    "url": "git+https://github.com/didit-protocol/diditui.git"
   },
   "bugs": {
-    "url": "git+https://github.com/Keddib/diditui/issues"
+    "url": "git+https://github.com/didit-protocol/diditui/issues"
   },
   "packageManager": "pnpm@9.1.3",
   "volta": {

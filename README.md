@@ -1,9 +1,9 @@
-# Didit new branding ui libary
+# Didit V3 ui libary
 
-This libary will be used by all didit web apps: 
+This libary will be used by all didit web apps:
 - [x] didit verification
-- [] application console
-- [] didit web app
+- [ ] application console
+- [ ] didit web app
 
 
 
