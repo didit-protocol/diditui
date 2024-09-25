@@ -10,7 +10,3 @@ export * from '@/hooks'
 
 /** Utils */
 export { cn, MediaQuery } from '@/utils'
-
-/** TailwindConfig */
-import didituiConfig from '../tailwind.config'
-export { didituiConfig }
