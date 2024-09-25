@@ -12,9 +12,16 @@ export default defineConfig({
   },
   build: {
     lib: {
-      entry: [path.resolve(__dirname, 'src/index.ts')],
+      entry: {
+        diditui: path.resolve(__dirname, 'src/index.ts'),
+        tailwind: path.resolve(__dirname, 'src/tailwind.ts')
+      },
       name: 'diditui',
-      fileName: 'diditui',
+      fileName: (format) => {
+        const ext = format === 'es' ? 'js' : format;
+
+        return `[name].${ext}`;
+      },
     },
     rollupOptions: {
       external: ['react', 'react-dom'],

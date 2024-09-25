@@ -6,9 +6,9 @@ import { forwardRef } from 'react'
 const textStyles = cva('font-inter', {
   variants: {
     variant: {
-      H1: 'text-[52px] font-medium leading-[95%] tracking-tighter',
-      H2: 'text-[42px] font-medium leading-[95%] tracking-tighter',
-      H3: 'text-[32px] font-medium leading-[105%] tracking-tighter',
+      H1: 'text-[42px] md:text-[52px] font-medium leading-[95%] tracking-tighter',
+      H2: 'text-[32px] md:text-[42px] font-medium leading-[95%] tracking-tighter',
+      H3: 'text-[28px] md:text-[32px] font-medium leading-[105%] tracking-tighter',
       H4: 'text-2xl font-medium leading-[110%] tracking-tight',
       H5: 'text-base font-semibold leading-[95%] tracking-tight',
       H6: 'text-sm font-medium leading-[90%] tracking-tight',
@@ -55,6 +55,7 @@ type TextComponent = <C extends React.ElementType = 'span'>(
 
 // @ts-expect-error - unexpected typing errors
 export const Text: TextComponent = forwardRef(
+  // @ts-expect-error - unexpected typing errors
   <C extends React.ElementType = 'span'>(
     { as, variant, align, italic, underline, className, ...props }: TextProps<C>,
     ref?: PolymorphicRef<C>

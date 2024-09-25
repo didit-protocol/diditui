@@ -16,6 +16,13 @@ const meta: Meta<typeof IconButton> = {
     size: {
       control: 'select',
       options: ['xs', 'sm', 'md', 'lg']
+    },
+    withBorder: {
+      control: 'boolean'
+    },
+    variant: {
+      control: 'select',
+      options: ['default', 'primary']
     }
   },
   parameters: {
@@ -30,6 +37,7 @@ type Story = StoryObj<typeof meta>
 
 export const Default: Story = {
   args: {
+    variant: 'default',
     icon: 'scan',
     size: 'sm',
     label: 'Scan QR Code'

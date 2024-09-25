@@ -4,7 +4,7 @@
   --font-inter: 'Inter', sans-serif;
 
   --color-primary: 38 103 255;
-  --color-soft: 249 247 249;
+  --color-soft: 232 234 248;
   --color-accent: 236 246 119;
 
   --color-background: 254 254 254;
@@ -18,6 +18,7 @@
 
   --color-error: 255 65 65;
   --color-success: 65 217 127;
+  --color-warning: 230 110 0;
 }
 
 body {

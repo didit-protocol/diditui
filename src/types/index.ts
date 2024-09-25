@@ -11,6 +11,7 @@ export type IconType =
   | 'connect'
   | 'passKey'
   | 'didit'
+  | 'diditNameLogo'
   | 'close'
   | 'diditLogo'
   | 'idCard'
@@ -22,3 +23,5 @@ export type IconType =
   | 'checkCircleBold'
   | 'refresh'
   | 'chevronLeft'
+  | 'eye'
+  | 'eyeSlash'

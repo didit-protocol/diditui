@@ -1,5 +1,11 @@
 # diditui
 
+## 1.0.0
+
+### Major Changes
+
+- all base components from didit v3 branding
+
 ## 0.0.13
 
 ### Patch Changes

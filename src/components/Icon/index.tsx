@@ -15,6 +15,7 @@ import ConnectSvg from '@/assets/icons/connect.svg'
 import passKeySvg from '@/assets/icons/pass-key.svg'
 import DiditSvg from '@/assets/icons/didit.svg'
 import DiditLogoSvg from '@/assets/icons/didit-logo.svg'
+import DiditNameLogoSvg from '@/assets/icons/didit-name-logo.svg'
 import CloseSvg from '@/assets/icons/close.svg'
 import CarSvg from '@/assets/icons/car.svg'
 import IdCardSvg from '@/assets/icons/id-card.svg'
@@ -25,6 +26,8 @@ import CheckCircleSvg from '@/assets/icons/check-circle.svg'
 import CheckCircleBoldSvg from '@/assets/icons/check-circle-bold.svg'
 import RefreshSvg from '@/assets/icons/refresh.svg'
 import ChevronLeftSvg from '@/assets/icons/chevron-left.svg'
+import EyeSvg from '@/assets/icons/eye.svg'
+import EyeSlashSvg from '@/assets/icons/eye-slash.svg'
 
 type SVGIcon = FC<React.SVGProps<SVGElement>>
 
@@ -41,6 +44,7 @@ export const svgOptions: Record<IconType, SVGIcon> = {
   didit: DiditSvg,
   close: CloseSvg,
   diditLogo: DiditLogoSvg,
+  diditNameLogo: DiditNameLogoSvg,
   idCard: IdCardSvg,
   car: CarSvg,
   passport: PassportSvg,
@@ -49,7 +53,9 @@ export const svgOptions: Record<IconType, SVGIcon> = {
   closeCircleBold: CloseCircleBoldSvg,
   checkCircleBold: CheckCircleBoldSvg,
   refresh: RefreshSvg,
-  chevronLeft: ChevronLeftSvg
+  chevronLeft: ChevronLeftSvg,
+  eye: EyeSvg,
+  eyeSlash: EyeSlashSvg
 }
 
 const iconStyles = cva(['flex items-center justify-center'], {

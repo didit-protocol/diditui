@@ -1,5 +1,4 @@
-import { Button, Text } from '@/components'
-import { Modal } from '@/components/Modal'
+import { Button, Text, Modal } from '@/components'
 import { useCallback, useState } from 'react'
 
 function ModalExample() {
@@ -13,7 +12,7 @@ function ModalExample() {
     <>
       <Button onClick={() => setIsOpen(true)}>Open Modal</Button>
       <Modal isOpen={isOpen} onRequestClose={handleClose}>
-        <div className="mx-auto max-w-[343px]">
+        <div className="w-full p-6 pt-[30px] border">
           <Text variant="H4" as="h4" className="p-10" align="center">
             What is included in Didit’s Identity verification solution?
           </Text>
