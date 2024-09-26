@@ -1,5 +1,5 @@
 import defaultTheme from 'tailwindcss/defaultTheme'
-import tailwindcssFomrs from "@tailwindcss/forms";
+import tailwindcssFomrs from '@tailwindcss/forms'
 
 interface Content {
   /**
@@ -31,21 +31,21 @@ interface Content {
    *
    * @default "./"
    */
-  base?: string;
+  base?: string
 }
 
-export function content({ base = "./" }: Content = {}) {
-  const path = "node_modules/diditui/dist/**/*.{js,ts,jsx,tsx}";
+export function content({ base = './' }: Content = {}) {
+  const path = 'node_modules/diditui/dist/**/*.{js,ts,jsx,tsx}'
 
-  return `${base}${path}`;
+  return `${base}${path}`
 }
 
 export function plugins() {
-  return [tailwindcssFomrs];
+  return [tailwindcssFomrs]
 }
 
 export function theme() {
-  return ({
+  return {
     fontFamily: {
       inter: ['--font-inter', ...defaultTheme.fontFamily.sans]
     },
@@ -90,5 +90,5 @@ export function theme() {
       xl: '1280px',
       '2xl': '1536px'
     }
-  })
+  }
 }

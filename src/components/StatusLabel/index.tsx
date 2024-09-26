@@ -35,7 +35,7 @@ type StatusLabelProps = ComponentProps<'div'> &
 function StatusLabel({ label, variant, className, ...props }: StatusLabelProps) {
   return (
     <div className={cn(statusLabelStyles({ variant, className }))} {...props}>
-      <Text className="text-inherit" variant="StyledLabel" as="span">
+      <Text className="text-inherit text-[9px]" variant="StyledLabel" as="span">
         {label}
       </Text>
     </div>

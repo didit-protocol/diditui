@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
-import { Input } from './index'
+import { SearchInput } from './index'
 
-const meta: Meta<typeof Input> = {
-  title: 'Components/Input',
-  component: Input,
+const meta: Meta<typeof SearchInput> = {
+  title: 'Components/SearchInput',
+  component: SearchInput,
   argTypes: {
     label: {
       control: 'text'
@@ -34,8 +34,8 @@ type Story = StoryObj<typeof meta>
 
 export const Default: Story = {
   args: {
-    label: 'Email',
-    placeholder: 'Enter your email',
+    label: 'Search',
+    placeholder: 'Type to search',
     value: '',
     disabled: false
   }

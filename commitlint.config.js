@@ -1,4 +1,4 @@
-import defaultConfig from '@commitlint/config-conventional';
+import defaultConfig from '@commitlint/config-conventional'
 
 export default {
   extends: ['@commitlint/config-conventional'],
@@ -19,8 +19,8 @@ export default {
         'ci',
         'chore',
         'revert',
-        'format',
-      ],
-    ],
-  },
-};
+        'format'
+      ]
+    ]
+  }
+}

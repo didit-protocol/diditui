@@ -1,7 +1,6 @@
 import { cn } from '@/utils'
 import { ComponentProps } from 'react'
 import { IconType } from '@/types'
-import { Icon } from '../Icon'
 import { Text } from '../Text'
 
 type InputProps = ComponentProps<'input'> & {
@@ -18,7 +17,6 @@ function Input({
   label,
   placeholder,
   value,
-  icon,
   disabled,
   className,
   error,
@@ -51,15 +49,14 @@ function Input({
   )
 
   return (
-    <div className="flex flex-col w-full relative">
+    <div className="w-full relative">
       <Text
         variant="StyledLabel"
         as="label"
-        className="absolute left-[22px] top-[12px] text-surface-md"
+        className="absolute left-[22px] top-[12px] text-surface-md truncate w-[85%]"
       >
         {label}
       </Text>
-      {icon && <Icon type={icon} className="" />}
       <input
         className={inputClassNames}
         value={value}
