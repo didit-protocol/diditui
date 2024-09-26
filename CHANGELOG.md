@@ -1,5 +1,11 @@
 # diditui
 
+## 1.0.1
+
+### Patch Changes
+
+- b26a904: add serach input component and icons
+
 ## 1.0.0
 
 ### Major Changes
