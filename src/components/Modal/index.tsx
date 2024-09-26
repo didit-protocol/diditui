@@ -1,9 +1,11 @@
 import ReactModal, { Props as ModalProps } from 'react-modal'
 import { IconButton } from '../IconButton'
 import { cn } from '@/utils'
+import { ReactNode } from 'react'
 
 interface Props extends ModalProps {
   withBorder?: boolean
+  children?: ReactNode
 }
 
 function Modal({

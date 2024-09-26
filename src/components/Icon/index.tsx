@@ -5,6 +5,7 @@ import { IconType } from '@/types/index.js'
 
 // -- Svg's-------------------------------- //
 import ScanSvg from '@/assets/icons/scan.svg'
+import Scan2Svg from '@/assets/icons/scan2.svg'
 import SettingSvg from '@/assets/icons/settings.svg'
 import InfoSvg from '@/assets/icons/info.svg'
 import ArrowRightSvg from '@/assets/icons/arrow-right.svg'
@@ -28,11 +29,20 @@ import RefreshSvg from '@/assets/icons/refresh.svg'
 import ChevronLeftSvg from '@/assets/icons/chevron-left.svg'
 import EyeSvg from '@/assets/icons/eye.svg'
 import EyeSlashSvg from '@/assets/icons/eye-slash.svg'
+import EmailSvg from '@/assets/icons/email.svg'
+import FaceSvg from '@/assets/icons/face.svg'
+import LocationSvg from '@/assets/icons/location.svg'
+import SearchSvg from '@/assets/icons/search.svg'
+import ShieldSearchSvg from '@/assets/icons/shield-search.svg'
+import SlackSvg from '@/assets/icons/slack.svg'
+import WifiSvg from '@/assets/icons/wifi.svg'
+import ExternalSvg from '@/assets/icons/external.svg'
 
 type SVGIcon = FC<React.SVGProps<SVGElement>>
 
 export const svgOptions: Record<IconType, SVGIcon> = {
   scan: ScanSvg,
+  scan2: Scan2Svg,
   settings: SettingSvg,
   info: InfoSvg,
   arrowRight: ArrowRightSvg,
@@ -55,14 +65,23 @@ export const svgOptions: Record<IconType, SVGIcon> = {
   refresh: RefreshSvg,
   chevronLeft: ChevronLeftSvg,
   eye: EyeSvg,
-  eyeSlash: EyeSlashSvg
+  eyeSlash: EyeSlashSvg,
+  email: EmailSvg,
+  face: FaceSvg,
+  location: LocationSvg,
+  search: SearchSvg,
+  shieldSearch: ShieldSearchSvg,
+  slack: SlackSvg,
+  wifi: WifiSvg,
+  external: ExternalSvg
 }
 
 const iconStyles = cva(['flex items-center justify-center'], {
   variants: {
     size: {
-      xs: 'size-[14px]',
-      sm: 'size-4',
+      xxs: 'size-[14px]',
+      xs: 'size-4',
+      sm: 'size-[18px]',
       md: 'size-5',
       lg: 'size-6',
       xl: 'size-12'
