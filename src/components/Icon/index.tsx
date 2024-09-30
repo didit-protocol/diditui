@@ -37,6 +37,7 @@ import ShieldSearchSvg from '@/assets/icons/shield-search.svg'
 import SlackSvg from '@/assets/icons/slack.svg'
 import WifiSvg from '@/assets/icons/wifi.svg'
 import ExternalSvg from '@/assets/icons/external.svg'
+import ChevronDownSvg from '@/assets/icons/chevron-down.svg'
 
 type SVGIcon = FC<React.SVGProps<SVGElement>>
 
@@ -73,7 +74,8 @@ export const svgOptions: Record<IconType, SVGIcon> = {
   shieldSearch: ShieldSearchSvg,
   slack: SlackSvg,
   wifi: WifiSvg,
-  external: ExternalSvg
+  external: ExternalSvg,
+  chevronDown: ChevronDownSvg
 }
 
 const iconStyles = cva(['flex items-center justify-center'], {

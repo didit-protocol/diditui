@@ -37,7 +37,7 @@ function CopyValue({ label, value, isSecret, className, ...props }: CopyValuePro
   return (
     <div className={cn(copyValueStyles({ isSecret, className }))} {...props}>
       {label && (
-        <Text className="text-inherit" variant="StyledLabel" as="span">
+        <Text className="text-inherit text-nowrap" variant="StyledLabel" as="span">
           {label}
         </Text>
       )}

@@ -35,3 +35,4 @@ export type IconType =
   | 'slack'
   | 'wifi'
   | 'external'
+  | 'chevronDown'
