@@ -1,3 +1,4 @@
+import { Toggle } from '@/components'
 import { SearchInput } from '@/components/SearchInput'
 import { useCallback, useState } from 'react'
 
@@ -28,6 +29,13 @@ function SearchInputExample() {
         value={country}
         onValueChange={handleValueChange}
         error={error}
+      />
+      <Toggle
+        label="Show error"
+        checked={!!error}
+        onToggle={checked => {
+          setError(checked ? 'Error' : '')
+        }}
       />
     </div>
   )
