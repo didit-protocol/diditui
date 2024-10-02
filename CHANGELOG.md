@@ -1,5 +1,18 @@
 # diditui
 
+## 1.0.3
+
+### Patch Changes
+
+- dab6c8a: add checkbox component and more icons
+- c2ca0a5: export search input component
+
+## 1.0.2
+
+### Patch Changes
+
+- c2ca0a5: export search input component
+
 ## 1.0.1
 
 ### Patch Changes
