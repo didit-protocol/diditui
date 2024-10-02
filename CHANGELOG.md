@@ -1,5 +1,11 @@
 # diditui
 
+## 1.0.7
+
+### Patch Changes
+
+- 3ced09d: add disabled prop to checkbox and toggle
+
 ## 1.0.6
 
 ### Patch Changes
