@@ -1,5 +1,11 @@
 # diditui
 
+## 1.0.6
+
+### Patch Changes
+
+- 3cc4b20: fix checkbox types
+
 ## 1.0.5
 
 ### Patch Changes
