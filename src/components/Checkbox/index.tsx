@@ -1,20 +1,23 @@
 import { cn } from '@/utils'
-import { ComponentProps, useCallback } from 'react'
+import { useCallback } from 'react'
 import { Text } from '../Text'
 
-type CheckboxProps = Omit<ComponentProps<'input'>, 'onChange' | 'size'> & {
+interface CheckboxProps {
+  id?: string
+  className?: string
   label?: string
   size?: 'sm' | 'md' | 'lg'
+  checked: boolean
   onToggle?: (checked: boolean) => void
 }
 
 function CheckBox({
   id,
-  label,
   className,
+  label,
   size = 'md',
-  onToggle = () => {},
-  ...props
+  checked,
+  onToggle = () => {}
 }: CheckboxProps) {
   const wrapperClassNames = cn(['inline-flex items-center gap-4'], className)
 
@@ -37,9 +40,8 @@ function CheckBox({
       <input
         id={id}
         type="checkbox"
-        value=""
+        checked={checked}
         className={inputClassNames}
-        {...props}
         onChange={handleToggle}
       />
       {label && (
