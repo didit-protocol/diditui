@@ -1,5 +1,11 @@
 # diditui
 
+## 1.0.4
+
+### Patch Changes
+
+- e286ac0: add tooltip and fix input text
+
 ## 1.0.3
 
 ### Patch Changes
