@@ -1,5 +1,11 @@
 # diditui
 
+## 1.0.5
+
+### Patch Changes
+
+- 5571247: fix modal and toggle types
+
 ## 1.0.4
 
 ### Patch Changes
