@@ -1,9 +1,23 @@
-import ReactModal, { Props as ModalProps } from 'react-modal'
+import ReactModal from 'react-modal'
 import { IconButton } from '../IconButton'
 import { cn } from '@/utils'
 
-type Props = ModalProps & {
+interface Props {
+  id?: string
+  testId?: string
+  className?: string
+  children: React.ReactNode
+  isOpen: boolean
   withBorder?: boolean
+  contentLabel?: string
+  overlayClassName?: string
+  role?: string
+  shouldCloseOnOverlayClick?: boolean
+  shouldCloseOnEsc?: boolean
+  shouldReturnFocusAfterClose?: boolean
+  onRequestClose: () => void
+  onAfterClose?: () => void
+  onAfterOpen?: () => void
 }
 
 function Modal({
