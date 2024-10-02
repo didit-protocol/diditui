@@ -1,13 +1,16 @@
 import { cn } from '@/utils'
-import { ComponentProps, useCallback } from 'react'
+import { useCallback } from 'react'
 import { Text } from '../Text'
 
-type ToggleProps = Omit<ComponentProps<'input'>, 'onChange'> & {
+interface ToggleProps {
+  id?: string
+  className?: string
+  checked: boolean
   label?: string
   onToggle?: (checked: boolean) => void
 }
 
-function Toggle({ onToggle = () => {}, label, checked, className, ...props }: ToggleProps) {
+function Toggle({ onToggle = () => {}, id, label, checked, className, ...props }: ToggleProps) {
   const wrapperClassNames = cn(['inline-flex items-center gap-4 cursor-pointer'], className)
 
   const handleToggle = useCallback(
@@ -23,6 +26,7 @@ function Toggle({ onToggle = () => {}, label, checked, className, ...props }: To
         type="checkbox"
         checked={checked}
         onChange={handleToggle}
+        id={id}
         className="sr-only peer"
         {...props}
       />
