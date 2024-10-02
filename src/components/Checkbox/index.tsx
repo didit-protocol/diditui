@@ -7,7 +7,8 @@ interface CheckboxProps {
   className?: string
   label?: string
   size?: 'sm' | 'md' | 'lg'
-  checked: boolean
+  checked?: boolean
+  disabled?: boolean
   onToggle?: (checked: boolean) => void
 }
 
@@ -17,6 +18,7 @@ function CheckBox({
   label,
   size = 'md',
   checked,
+  disabled,
   onToggle = () => {}
 }: CheckboxProps) {
   const wrapperClassNames = cn(['inline-flex items-center gap-4'], className)
@@ -43,6 +45,7 @@ function CheckBox({
         checked={checked}
         className={inputClassNames}
         onChange={handleToggle}
+        disabled={disabled}
       />
       {label && (
         <Text as="label" htmlFor={id} variant="Label3" className="text-inheret truncate">

@@ -5,12 +5,13 @@ import { Text } from '../Text'
 interface ToggleProps {
   id?: string
   className?: string
-  checked: boolean
+  checked?: boolean
+  disabled?: boolean
   label?: string
   onToggle?: (checked: boolean) => void
 }
 
-function Toggle({ onToggle = () => {}, id, label, checked, className, ...props }: ToggleProps) {
+function Toggle({ id, className, label, checked, disabled, onToggle = () => {} }: ToggleProps) {
   const wrapperClassNames = cn(['inline-flex items-center gap-4 cursor-pointer'], className)
 
   const handleToggle = useCallback(
@@ -28,7 +29,7 @@ function Toggle({ onToggle = () => {}, id, label, checked, className, ...props }
         onChange={handleToggle}
         id={id}
         className="sr-only peer"
-        {...props}
+        disabled={disabled}
       />
       <div className="relative w-11 h-6 bg-surface-lo peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-background after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-background after:border-background after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary" />
       {label && (
