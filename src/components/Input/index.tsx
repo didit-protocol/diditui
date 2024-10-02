@@ -25,7 +25,7 @@ function Input({
 }: InputProps) {
   const inputClassNames = cn(
     [
-      'w-full min-h-[68px] bg-surface-lo pt-[20px] pl-[20px] pr-[24px]',
+      'w-full min-h-[68px] bg-surface-lo pt-[20px] pl-[20px] pr-14',
       'rounded-3xl placeholder:text-sm placeholder:font-normal border-transparent',
       'placeholder:leading-[140%] placeholder:tracking-tight',
       'placeholder:text-surface-mdlo text-sm font-normal leading-[140%] tracking-tight',
@@ -39,12 +39,9 @@ function Input({
   )
 
   const clearButtonClassNames = cn(
-    [
-      'flex justify-center align-items-center absolute right-[24px] top-[26px]',
-      'z-20 hover:opacity-80'
-    ],
+    ['flex justify-center align-items-center absolute right-3 top-[26px]', 'z-20 hover:opacity-80'],
     {
-      hidden: !value
+      invisible: !value
     }
   )
 
@@ -71,7 +68,7 @@ function Input({
           CLEAR
         </Text>
       </button>
-      <Text variant="P3" as="span" className="text-error mt-1 pl-1">
+      <Text variant="P3" as="span" className="text-error mt-1 pl-1 w-full block">
         {error}
       </Text>
     </div>

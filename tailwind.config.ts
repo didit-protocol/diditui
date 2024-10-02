@@ -4,7 +4,7 @@ import { Config } from 'tailwindcss'
 import * as diditConfig from './src/tailwind'
 
 const config: Config = {
-  content: ['./src/**/*.{js,ts,jsx,tsx}'],
+  content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: diditConfig.theme(),
   plugins: diditConfig.plugins()
 }
