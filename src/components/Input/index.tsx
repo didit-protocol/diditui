@@ -41,7 +41,6 @@ function Input({
     'w-full min-h-[68px] py-4 px-5 cursor-text rounded-3xl',
     'flex items-center gap-2 bg-surface-lo hover:bg-surface-ulo',
     'transition-all duration-300 border border-transparent',
-    className,
     {
       'opacity-80': disabled,
       'border-error bg-error/5': error,
@@ -65,7 +64,7 @@ function Input({
   ])
 
   return (
-    <div className="w-full overflow-visible">
+    <div className={className}>
       <div className={wrapperClassNames} onClick={() => inputRef.current?.focus()}>
         <div className="flex flex-col gap-[6px] grow overflow-hidden min-w-0">
           <Text
