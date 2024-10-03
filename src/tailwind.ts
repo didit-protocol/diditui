@@ -77,11 +77,12 @@ export function theme() {
       'slide-in': {
         '0%': { opacity: '0', transform: 'translateY(-100%)' },
         '100%': { opacity: '1', transform: 'translateY(0)' }
-      }
+      },
+      ...defaultTheme.keyframes
     },
     animation: {
       'slide-in': 'slide-in .20s ease-in-out forwards',
-      ...defaultTheme.animation
+      spin: defaultTheme.animation.spin
     },
     screens: {
       sm: '640px',

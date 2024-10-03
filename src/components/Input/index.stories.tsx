@@ -20,6 +20,12 @@ const meta: Meta<typeof Input> = {
     },
     error: {
       control: 'text'
+    },
+    showClearButton: {
+      control: 'boolean'
+    },
+    showCopyButton: {
+      control: 'boolean'
     }
   },
   parameters: {
@@ -37,6 +43,9 @@ export const Default: Story = {
     label: 'Email',
     placeholder: 'Enter your email',
     value: '',
-    disabled: false
+    disabled: false,
+    showClearButton: true,
+    showCopyButton: false,
+    onCopyClick: () => {}
   }
 }

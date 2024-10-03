@@ -48,7 +48,7 @@ function SearchInput({
   ])
 
   const clearButtonClassNames = cn(
-    ['flex justify-center align-items-center z-20 hover:opacity-80 p-[2px]'],
+    ['flex justify-center align-items-center hover:opacity-80 p-[2px]'],
     {
       invisible: !value
     }
@@ -82,7 +82,7 @@ function SearchInput({
             onBlur={() => setIsFocused(false)}
             className={inputClassNames}
             value={value}
-            type="email"
+            type="text"
             onChange={e => onValueChange(e.target.value)}
             placeholder={placeholder}
             disabled={disabled}
