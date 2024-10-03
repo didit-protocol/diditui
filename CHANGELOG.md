@@ -1,5 +1,11 @@
 # diditui
 
+## 1.0.9
+
+### Patch Changes
+
+- d80311e: fix input className placment
+
 ## 1.0.8
 
 ### Patch Changes
