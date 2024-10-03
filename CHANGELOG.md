@@ -1,5 +1,11 @@
 # diditui
 
+## 1.0.8
+
+### Patch Changes
+
+- 62674fc: add didit loading logo and fix input styles
+
 ## 1.0.7
 
 ### Patch Changes
