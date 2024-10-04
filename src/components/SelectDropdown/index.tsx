@@ -81,12 +81,12 @@ function SelectDropdown({
   const selectFieldClassName = cn('w-full min-w-[230px]', className)
 
   const dropdownClassNames = cn(
-    'absolute left-0 top-[calc(100%+8px)] max-h-[240px] w-full',
-    'scrollbar-none overflow-hidden overflow-y-auto rounded-2xl p-2 shadow-card',
-    'z-50 opacity-0 transition-all duration-300 ease-in-out sm:max-h-[282px]',
+    'absolute righ-0 top-[calc(100%+8px)] w-full bg-background rounded-2xl p-2',
+    'shadow-card z-50 transition-all duration-300 overflow-hidden overflow-y-auto',
+    'scrollbar-none max-h-[240px]',
     {
-      'opacity-100': isDropdownOpen,
-      'cursor-pointer': !!onClick
+      'cursor-pointer': !!onClick,
+      'pt-0': withSearch
     },
     dropdownClassName
   )
@@ -107,15 +107,19 @@ function SelectDropdown({
         />
         {isDropdownOpen && (
           <div ref={divRef as LegacyRef<HTMLDivElement>} className={dropdownClassNames}>
+            <div
+              className={cn('sticky top-0 left-0 w-full bg-background', {
+                hidden: !withSearch
+              })}
+            >
+              <SearchMini
+                immediateFocus
+                placeholder="Search"
+                value={searchQuery}
+                onChange={setSearchQuery}
+              />
+            </div>
             <ul className="[&>*:last-child]:border-none">
-              <li className={cn({ hidden: !withSearch })}>
-                <SearchMini
-                  immediateFocus
-                  placeholder="Search"
-                  value={searchQuery}
-                  onChange={setSearchQuery}
-                />
-              </li>
               {!filtredOptions.length ? (
                 <Text as="p" variant="P2" className="truncate p-4 text-center">
                   No options

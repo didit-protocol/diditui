@@ -31,7 +31,7 @@ function SelectDropdownTrigger({
   onClick
 }: SelectDropdownTriggerProps) {
   const wrapperClassNames = cn(
-    'w-full min-h-[68px] py-4 px-5 cursor-text rounded-3xl',
+    'w-full min-h-[68px] py-4 px-5 rounded-3xl',
     'flex items-center gap-2 bg-surface-lo hover:bg-surface-ulo',
     'transition-all duration-300 border border-transparent',
     {
@@ -56,7 +56,7 @@ function SelectDropdownTrigger({
   ])
 
   return (
-    <button id={id} className={wrapperClassNames} ref={buttonRef} onClick={onClick}>
+    <button id={id} className={wrapperClassNames} ref={buttonRef} onClick={onClick} type="button">
       <div className="flex flex-col gap-[6px] grow overflow-hidden min-w-0">
         <Text variant="StyledLabel" as="label" className="text-surface-md truncate w-fit">
           {label}
