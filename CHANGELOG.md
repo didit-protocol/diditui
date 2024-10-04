@@ -1,5 +1,11 @@
 # diditui
 
+## 1.0.11
+
+### Patch Changes
+
+- 6303aa3: fix selectdropdown button type
+
 ## 1.0.10
 
 ### Patch Changes
