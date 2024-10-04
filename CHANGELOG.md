@@ -1,5 +1,11 @@
 # diditui
 
+## 1.0.10
+
+### Patch Changes
+
+- 05eb810: add selectdropdoen component
+
 ## 1.0.9
 
 ### Patch Changes
