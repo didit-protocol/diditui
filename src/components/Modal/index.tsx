@@ -1,6 +1,7 @@
 import ReactModal from 'react-modal'
 import { IconButton } from '../IconButton'
 import { cn } from '@/utils'
+import { useEffect } from 'react'
 
 interface Props {
   id?: string
@@ -15,6 +16,7 @@ interface Props {
   shouldCloseOnOverlayClick?: boolean
   shouldCloseOnEsc?: boolean
   shouldReturnFocusAfterClose?: boolean
+  appElementId?: string
   onRequestClose: () => void
   onAfterClose?: () => void
   onAfterOpen?: () => void
@@ -26,9 +28,16 @@ function Modal({
   overlayClassName,
   className,
   withBorder = false,
+  appElementId = '#__next',
   onRequestClose,
   ...props
 }: Props) {
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      ReactModal.setAppElement(appElementId)
+    }
+  }, [appElementId])
+
   const overlayClassNameBase = cn([
     'fixed right-0 left-0 bottom-0 z-[1000] h-screen overflow-y-auto',
     'overflow-x-hidden md:inset-0 md:h-full bg-foreground/5 backdrop-blur-md',
