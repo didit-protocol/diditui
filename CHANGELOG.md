@@ -1,5 +1,11 @@
 # diditui
 
+## 1.0.12
+
+### Patch Changes
+
+- 74ef7a4: add icons
+
 ## 1.0.11
 
 ### Patch Changes
