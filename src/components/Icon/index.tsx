@@ -38,6 +38,16 @@ import SlackSvg from '@/assets/icons/slack.svg'
 import WifiSvg from '@/assets/icons/wifi.svg'
 import ExternalSvg from '@/assets/icons/external.svg'
 import ChevronDownSvg from '@/assets/icons/chevron-down.svg'
+import EditSvg from '@/assets/icons/edit.svg'
+import Settings2Svg from '@/assets/icons/settings2.svg'
+import LogoutSvg from '@/assets/icons/logout.svg'
+import PlaySvg from '@/assets/icons/play.svg'
+import ChartSvg from '@/assets/icons/chart.svg'
+import AddCircleSvg from '@/assets/icons/add-circle.svg'
+import DocumentSvg from '@/assets/icons/document.svg'
+import ProfileSvg from '@/assets/icons/profile.svg'
+import SecuritySafeSvg from '@/assets/icons/security-safe.svg'
+import MoreCirclesSvg from '@/assets/icons/more-circles.svg'
 
 type SVGIcon = FC<React.SVGProps<SVGElement>>
 
@@ -75,7 +85,17 @@ export const svgOptions: Record<IconType, SVGIcon> = {
   slack: SlackSvg,
   wifi: WifiSvg,
   external: ExternalSvg,
-  chevronDown: ChevronDownSvg
+  chevronDown: ChevronDownSvg,
+  settings2: Settings2Svg,
+  play: PlaySvg,
+  chart: ChartSvg,
+  addCircle: AddCircleSvg,
+  document: DocumentSvg,
+  profile: ProfileSvg,
+  securitySafe: SecuritySafeSvg,
+  moreCircles: MoreCirclesSvg,
+  logout: LogoutSvg,
+  edit: EditSvg
 }
 
 const iconStyles = cva(['flex items-center justify-center'], {

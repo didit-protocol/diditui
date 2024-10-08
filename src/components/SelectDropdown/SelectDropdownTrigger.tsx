@@ -44,8 +44,8 @@ function SelectDropdownTrigger({
   )
 
   const valueClassNames = cn('truncate w-fit', {
-    'text-surface-background': isDropdownOpen,
-    'text-surface-md': !isDropdownOpen
+    'text-surface-background': selectedOption.value,
+    'text-surface-md': !selectedOption.value
   })
 
   const rightButtonWrapperClassNames = cn([
