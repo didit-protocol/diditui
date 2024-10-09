@@ -1,5 +1,11 @@
 # diditui
 
+## 1.0.13
+
+### Patch Changes
+
+- 7248991: add error variant to button
+
 ## 1.0.12
 
 ### Patch Changes
