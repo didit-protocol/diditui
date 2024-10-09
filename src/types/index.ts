@@ -46,3 +46,4 @@ export type IconType =
   | 'moreCircles'
   | 'logout'
   | 'edit'
+  | 'trash'
