@@ -16,7 +16,8 @@ const buttonStyles = cva(
         default: 'bg-transparent border border-foreground text-foreground',
         white: 'bg-transparent border border-background text-background',
         primary: 'bg-primary border border-primary text-background',
-        soft: 'bg-soft border border-soft text-primary'
+        soft: 'bg-soft border border-soft text-primary',
+        error: 'bg-error border border-error text-background'
       },
       size: {
         md: 'px-2 py-4',
@@ -38,6 +39,11 @@ const buttonStyles = cva(
         animate: true,
         variant: 'primary',
         className: 'hover:text-primary'
+      },
+      {
+        animate: true,
+        variant: 'error',
+        className: 'hover:text-error'
       }
     ],
     defaultVariants: {
@@ -74,6 +80,7 @@ function Button({
       'right-3': size === 'lg',
       'text-foreground': variant === 'default',
       'bg-background text-primary': variant === 'primary',
+      'bg-background text-error': variant === 'error',
       'bg-transparent text-surface-mdlo': disabled
     }
   ])
@@ -87,6 +94,7 @@ function Button({
       'right-3': size === 'lg',
       'text-foreground': variant === 'default',
       'bg-background text-primary': variant === 'primary',
+      'bg-background text-error': variant === 'error',
       'bg-transparent text-surface-mdlo': disabled,
       block: animate
     }

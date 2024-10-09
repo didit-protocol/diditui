@@ -9,7 +9,8 @@ const spinnerStyles = cva(['flex items-center justify-center animate-spin'], {
       default: '',
       primary: '',
       soft: '',
-      accent: ''
+      accent: '',
+      error: ''
     },
     size: {
       xs: 'size-[14px]',
@@ -32,14 +33,16 @@ function Spinner({ size, variant = 'default', className, ...props }: SpinnerProp
     'stroke-foreground/20': variant === 'default',
     'stroke-primary/20': variant === 'primary',
     'stroke-soft/30': variant === 'soft',
-    'stroke-accent/30': variant === 'accent'
+    'stroke-accent/30': variant === 'accent',
+    'stroke-error/30': variant === 'error'
   })
 
   const path2ClassName = clsx({
     'stroke-foreground': variant === 'default',
     'stroke-primary': variant === 'primary',
     'stroke-soft': variant === 'soft',
-    'stroke-accent': variant === 'accent'
+    'stroke-accent': variant === 'accent',
+    'stroke-error': variant === 'error'
   })
 
   return (
