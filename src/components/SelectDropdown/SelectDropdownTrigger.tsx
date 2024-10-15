@@ -56,7 +56,14 @@ function SelectDropdownTrigger({
   ])
 
   return (
-    <button id={id} className={wrapperClassNames} ref={buttonRef} onClick={onClick} type="button">
+    <button
+      disabled={disabled}
+      id={id}
+      className={wrapperClassNames}
+      ref={buttonRef}
+      onClick={onClick}
+      type="button"
+    >
       <div className="flex flex-col gap-[6px] grow overflow-hidden min-w-0">
         <Text variant="StyledLabel" as="label" className="text-surface-md truncate w-fit">
           {label}

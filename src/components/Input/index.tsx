@@ -89,7 +89,7 @@ function Input({
         </div>
         <div className={rightButtonWrapperClassNames}>
           {isClearButtonVisible && (
-            <button onClick={() => onValueChange('')}>
+            <button onClick={() => onValueChange('')} disabled={disabled}>
               <Text variant="StyledLabel" as="span" className="text-[9px] m-0">
                 CLEAR
               </Text>
