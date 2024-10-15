@@ -8,6 +8,10 @@ const meta: Meta<typeof Toggle> = {
   argTypes: {
     label: {
       control: 'text'
+    },
+    size: {
+      control: 'select',
+      options: ['sm', 'md']
     }
   },
   parameters: {
@@ -22,6 +26,7 @@ type Story = StoryObj<typeof meta>
 
 export const Default: Story = {
   args: {
-    label: 'Set as default'
+    label: 'Set as default',
+    size: 'md'
   }
 }
