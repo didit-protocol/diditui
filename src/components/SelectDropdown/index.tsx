@@ -75,8 +75,10 @@ function SelectDropdown({
   )
 
   const handleFieldClick = useCallback(() => {
-    onClick()
-  }, [onClick])
+    if (!disabled) {
+      onClick()
+    }
+  }, [onClick, disabled])
 
   const selectFieldClassName = cn('w-full min-w-[230px]', className)
 
