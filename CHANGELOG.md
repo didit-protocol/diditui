@@ -1,5 +1,11 @@
 # diditui
 
+## 1.0.14
+
+### Patch Changes
+
+- c2af4c4: add sm size to toggle component
+
 ## 1.0.13
 
 ### Patch Changes
