@@ -8,18 +8,40 @@ interface ToggleProps {
   checked?: boolean
   disabled?: boolean
   label?: string
+  size?: 'sm' | 'md'
   onToggle?: (checked: boolean) => void
 }
 
-function Toggle({ id, className, label, checked, disabled, onToggle = () => {} }: ToggleProps) {
-  const wrapperClassNames = cn(['inline-flex items-center gap-4 cursor-pointer'], className)
-
+function Toggle({
+  id,
+  className,
+  label,
+  checked,
+  disabled,
+  onToggle = () => {},
+  size = 'md'
+}: ToggleProps) {
   const handleToggle = useCallback(
     (event: React.ChangeEvent<HTMLInputElement>) => {
       onToggle(event.target.checked)
     },
     [onToggle]
   )
+
+  const wrapperClassNames = cn('inline-flex items-center gap-4 cursor-pointer', className)
+
+  const divClassNames = cn([
+    'relative bg-surface-lo peer-focus:outline-none',
+    'rounded-full peer peer-checked:after:translate-x-full ',
+    'rtl:peer-checked:after:-translate-x-full peer-checked:after:border-background',
+    `after:content-[''] after:absolute`,
+    'after:bg-background after:border-background after:border after:rounded-full',
+    'after:transition-all peer-checked:bg-primary',
+    {
+      'w-11 h-6 after:h-5 after:w-5 after:top-[2px] after:start-[2px]': size === 'md',
+      'w-[30px] h-4 after:h-[14px] after:w-[14px] after:top-[1px] after:start-[1px]': size === 'sm'
+    }
+  ])
 
   return (
     <label className={wrapperClassNames}>
@@ -31,7 +53,7 @@ function Toggle({ id, className, label, checked, disabled, onToggle = () => {} }
         className="sr-only peer"
         disabled={disabled}
       />
-      <div className="relative w-11 h-6 bg-surface-lo peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-background after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-background after:border-background after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary" />
+      <div className={divClassNames} />
       {label && (
         <Text as="span" variant="P3" className="text-inheret">
           {label}
