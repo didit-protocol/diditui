@@ -1,5 +1,11 @@
 # diditui
 
+## 1.0.16
+
+### Patch Changes
+
+- 5879394: add use-client for next js
+
 ## 1.0.15
 
 ### Patch Changes
