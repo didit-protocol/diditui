@@ -96,7 +96,7 @@
     "react-dom": ">=18"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.27.8",
+    "@changesets/cli": "^2.27.9",
     "@chromatic-com/storybook": "^2.0.2",
     "@commitlint/cli": "^19.5.0",
     "@commitlint/config-conventional": "^19.5.0",
