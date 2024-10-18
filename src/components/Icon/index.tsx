@@ -1,3 +1,5 @@
+'use client'
+
 import { cn } from '@/utils'
 import { cva, VariantProps } from 'class-variance-authority'
 import { ComponentProps, FC } from 'react'
@@ -44,6 +46,7 @@ import LogoutSvg from '@/assets/icons/logout.svg'
 import PlaySvg from '@/assets/icons/play.svg'
 import ChartSvg from '@/assets/icons/chart.svg'
 import AddCircleSvg from '@/assets/icons/add-circle.svg'
+import AddCircleBoldSvg from '@/assets/icons/add-circle-bold.svg'
 import DocumentSvg from '@/assets/icons/document.svg'
 import ProfileSvg from '@/assets/icons/profile.svg'
 import SecuritySafeSvg from '@/assets/icons/security-safe.svg'
@@ -97,7 +100,8 @@ export const svgOptions: Record<IconType, SVGIcon> = {
   moreCircles: MoreCirclesSvg,
   logout: LogoutSvg,
   edit: EditSvg,
-  trash: TrashSvg
+  trash: TrashSvg,
+  addCircleBold: AddCircleBoldSvg
 }
 
 const iconStyles = cva(['flex items-center justify-center'], {

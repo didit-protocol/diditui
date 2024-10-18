@@ -1,6 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
 import { StatusLabel } from './index'
+import { svgOptions } from '../Icon'
+
+const icons = Object.keys(svgOptions)
 
 const meta: Meta<typeof StatusLabel> = {
   title: 'Components/StatusLabel',
@@ -8,10 +11,14 @@ const meta: Meta<typeof StatusLabel> = {
   argTypes: {
     variant: {
       control: 'select',
-      options: ['primary', 'accent', 'success', 'warning', 'error']
+      options: ['default', 'primary', 'accent', 'success', 'warning', 'error']
     },
     label: {
       control: 'text'
+    },
+    icon: {
+      control: 'select',
+      options: icons
     }
   },
   parameters: {
@@ -26,7 +33,7 @@ type Story = StoryObj<typeof meta>
 
 export const Default: Story = {
   args: {
-    variant: 'success',
+    variant: 'default',
     label: 'Active'
   }
 }

@@ -1,3 +1,5 @@
+'use client'
+
 import { IconType } from '@/types'
 import { cn } from '@/utils'
 import { cva, VariantProps } from 'class-variance-authority'

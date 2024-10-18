@@ -40,6 +40,7 @@ export type IconType =
   | 'play'
   | 'chart'
   | 'addCircle'
+  | 'addCircleBold'
   | 'document'
   | 'profile'
   | 'securitySafe'
