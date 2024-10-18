@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useState, useRef, useEffect, useCallback } from 'react'
 import { cn } from '@/utils'
 
@@ -51,10 +53,8 @@ function Tooltip({ label, children, direction = 'top', className }: TooltipProps
   }, [getPosition])
 
   const wrapperClassNames = cn(
-    'absolute z-10 px-3 py-2',
-    'bg-surface-hi rounded-xl shadow-sm',
-    'transition-opacity duration-300',
-    'text-background text-sm',
+    'absolute z-10 px-3 py-2 text-background text-sm bg-surface-hi',
+    'rounded-xl shadow-sm whitespace-nowrap transition-opacity duration-300',
     { hidden: !isVisible }
   )
 

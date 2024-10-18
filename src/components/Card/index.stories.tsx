@@ -9,6 +9,12 @@ const meta: Meta<typeof Card> = {
     padding: {
       control: 'select',
       options: ['none', 'sm', 'md', 'lg']
+    },
+    shadow: {
+      control: 'boolean'
+    },
+    border: {
+      control: 'boolean'
     }
   },
   parameters: {
@@ -24,7 +30,8 @@ type Story = StoryObj<typeof meta>
 export const Default: Story = {
   args: {
     padding: 'md',
-    shadow: true,
+    shadow: false,
+    border: false,
     children: (
       <Text variant="H4" as="h4" className="p-10" align="center">
         this is a card

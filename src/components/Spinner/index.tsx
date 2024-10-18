@@ -1,6 +1,7 @@
+'use client'
+
 import { cn } from '@/utils'
 import { cva, VariantProps } from 'class-variance-authority'
-import clsx from 'clsx'
 import { ComponentProps } from 'react'
 
 const spinnerStyles = cva(['flex items-center justify-center animate-spin'], {
@@ -29,7 +30,7 @@ const spinnerStyles = cva(['flex items-center justify-center animate-spin'], {
 type SpinnerProps = ComponentProps<'span'> & VariantProps<typeof spinnerStyles>
 
 function Spinner({ size, variant = 'default', className, ...props }: SpinnerProps) {
-  const path1ClassName = clsx({
+  const path1ClassName = cn({
     'stroke-foreground/20': variant === 'default',
     'stroke-primary/20': variant === 'primary',
     'stroke-soft/30': variant === 'soft',
@@ -37,7 +38,7 @@ function Spinner({ size, variant = 'default', className, ...props }: SpinnerProp
     'stroke-error/30': variant === 'error'
   })
 
-  const path2ClassName = clsx({
+  const path2ClassName = cn({
     'stroke-foreground': variant === 'default',
     'stroke-primary': variant === 'primary',
     'stroke-soft': variant === 'soft',

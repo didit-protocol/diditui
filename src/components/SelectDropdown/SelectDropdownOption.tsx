@@ -1,6 +1,6 @@
 import { FC, SVGProps, useCallback } from 'react'
-import clsx from 'clsx'
 import { Text } from '@/components/Text'
+import { cn } from '@/utils'
 
 interface SelectDropdownOptionProps {
   value: string
@@ -25,7 +25,7 @@ function SelectDropdownOption({
     onClick(value)
   }, [value, onClick])
 
-  const selectFieldOptionClassnames = clsx(
+  const selectFieldOptionClassnames = cn(
     'flex w-full items-center gap-2 px-4 py-3 text-surface-hi',
     'hover:bg-surface-ulo/60 border-b border-surface-ulo',
     'transition-all duration-300',

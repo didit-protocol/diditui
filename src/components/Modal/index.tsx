@@ -1,3 +1,5 @@
+'use client'
+
 import ReactModal from 'react-modal'
 import { IconButton } from '../IconButton'
 import { cn } from '@/utils'

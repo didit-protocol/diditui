@@ -1,3 +1,5 @@
+'use client'
+
 import { cn } from '@/utils'
 import { ComponentProps } from 'react'
 import { Text } from '../Text'

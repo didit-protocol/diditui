@@ -1,3 +1,5 @@
+'use client'
+
 import { FC, LegacyRef, SVGProps, useCallback, useMemo, useRef, useState } from 'react'
 import { useKeyPress, useOnClickOutside } from '@/hooks'
 

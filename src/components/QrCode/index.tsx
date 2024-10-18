@@ -1,3 +1,5 @@
+'use client'
+
 import { cn } from '@/utils'
 import { ComponentProps, useMemo } from 'react'
 import { Icon } from '../Icon'

@@ -1,3 +1,5 @@
+'use client'
+
 import { cn } from '@/utils'
 import { useEffect, useRef, useState } from 'react'
 import { useDebounceCallback } from 'usehooks-ts'

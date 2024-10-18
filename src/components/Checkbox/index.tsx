@@ -1,3 +1,5 @@
+'use client'
+
 import { cn } from '@/utils'
 import { useCallback } from 'react'
 import { Text } from '../Text'
