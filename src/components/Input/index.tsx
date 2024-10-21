@@ -14,6 +14,7 @@ type InputProps = ComponentProps<'input'> & {
   icon?: IconType
   diabled?: boolean
   error?: string
+  required?: boolean
   showClearButton?: boolean
   showCopyButton?: boolean
   onValueChange?: (v: string) => void
@@ -27,6 +28,7 @@ function Input({
   disabled,
   className,
   error,
+  required,
   showClearButton = true,
   showCopyButton = false,
   type = 'text',
@@ -75,6 +77,7 @@ function Input({
             className="text-surface-md cursor-pointer truncate w-fit"
           >
             {label}
+            {required && <span className="text-error text-[14px]">*</span>}
           </Text>
           <input
             ref={inputRef}

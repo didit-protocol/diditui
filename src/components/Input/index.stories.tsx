@@ -18,6 +18,9 @@ const meta: Meta<typeof Input> = {
     disabled: {
       control: 'boolean'
     },
+    required: {
+      control: 'boolean'
+    },
     error: {
       control: 'text'
     },
@@ -44,6 +47,7 @@ export const Default: Story = {
     placeholder: 'Enter your email',
     value: '',
     disabled: false,
+    required: true,
     showClearButton: true,
     showCopyButton: false,
     onCopyClick: () => {}
