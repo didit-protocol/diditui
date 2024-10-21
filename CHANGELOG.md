@@ -1,5 +1,11 @@
 # diditui
 
+## 1.0.18
+
+### Patch Changes
+
+- a4ca665: add red astrick for required input
+
 ## 1.0.17
 
 ### Patch Changes
