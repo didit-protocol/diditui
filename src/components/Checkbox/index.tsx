@@ -10,6 +10,7 @@ interface CheckboxProps {
   label?: string
   size?: 'sm' | 'md' | 'lg'
   checked?: boolean
+  note?: string
   disabled?: boolean
   onToggle?: (checked: boolean) => void
 }
@@ -21,13 +22,17 @@ function CheckBox({
   size = 'md',
   checked,
   disabled,
+  note = '',
   onToggle = () => {}
 }: CheckboxProps) {
-  const wrapperClassNames = cn(['inline-flex items-center gap-4'], className)
+  const wrapperClassNames = cn(['inline-flex items-center gap-4'], className, {
+    'opacity-30': disabled
+  })
 
   const inputClassNames = cn([
     'w-5 h-5 text-primary hover:bg-surface-lo border border-surface-mdlo rounded',
-    'focus:ring-transparent focus:ring-0 focus:outline-none',
+    'focus:ring-transparent focus:ring-0 focus:outline-none cursor-pointer',
+    'disabled:bg-transparent disabled:cursor-auto',
     size === 'sm' && 'w-4 h-4',
     size === 'lg' && 'w-6 h-6'
   ])
@@ -48,6 +53,7 @@ function CheckBox({
         className={inputClassNames}
         onChange={handleToggle}
         disabled={disabled}
+        title={note}
       />
       {label && (
         <Text as="label" htmlFor={id} variant="Label3" className="text-inheret truncate">

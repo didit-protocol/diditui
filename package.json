@@ -26,7 +26,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "build:watch": "tsc -b && vite build --watch",
+    "watch": "tsc -b && vite build --watch",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006 --no-open",
     "build-storybook": "storybook build",
