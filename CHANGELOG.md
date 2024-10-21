@@ -1,5 +1,11 @@
 # diditui
 
+## 1.0.17
+
+### Patch Changes
+
+- 8051fbc: fix checkbox diabled state
+
 ## 1.0.16
 
 ### Patch Changes
