@@ -1,5 +1,17 @@
 # diditui
 
+## 1.0.16
+
+### Patch Changes
+
+- 5879394: add use-client for next js
+
+## 1.0.15
+
+### Patch Changes
+
+- 94ee1d4: fix disable state on input and selectdropdown
+
 ## 1.0.14
 
 ### Patch Changes
