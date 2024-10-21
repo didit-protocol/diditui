@@ -20,7 +20,7 @@ const iconSizeMap = {
   xl: 320
 }
 
-function QrCode({ uri, size = 'md', color, iconName = 'didit', className, ...props }: QrCodeProps) {
+function QrCode({ uri, size = 'md', color, iconName, className, ...props }: QrCodeProps) {
   const svgSize = typeof size === 'number' ? size : iconSizeMap[size]
 
   const dots = useMemo(
@@ -41,7 +41,7 @@ function QrCode({ uri, size = 'md', color, iconName = 'didit', className, ...pro
 
   return (
     <div className={divClassNames} {...props}>
-      <Icon type={iconName} className={iconClassNames} />
+      {iconName && <Icon type={iconName} className={iconClassNames} />}
       <svg width={svgSize} height={svgSize}>
         {dots}
       </svg>

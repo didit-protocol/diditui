@@ -77,7 +77,7 @@ function Input({
             className="text-surface-md cursor-pointer truncate w-fit"
           >
             {label}
-            {required && <span className="text-error text-[14px]">*</span>}
+            {required && <span className="text-error text-[14px] leading-[90%]">*</span>}
           </Text>
           <input
             ref={inputRef}
@@ -86,6 +86,7 @@ function Input({
             className={inputClassNames}
             value={value}
             type={type}
+            required={required}
             onChange={e => onValueChange(e.target.value)}
             placeholder={placeholder}
             disabled={disabled}
