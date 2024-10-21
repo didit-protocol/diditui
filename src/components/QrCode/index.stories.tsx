@@ -31,7 +31,6 @@ export const Default: Story = {
   args: {
     uri: 'http://example.com',
     size: 'md',
-    color: 'black',
-    iconName: 'didit'
+    color: 'black'
   }
 }
