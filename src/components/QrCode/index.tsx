@@ -29,14 +29,17 @@ function QrCode({ uri, size = 'md', color, iconName, className, ...props }: QrCo
   )
 
   const divClassNames = cn(
-    ['size-fit', 'flex  items-center justify-center', 'relative overflow-hidden aspect-square'],
+    [
+      'size-fit flex  items-center justify-center',
+      'relative overflow-hidden aspect-square text-primary'
+    ],
     className
   )
 
   const iconClassNames = cn([
     'size-full absolute top-1/2 left-1/2',
     'transform -translate-x-1/2 -translate-y-1/2 scale-[0.25]',
-    'text-primary rounded-3xl overflow-hidden'
+    'rounded-3xl overflow-hidden'
   ])
 
   return (

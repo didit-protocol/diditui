@@ -12,6 +12,7 @@ interface SelectDropdownTriggerProps {
   placeholder: string
   selectedOption?: SelectDropdownOptionType
   disabled?: boolean
+  required?: boolean
   isDropdownOpen?: boolean
   buttonRef?: LegacyRef<HTMLButtonElement>
   onClick: () => void
@@ -25,6 +26,7 @@ function SelectDropdownTrigger({
   placeholder,
   selectedOption = { label: '', value: '', Icon: null },
   disabled = false,
+  required = false,
   isDropdownOpen = false,
   buttonRef = undefined,
   hasError = false,
@@ -67,6 +69,7 @@ function SelectDropdownTrigger({
       <div className="flex flex-col gap-[6px] grow overflow-hidden min-w-0">
         <Text variant="StyledLabel" as="label" className="text-surface-md truncate w-fit">
           {label}
+          {required && <span className="text-error text-[14px] leading-[90%]">*</span>}
         </Text>
         <Text as="span" variant="P2" className={valueClassNames}>
           {selectedOption.label || placeholder}
