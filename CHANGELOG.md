@@ -1,5 +1,11 @@
 # diditui
 
+## 1.0.20
+
+### Patch Changes
+
+- ea9cfbf: fix font line hieght
+
 ## 1.0.19
 
 ### Patch Changes
