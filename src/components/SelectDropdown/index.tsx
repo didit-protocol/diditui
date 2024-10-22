@@ -25,6 +25,7 @@ interface SelectDropdownProps {
   value?: string
   options: SelectDropdownOptionType[]
   disabled?: boolean
+  required?: boolean
   withSearch?: boolean
   errorMessage?: string
   dropdownClassName?: string
@@ -41,6 +42,7 @@ function SelectDropdown({
   value = undefined,
   options,
   disabled = false,
+  required = false,
   withSearch = false,
   errorMessage = '',
   dropdownClassName = '',
@@ -103,6 +105,7 @@ function SelectDropdown({
           buttonRef={buttonRef as LegacyRef<HTMLButtonElement>}
           hasError={!!errorMessage}
           id={id}
+          required={required}
           disabled={disabled}
           isDropdownOpen={isDropdownOpen}
           placeholder={placeholder}

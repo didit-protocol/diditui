@@ -18,6 +18,9 @@ const meta: Meta<typeof SelectDropdown> = {
     disabled: {
       control: 'boolean'
     },
+    required: {
+      control: 'boolean'
+    },
     withSearch: {
       control: 'boolean'
     },
@@ -44,6 +47,7 @@ export const Default: Story = {
     placeholder: 'Select test',
     value: '',
     disabled: false,
-    options: []
+    options: [],
+    required: false
   }
 }
