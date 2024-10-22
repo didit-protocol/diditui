@@ -50,3 +50,4 @@ export type IconType =
   | 'trash'
   | 'filterAdd'
   | 'filterRemove'
+  | 'warningBold'
