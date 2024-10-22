@@ -1,5 +1,11 @@
 # diditui
 
+## 1.0.21
+
+### Patch Changes
+
+- ed0e618: add filter icons
+
 ## 1.0.20
 
 ### Patch Changes
