@@ -48,3 +48,5 @@ export type IconType =
   | 'logout'
   | 'edit'
   | 'trash'
+  | 'filterAdd'
+  | 'filterRemove'
