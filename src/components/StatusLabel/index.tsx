@@ -10,7 +10,7 @@ import { Icon } from '../Icon'
 const statusLabelStyles = cva(
   [
     'w-fit border border-foreground rounded-3xl py-[6px] px-2 bg-transparent',
-    'flex items-center justify-center gap-1'
+    'flex items-center justify-center gap-1 overflow-hidden'
   ],
   {
     variants: {
@@ -42,7 +42,11 @@ function StatusLabel({ label, icon, variant, className, ...props }: StatusLabelP
   return (
     <div className={cn(statusLabelStyles({ variant, icon: !!icon, className }))} {...props}>
       {icon && <Icon type={icon} size="xs" />}
-      <Text className="text-inherit text-[9px]" variant="StyledLabel" as="span">
+      <Text
+        className="text-inherit text-[9px] truncate whitespace-nowrap"
+        variant="StyledLabel"
+        as="span"
+      >
         {label}
       </Text>
     </div>
