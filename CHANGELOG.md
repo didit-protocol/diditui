@@ -1,5 +1,11 @@
 # diditui
 
+## 1.0.22
+
+### Patch Changes
+
+- 9be3fa4: add warning icon
+
 ## 1.0.21
 
 ### Patch Changes
