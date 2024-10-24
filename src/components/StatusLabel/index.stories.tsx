@@ -11,7 +11,7 @@ const meta: Meta<typeof StatusLabel> = {
   argTypes: {
     variant: {
       control: 'select',
-      options: ['default', 'primary', 'accent', 'success', 'warning', 'error']
+      options: ['default', 'soft', 'primary', 'accent', 'success', 'warning', 'error']
     },
     label: {
       control: 'text'
