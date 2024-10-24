@@ -103,7 +103,7 @@
     "@commitlint/cz-commitlint": "^19.4.0",
     "@manypkg/cli": "^0.21.4",
     "@storybook/addon-essentials": "^8.3.6",
-    "@storybook/addon-interactions": "^8.3.4",
+    "@storybook/addon-interactions": "^8.3.6",
     "@storybook/addon-links": "^8.3.2",
     "@storybook/addon-onboarding": "^8.3.4",
     "@storybook/blocks": "^8.3.6",
