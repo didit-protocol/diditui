@@ -1,5 +1,11 @@
 # diditui
 
+## 1.0.23
+
+### Patch Changes
+
+- 06abc2c: add soft state to statusLabel
+
 ## 1.0.22
 
 ### Patch Changes
