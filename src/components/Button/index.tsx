@@ -22,8 +22,8 @@ const buttonStyles = cva(
         error: 'bg-error border border-error text-background'
       },
       size: {
-        md: 'px-2 py-4',
-        lg: 'px-3 py-5'
+        md: 'px-2 py-4 pl-4',
+        lg: 'px-3 py-5 pl-5'
       },
       disabled: {
         true: 'pointer-events-none bg-surface-lo text-surface-mdlo border-surface-lo'
@@ -102,6 +102,12 @@ function Button({
     }
   ])
 
+  const textClassName = cn([
+    'text-sm font-medium leading-[90%] tracking-tight w-full text-center z-30',
+    'text-inherit',
+    { 'mr-[32px]': !!icon }
+  ])
+
   const iconSize = variant === 'primary' ? 'xs' : 'sm'
 
   return (
@@ -109,9 +115,7 @@ function Button({
       className={cn(buttonStyles({ variant, size, isLoading, disabled, animate, className }))}
       {...props}
     >
-      <span className="text-sm font-medium leading-[90%] tracking-tight w-full text-center z-30 text-inherit">
-        {children}
-      </span>
+      <span className={textClassName}>{children}</span>
       {icon && !isLoading && (
         <div className={iconWrapperClassNames}>
           <Icon type={icon} size={disabled ? 'sm' : iconSize} />
