@@ -1,5 +1,11 @@
 # diditui
 
+## 1.0.24
+
+### Patch Changes
+
+- e293d10: fix long text on buttons
+
 ## 1.0.23
 
 ### Patch Changes
