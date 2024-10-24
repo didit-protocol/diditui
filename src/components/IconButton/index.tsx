@@ -6,6 +6,7 @@ import { cva, VariantProps } from 'class-variance-authority'
 import { ComponentProps } from 'react'
 import { Icon } from '../Icon'
 import { Text } from '../Text'
+import { Spinner } from '../Spinner'
 
 const iconButtonStyles = cva(['flex items-center justify-center', 'rounded-full border'], {
   variants: {
@@ -42,11 +43,13 @@ type IconButtonProps = ComponentProps<'button'> &
   VariantProps<typeof iconButtonStyles> & {
     icon?: IconType
     label?: string
+    isLoading?: boolean
   }
 
 function IconButton({
   icon = 'scan',
   label,
+  isLoading,
   size,
   variant,
   withBorder,
@@ -61,14 +64,19 @@ function IconButton({
     ],
     className,
     {
-      'text-primary': variant === 'primary'
+      'text-primary': variant === 'primary',
+      'opacity-100': isLoading
     }
   )
 
   return (
     <button className={buttonClassNames} {...props}>
       <div className={cn(iconButtonStyles({ size, variant, withBorder }))}>
-        <Icon className="text-inherit" type={icon} size={size} />
+        {isLoading ? (
+          <Spinner size={size} variant={variant} />
+        ) : (
+          <Icon className="text-inherit" type={icon} size={size} />
+        )}
       </div>
       {label && (
         <Text className="text-inherit" variant="P3">

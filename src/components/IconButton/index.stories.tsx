@@ -23,6 +23,9 @@ const meta: Meta<typeof IconButton> = {
     variant: {
       control: 'select',
       options: ['default', 'primary']
+    },
+    isLoading: {
+      control: 'boolean'
     }
   },
   parameters: {
@@ -40,6 +43,7 @@ export const Default: Story = {
     variant: 'default',
     icon: 'scan',
     size: 'sm',
-    label: 'Scan QR Code'
+    label: 'Scan QR Code',
+    isLoading: false
   }
 }
