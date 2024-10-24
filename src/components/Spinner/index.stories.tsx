@@ -11,7 +11,7 @@ const meta: Meta<typeof Spinner> = {
     },
     size: {
       control: 'select',
-      options: ['xs', 'sm', 'md', 'lg', 'xl']
+      options: ['xxs', 'xs', 'sm', 'md', 'lg', 'xl']
     }
   },
   parameters: {

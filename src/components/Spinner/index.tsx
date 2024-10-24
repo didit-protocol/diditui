@@ -14,8 +14,9 @@ const spinnerStyles = cva(['flex items-center justify-center animate-spin'], {
       error: ''
     },
     size: {
-      xs: 'size-[14px]',
-      sm: 'size-4',
+      xxs: 'size-[14px]',
+      xs: 'size-4',
+      sm: 'size-[18px]',
       md: 'size-5',
       lg: 'size-6',
       xl: 'size-12'

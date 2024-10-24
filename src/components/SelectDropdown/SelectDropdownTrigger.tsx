@@ -37,7 +37,7 @@ function SelectDropdownTrigger({
     'flex items-center gap-2 bg-surface-lo hover:bg-surface-ulo',
     'transition-all duration-300 border border-transparent',
     {
-      'opacity-80': disabled,
+      'opacity-50 hover:bg-surface-lo': disabled,
       'border-error bg-error/5': hasError,
       'bg-transparent border-foreground hover:bg-transparent': isDropdownOpen,
       'border-error': isDropdownOpen && hasError
