@@ -9,7 +9,7 @@ import { Icon } from '../Icon'
 
 const statusLabelStyles = cva(
   [
-    'w-full border border-foreground rounded-3xl py-[6px] px-2 bg-transparent',
+    'w-fit max-w-full border border-foreground rounded-3xl py-[6px] px-2 bg-transparent',
     'flex items-center justify-center gap-1 overflow-hidden'
   ],
   {
