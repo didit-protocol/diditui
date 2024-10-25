@@ -4,8 +4,8 @@ import { cn } from '@/utils'
 import { cva, VariantProps } from 'class-variance-authority'
 import { ComponentProps } from 'react'
 import { Text } from '../Text'
-import { IconType } from '@/types'
 import { Icon } from '../Icon'
+import { IconType } from '@/types'
 
 const statusLabelStyles = cva(
   [
@@ -23,7 +23,7 @@ const statusLabelStyles = cva(
         warning: 'bg-warning/10 border-warning/20 text-warning',
         error: 'bg-error/10 border-error/20 text-error'
       },
-      hasIcon: {
+      withIcon: {
         true: 'pl-1 pr-2'
       }
     },
@@ -34,14 +34,27 @@ const statusLabelStyles = cva(
 )
 
 type StatusLabelProps = ComponentProps<'div'> &
-  Omit<VariantProps<typeof statusLabelStyles>, 'hasIcon'> & {
+  VariantProps<typeof statusLabelStyles> & {
     label: string
-    icon?: IconType
+    withIcon?: boolean
   }
 
-function StatusLabel({ label, icon, variant, className, ...props }: StatusLabelProps) {
+const iconMap: Record<string, IconType | undefined> = {
+  success: 'checkCircleBold',
+  warning: 'warningBold',
+  error: 'closeCircleBold',
+  default: 'info',
+  soft: 'info',
+  primary: 'refresh',
+  accent: 'info',
+  '': undefined
+}
+
+function StatusLabel({ label, withIcon = false, variant, className, ...props }: StatusLabelProps) {
+  const icon = withIcon ? iconMap[variant || ''] : undefined
+
   return (
-    <div className={cn(statusLabelStyles({ variant, hasIcon: !!icon, className }))} {...props}>
+    <div className={cn(statusLabelStyles({ variant, withIcon, className }))} {...props}>
       {icon && <Icon className="shrink-0" type={icon} size="xs" />}
       <Text
         className="text-inherit text-[9px] truncate whitespace-nowrap"
