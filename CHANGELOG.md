@@ -1,5 +1,11 @@
 # diditui
 
+## 1.0.28
+
+### Patch Changes
+
+- 13cac3b: fix statusLabel icon
+
 ## 1.0.27
 
 ### Patch Changes
