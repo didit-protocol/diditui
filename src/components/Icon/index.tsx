@@ -49,12 +49,17 @@ import AddCircleSvg from '@/assets/icons/add-circle.svg'
 import AddCircleBoldSvg from '@/assets/icons/add-circle-bold.svg'
 import DocumentSvg from '@/assets/icons/document.svg'
 import ProfileSvg from '@/assets/icons/profile.svg'
+import ProfileBoldSvg from '@/assets/icons/profile-bold.svg'
 import SecuritySafeSvg from '@/assets/icons/security-safe.svg'
 import MoreCirclesSvg from '@/assets/icons/more-circles.svg'
 import TrashSvg from '@/assets/icons/trash.svg'
 import FilterAddSvg from '@/assets/icons/filter-add.svg'
 import FilterRemoveSvg from '@/assets/icons/filter-remove.svg'
 import WarningBoldSvg from '@/assets/icons/warning-bold.svg'
+import LocationBoldSvg from '@/assets/icons/location-bold.svg'
+import ProfileEditBoldSvg from '@/assets/icons/profile-edit-bold.svg'
+import FaceBoldSvg from '@/assets/icons/face-bold.svg'
+import ShieldSearchBoldSvg from '@/assets/icons/shield-search-bold.svg'
 
 type SVGIcon = FC<React.SVGProps<SVGElement>>
 
@@ -99,6 +104,7 @@ export const svgOptions: Record<IconType, SVGIcon> = {
   addCircle: AddCircleSvg,
   document: DocumentSvg,
   profile: ProfileSvg,
+  profileBold: ProfileBoldSvg,
   securitySafe: SecuritySafeSvg,
   moreCircles: MoreCirclesSvg,
   logout: LogoutSvg,
@@ -107,7 +113,11 @@ export const svgOptions: Record<IconType, SVGIcon> = {
   addCircleBold: AddCircleBoldSvg,
   filterAdd: FilterAddSvg,
   filterRemove: FilterRemoveSvg,
-  warningBold: WarningBoldSvg
+  warningBold: WarningBoldSvg,
+  locationBold: LocationBoldSvg,
+  profileEditBold: ProfileEditBoldSvg,
+  faceBold: FaceBoldSvg,
+  shieldSearchBold: ShieldSearchBoldSvg
 }
 
 const iconStyles = cva(['flex items-center justify-center'], {
