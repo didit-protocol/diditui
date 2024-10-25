@@ -7,7 +7,7 @@ const meta: Meta<typeof Spinner> = {
   argTypes: {
     variant: {
       control: 'select',
-      options: ['default', 'primary', 'soft', 'accent', 'error']
+      options: ['default', 'primary', 'soft', 'accent', 'error', 'success', 'warning']
     },
     size: {
       control: 'select',
