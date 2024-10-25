@@ -36,6 +36,7 @@ const statusLabelStyles = cva(
 type StatusLabelProps = ComponentProps<'div'> &
   VariantProps<typeof statusLabelStyles> & {
     label: string
+    icon?: IconType
     withIcon?: boolean
   }
 
@@ -50,12 +51,22 @@ const iconMap: Record<string, IconType | undefined> = {
   '': undefined
 }
 
-function StatusLabel({ label, withIcon = false, variant, className, ...props }: StatusLabelProps) {
-  const icon = withIcon ? iconMap[variant || ''] : undefined
+function StatusLabel({
+  label,
+  icon,
+  withIcon = false,
+  variant,
+  className,
+  ...props
+}: StatusLabelProps) {
+  const selectedIcon = withIcon ? iconMap[variant || ''] : icon
 
   return (
-    <div className={cn(statusLabelStyles({ variant, withIcon, className }))} {...props}>
-      {icon && <Icon className="shrink-0" type={icon} size="xs" />}
+    <div
+      className={cn(statusLabelStyles({ variant, withIcon: !!selectedIcon, className }))}
+      {...props}
+    >
+      {selectedIcon && <Icon className="shrink-0" type={selectedIcon} size="xs" />}
       <Text
         className="text-inherit text-[9px] truncate whitespace-nowrap"
         variant="StyledLabel"
