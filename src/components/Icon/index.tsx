@@ -28,6 +28,8 @@ import CloseCircleBoldSvg from '@/assets/icons/close-circle-bold.svg'
 import CheckCircleSvg from '@/assets/icons/check-circle.svg'
 import CheckCircleBoldSvg from '@/assets/icons/check-circle-bold.svg'
 import RefreshSvg from '@/assets/icons/refresh.svg'
+import Refresh2Svg from '@/assets/icons/refresh2.svg'
+import RepeatSvg from '@/assets/icons/repeat.svg'
 import ChevronLeftSvg from '@/assets/icons/chevron-left.svg'
 import EyeSvg from '@/assets/icons/eye.svg'
 import EyeSlashSvg from '@/assets/icons/eye-slash.svg'
@@ -117,7 +119,9 @@ export const svgOptions: Record<IconType, SVGIcon> = {
   locationBold: LocationBoldSvg,
   profileEditBold: ProfileEditBoldSvg,
   faceBold: FaceBoldSvg,
-  shieldSearchBold: ShieldSearchBoldSvg
+  shieldSearchBold: ShieldSearchBoldSvg,
+  refresh2: Refresh2Svg,
+  repeat: RepeatSvg
 }
 
 const iconStyles = cva(['flex items-center justify-center'], {
