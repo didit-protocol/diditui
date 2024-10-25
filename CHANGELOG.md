@@ -1,5 +1,11 @@
 # diditui
 
+## 1.0.26
+
+### Patch Changes
+
+- 48fbb39: add bold icons
+
 ## 1.0.25
 
 ### Patch Changes
