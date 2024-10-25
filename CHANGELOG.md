@@ -1,5 +1,11 @@
 # diditui
 
+## 1.0.25
+
+### Patch Changes
+
+- a230be1: add actionButton component
+
 ## 1.0.24
 
 ### Patch Changes
