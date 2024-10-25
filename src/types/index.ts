@@ -23,6 +23,8 @@ export type IconType =
   | 'checkCircle'
   | 'checkCircleBold'
   | 'refresh'
+  | 'refresh2'
+  | 'repeat'
   | 'chevronLeft'
   | 'eye'
   | 'eyeSlash'
