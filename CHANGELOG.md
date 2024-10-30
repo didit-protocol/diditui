@@ -1,5 +1,11 @@
 # diditui
 
+## 1.0.30
+
+### Patch Changes
+
+- 8cb5ea9: add distance icon
+
 ## 1.0.29
 
 ### Patch Changes
