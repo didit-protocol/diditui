@@ -59,3 +59,4 @@ export type IconType =
   | 'profileEditBold'
   | 'faceBold'
   | 'shieldSearchBold'
+  | 'distance'
