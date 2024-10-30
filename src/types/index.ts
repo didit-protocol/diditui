@@ -15,6 +15,7 @@ export type IconType =
   | 'diditNameLogo'
   | 'close'
   | 'diditLogo'
+  | 'home'
   | 'idCard'
   | 'car'
   | 'passport'
