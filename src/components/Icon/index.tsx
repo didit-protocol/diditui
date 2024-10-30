@@ -62,6 +62,7 @@ import LocationBoldSvg from '@/assets/icons/location-bold.svg'
 import ProfileEditBoldSvg from '@/assets/icons/profile-edit-bold.svg'
 import FaceBoldSvg from '@/assets/icons/face-bold.svg'
 import ShieldSearchBoldSvg from '@/assets/icons/shield-search-bold.svg'
+import HomeSvg from '@/assets/icons/home.svg'
 
 type SVGIcon = FC<React.SVGProps<SVGElement>>
 
@@ -121,7 +122,8 @@ export const svgOptions: Record<IconType, SVGIcon> = {
   faceBold: FaceBoldSvg,
   shieldSearchBold: ShieldSearchBoldSvg,
   refresh2: Refresh2Svg,
-  repeat: RepeatSvg
+  repeat: RepeatSvg,
+  home: HomeSvg
 }
 
 const iconStyles = cva(['flex items-center justify-center'], {
