@@ -1,5 +1,11 @@
 # diditui
 
+## 1.0.31
+
+### Patch Changes
+
+- 8e8b89a: add user square icon
+
 ## 1.0.30
 
 ### Patch Changes
