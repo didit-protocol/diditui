@@ -60,3 +60,4 @@ export type IconType =
   | 'faceBold'
   | 'shieldSearchBold'
   | 'distance'
+  | 'userSquare'
