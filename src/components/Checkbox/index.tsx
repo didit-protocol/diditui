@@ -32,7 +32,7 @@ function CheckBox({
   const inputClassNames = cn([
     'w-5 h-5 text-primary hover:bg-surface-lo border border-surface-mdlo rounded',
     'focus:ring-transparent focus:ring-0 focus:outline-none cursor-pointer',
-    'disabled:bg-transparent disabled:cursor-auto',
+    'disabled:cursor-auto',
     size === 'sm' && 'w-4 h-4',
     size === 'lg' && 'w-6 h-6'
   ])
