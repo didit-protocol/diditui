@@ -1,5 +1,11 @@
 # diditui
 
+## 1.0.32
+
+### Patch Changes
+
+- 1ba2f71: fix disabled state on checkbox
+
 ## 1.0.31
 
 ### Patch Changes
