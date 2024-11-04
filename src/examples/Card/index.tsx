@@ -1,4 +1,4 @@
-import { Card, IconButton, Text } from '@/components'
+import { Card, CheckBox, IconButton, Text } from '@/components'
 
 function CardExample() {
   return (
@@ -32,6 +32,7 @@ function CardExample() {
             Sanctions list verification, Warnings and PEP
           </Text>
         </div>
+        <CheckBox label="Checkbox" checked={true} onToggle={() => {}} disabled />
       </div>
     </Card>
   )
