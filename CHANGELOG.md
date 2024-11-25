@@ -1,5 +1,11 @@
 # diditui
 
+## 1.0.33
+
+### Patch Changes
+
+- 5e048c4: fix MiniSearch placeholder text
+
 ## 1.0.32
 
 ### Patch Changes
