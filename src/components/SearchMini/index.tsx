@@ -44,7 +44,7 @@ function SearchMini({
   )
   const inputClassName = cn(
     'text-xs remove-arrow :focus:shadow-none grow shrink-0 truncate',
-    'placeholder:body-text placeholder:text-surface-md',
+    'placeholder:text-surface-mdlo text-sm font-normal leading-[140%]',
     'border-none bg-transparent p-0 !shadow-none outline-none ring-0 ring-offset-0',
     'focus:border-none focus:outline-none focus:ring-0',
     'disabled:opacity-25'
