@@ -61,3 +61,8 @@ export type IconType =
   | 'shieldSearchBold'
   | 'distance'
   | 'userSquare'
+  | 'bell'
+  | 'hierarchy'
+  | 'code'
+  | 'percentage'
+  | 'world'
