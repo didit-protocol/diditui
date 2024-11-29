@@ -1,5 +1,11 @@
 # diditui
 
+## 1.0.34
+
+### Patch Changes
+
+- 98b1bdd: add more icons
+
 ## 1.0.33
 
 ### Patch Changes
