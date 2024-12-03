@@ -1,5 +1,11 @@
 # diditui
 
+## 1.0.35
+
+### Patch Changes
+
+- 21fdb2f: add spinner icon
+
 ## 1.0.34
 
 ### Patch Changes
