@@ -99,7 +99,7 @@
     "@changesets/cli": "^2.27.10",
     "@chromatic-com/storybook": "^3.2.2",
     "@commitlint/cli": "^19.6.0",
-    "@commitlint/config-conventional": "^19.5.0",
+    "@commitlint/config-conventional": "^19.6.0",
     "@commitlint/cz-commitlint": "^19.5.0",
     "@manypkg/cli": "^0.23.0",
     "@storybook/addon-essentials": "^8.3.6",
