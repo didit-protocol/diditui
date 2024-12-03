@@ -70,6 +70,7 @@ import HierarchySvg from '@/assets/icons/hierarchy.svg'
 import CodeSvg from '@/assets/icons/code.svg'
 import PercentageSvg from '@/assets/icons/percentage.svg'
 import WorldSvg from '@/assets/icons/world.svg'
+import SpinnerSvg from '@/assets/icons/spinner.svg'
 
 type SVGIcon = FC<React.SVGProps<SVGElement>>
 
@@ -137,7 +138,8 @@ export const svgOptions: Record<IconType, SVGIcon> = {
   hierarchy: HierarchySvg,
   code: CodeSvg,
   percentage: PercentageSvg,
-  world: WorldSvg
+  world: WorldSvg,
+  spinner: SpinnerSvg
 }
 
 const iconStyles = cva(['flex items-center justify-center'], {
