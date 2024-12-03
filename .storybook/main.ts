@@ -16,12 +16,12 @@ const config: StorybookConfig = {
     options: {}
   },
   viteFinal: async config => {
+    const projectRoot = path.resolve(__dirname, '..')  // Goes to diditui directory
     config.plugins?.push(
       tsconfigPaths({
-        projects: [path.resolve((path.dirname(__dirname), '../tsconfig.json'))]
+        projects: [path.join(projectRoot, 'tsconfig.json')]
       })
     )
-
     return config
   }
 }
