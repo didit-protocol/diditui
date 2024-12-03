@@ -84,7 +84,7 @@
     }
   },
   "dependencies": {
-    "class-variance-authority": "^0.7.0",
+    "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "qrcode": "^1.5.4",
     "react-modal": "^3.16.1",
