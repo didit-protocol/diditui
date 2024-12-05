@@ -1,5 +1,11 @@
 # diditui
 
+## 1.0.36
+
+### Patch Changes
+
+- f48c838: add color swatch icon
+
 ## 1.0.35
 
 ### Patch Changes
