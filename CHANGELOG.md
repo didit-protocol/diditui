@@ -1,5 +1,11 @@
 # diditui
 
+## 1.0.37
+
+### Patch Changes
+
+- 572d76c: add more icons
+
 ## 1.0.36
 
 ### Patch Changes
