@@ -68,3 +68,5 @@ export type IconType =
   | 'percentage'
   | 'world'
   | 'colorSwatch'
+  | 'verify'
+  | 'brush'

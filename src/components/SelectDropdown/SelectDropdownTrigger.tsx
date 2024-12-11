@@ -46,7 +46,6 @@ function SelectDropdownTrigger({
   )
 
   const valueClassNames = cn('truncate w-fit', {
-    'text-surface-background': selectedOption.value,
     'text-surface-md': !selectedOption.value
   })
 
