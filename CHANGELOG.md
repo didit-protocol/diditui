@@ -1,5 +1,11 @@
 # diditui
 
+## 1.0.39
+
+### Patch Changes
+
+- 0974dcb: fix assets files names after build
+
 ## 1.0.38
 
 ### Patch Changes
