@@ -8,7 +8,7 @@ const meta: Meta<typeof DiditAnimatedLogo> = {
   argTypes: {
     size: {
       control: 'select',
-      options: ['small', 'medium', 'large']
+      options: ['smaller', 'small', 'medium', 'large']
     }
   },
   parameters: {
