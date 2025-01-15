@@ -22,6 +22,7 @@ export default defineConfig({
 
         return `[name].${ext}`;
       },
+      cssFileName: 'style' // Add this line
     },
     rollupOptions: {
       external: ['react', 'react-dom'],
