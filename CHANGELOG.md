@@ -1,5 +1,11 @@
 # diditui
 
+## 1.0.38
+
+### Patch Changes
+
+- change colors of didit animated logo with props
+
 ## 1.0.37
 
 ### Patch Changes
