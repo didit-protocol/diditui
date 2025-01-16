@@ -1,5 +1,11 @@
 # diditui
 
+## 1.0.40
+
+### Patch Changes
+
+- 7c2bbfd: fix build
+
 ## 1.0.39
 
 ### Patch Changes
