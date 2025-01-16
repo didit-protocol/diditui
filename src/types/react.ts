@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/ban-types */
-import React from 'react'
+import React, { JSX } from 'react'
 
 export type PropsOf<C extends keyof JSX.IntrinsicElements | React.JSXElementConstructor<unknown>> =
   JSX.LibraryManagedAttributes<C, React.ComponentPropsWithoutRef<C>>

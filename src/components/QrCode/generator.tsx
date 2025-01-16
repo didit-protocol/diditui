@@ -1,4 +1,5 @@
 import QRCodeUtil from 'qrcode'
+import { JSX } from 'react'
 
 type CoordinateMapping = [number, number[]]
 
