@@ -1,5 +1,11 @@
 # diditui
 
+## 1.0.41
+
+### Patch Changes
+
+- c7dbd8f: make Qr code logo optional
+
 ## 1.0.40
 
 ### Patch Changes
