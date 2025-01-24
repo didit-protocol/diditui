@@ -22,10 +22,10 @@ const iconSizeMap = {
 
 function QrCode({ uri, size = 'md', color, iconName, className, ...props }: QrCodeProps) {
   const svgSize = typeof size === 'number' ? size : iconSizeMap[size]
-
+  const logoSize = iconName ? svgSize / 4 : undefined
   const dots = useMemo(
-    () => QrCodeUtil.generate(uri, svgSize, svgSize / 4, color),
-    [uri, svgSize, color]
+    () => QrCodeUtil.generate(uri, svgSize, color, logoSize),
+    [uri, svgSize, color, logoSize]
   )
 
   const divClassNames = cn(

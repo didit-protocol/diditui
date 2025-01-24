@@ -31,7 +31,7 @@ function getMatrix(value: string, errorCorrectionLevel: QRCodeUtil.QRCodeErrorCo
 }
 
 export const QrCodeUtil = {
-  generate(uri: string, size: number, logoSize: number, dotColor: string = '#141414') {
+  generate(uri: string, size: number, dotColor: string = '#141414', logoSize?: number) {
     const edgeColor = 'transparent'
     const strokeWidth = 5
     const matrix = getMatrix(uri, 'Q')
@@ -67,7 +67,7 @@ export const QrCodeUtil = {
       }
     })
 
-    const clearArenaSize = Math.floor((logoSize + 25) / cellSize)
+    const clearArenaSize = logoSize ? Math.floor((logoSize + 25) / cellSize) : 0
     const matrixMiddleStart = matrix.length / 2 - clearArenaSize / 2
     const matrixMiddleEnd = matrix.length / 2 + clearArenaSize / 2 - 1
     const circles: [number, number][] = []
@@ -84,6 +84,7 @@ export const QrCodeUtil = {
             )
           ) {
             if (
+              !logoSize || // Skip logo space check if logoSize is not provided
               !(
                 i > matrixMiddleStart &&
                 i < matrixMiddleEnd &&

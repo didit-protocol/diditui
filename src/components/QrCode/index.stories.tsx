@@ -11,7 +11,7 @@ const meta: Meta<typeof QrCode> = {
     },
     size: {
       control: 'select',
-      options: ['sm', 'md', 'lg']
+      options: ['sm', 'md', 'lg', 'xl']
     },
     color: {
       control: 'color'
