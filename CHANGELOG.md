@@ -1,5 +1,11 @@
 # diditui
 
+## 1.0.42
+
+### Patch Changes
+
+- 01d0cdb: add more icons
+
 ## 1.0.41
 
 ### Patch Changes
