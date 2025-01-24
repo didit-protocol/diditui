@@ -74,6 +74,8 @@ import SpinnerSvg from '@/assets/icons/spinner.svg'
 import ColorSwatchSvg from '@/assets/icons/color-swatch.svg'
 import VerifySvg from '@/assets/icons/verify.svg'
 import BrushSvg from '@/assets/icons/brush.svg'
+import SmartPhoneSvg from '@/assets/icons/smart-phone.svg'
+import CameraSvg from '@/assets/icons/camera.svg'
 
 type SVGIcon = FC<React.SVGProps<SVGElement>>
 
@@ -145,7 +147,9 @@ export const svgOptions: Record<IconType, SVGIcon> = {
   spinner: SpinnerSvg,
   colorSwatch: ColorSwatchSvg,
   verify: VerifySvg,
-  brush: BrushSvg
+  brush: BrushSvg,
+  smartPhone: SmartPhoneSvg,
+  camera: CameraSvg
 }
 
 const iconStyles = cva(['flex items-center justify-center'], {

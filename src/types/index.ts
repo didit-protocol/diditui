@@ -70,3 +70,5 @@ export type IconType =
   | 'colorSwatch'
   | 'verify'
   | 'brush'
+  | 'smartPhone'
+  | 'camera'
