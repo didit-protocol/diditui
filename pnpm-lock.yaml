@@ -53,7 +53,7 @@ importers:
         version: 0.23.0
       '@storybook/addon-essentials':
         specifier: ^8.4.6
-        version: 8.5.0(@types/react@19.0.7)(storybook@8.5.0(prettier@3.4.2))
+        version: 8.5.0(@types/react@19.0.8)(storybook@8.5.0(prettier@3.4.2))
       '@storybook/addon-interactions':
         specifier: ^8.4.6
         version: 8.5.0(storybook@8.5.0(prettier@3.4.2))
@@ -85,11 +85,11 @@ importers:
         specifier: ^1.5.5
         version: 1.5.5
       '@types/react':
-        specifier: ^19.0.7
-        version: 19.0.7
+        specifier: ^19.0.8
+        version: 19.0.8
       '@types/react-dom':
         specifier: ^19.0.3
-        version: 19.0.3(@types/react@19.0.7)
+        version: 19.0.3(@types/react@19.0.8)
       '@types/react-modal':
         specifier: ^3.16.3
         version: 3.16.3
@@ -1124,8 +1124,8 @@ packages:
   '@types/react-modal@3.16.3':
     resolution: {integrity: sha512-xXuGavyEGaFQDgBv4UVm8/ZsG+qxeQ7f77yNrW3n+1J6XAstUy5rYHeIHPh1KzsGc6IkCIdu6lQ2xWzu1jBTLg==}
 
-  '@types/react@19.0.7':
-    resolution: {integrity: sha512-MoFsEJKkAtZCrC1r6CM8U22GzhG7u2Wir8ons/aCKH6MBdD1ibV24zOSSkdZVUKqN5i396zG5VKLYZ3yaUZdLA==}
+  '@types/react@19.0.8':
+    resolution: {integrity: sha512-9P/o1IGdfmQxrujGbIMDyYaaCykhLKc0NGCtYcECNUr9UAaDe4gwvV9bR6tvd5Br1SG0j+PBpbKr2UYY8CwqSw==}
 
   '@types/resolve@1.20.6':
     resolution: {integrity: sha512-A4STmOXPhMUtHH+S6ymgE2GiBSMqf4oTvcQZMcHzokuTLVYzXTB8ttjcgxOVaAp2lGwEdzZ0J+cRbbeevQj1UQ==}
@@ -4060,10 +4060,10 @@ snapshots:
       jju: 1.4.0
       js-yaml: 4.1.0
 
-  '@mdx-js/react@3.1.0(@types/react@19.0.7)(react@18.3.1)':
+  '@mdx-js/react@3.1.0(@types/react@19.0.8)(react@18.3.1)':
     dependencies:
       '@types/mdx': 2.0.13
-      '@types/react': 19.0.7
+      '@types/react': 19.0.8
       react: 18.3.1
 
   '@microsoft/api-extractor-model@7.30.2(@types/node@22.10.7)':
@@ -4252,9 +4252,9 @@ snapshots:
       storybook: 8.5.0(prettier@3.4.2)
       ts-dedent: 2.2.0
 
-  '@storybook/addon-docs@8.5.0(@types/react@19.0.7)(storybook@8.5.0(prettier@3.4.2))':
+  '@storybook/addon-docs@8.5.0(@types/react@19.0.8)(storybook@8.5.0(prettier@3.4.2))':
     dependencies:
-      '@mdx-js/react': 3.1.0(@types/react@19.0.7)(react@18.3.1)
+      '@mdx-js/react': 3.1.0(@types/react@19.0.8)(react@18.3.1)
       '@storybook/blocks': 8.5.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.5.0(prettier@3.4.2))
       '@storybook/csf-plugin': 8.5.0(storybook@8.5.0(prettier@3.4.2))
       '@storybook/react-dom-shim': 8.5.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.5.0(prettier@3.4.2))
@@ -4265,12 +4265,12 @@ snapshots:
     transitivePeerDependencies:
       - '@types/react'
 
-  '@storybook/addon-essentials@8.5.0(@types/react@19.0.7)(storybook@8.5.0(prettier@3.4.2))':
+  '@storybook/addon-essentials@8.5.0(@types/react@19.0.8)(storybook@8.5.0(prettier@3.4.2))':
     dependencies:
       '@storybook/addon-actions': 8.5.0(storybook@8.5.0(prettier@3.4.2))
       '@storybook/addon-backgrounds': 8.5.0(storybook@8.5.0(prettier@3.4.2))
       '@storybook/addon-controls': 8.5.0(storybook@8.5.0(prettier@3.4.2))
-      '@storybook/addon-docs': 8.5.0(@types/react@19.0.7)(storybook@8.5.0(prettier@3.4.2))
+      '@storybook/addon-docs': 8.5.0(@types/react@19.0.8)(storybook@8.5.0(prettier@3.4.2))
       '@storybook/addon-highlight': 8.5.0(storybook@8.5.0(prettier@3.4.2))
       '@storybook/addon-measure': 8.5.0(storybook@8.5.0(prettier@3.4.2))
       '@storybook/addon-outline': 8.5.0(storybook@8.5.0(prettier@3.4.2))
@@ -4609,15 +4609,15 @@ snapshots:
     dependencies:
       '@types/node': 22.10.7
 
-  '@types/react-dom@19.0.3(@types/react@19.0.7)':
+  '@types/react-dom@19.0.3(@types/react@19.0.8)':
     dependencies:
-      '@types/react': 19.0.7
+      '@types/react': 19.0.8
 
   '@types/react-modal@3.16.3':
     dependencies:
-      '@types/react': 19.0.7
+      '@types/react': 19.0.8
 
-  '@types/react@19.0.7':
+  '@types/react@19.0.8':
     dependencies:
       csstype: 3.1.3
 
