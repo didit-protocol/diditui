@@ -43,8 +43,8 @@ importers:
         specifier: ^19.6.1
         version: 19.6.1(@types/node@22.10.7)(typescript@5.7.3)
       '@commitlint/config-conventional':
-        specifier: ^19.6.0
-        version: 19.6.0
+        specifier: ^19.7.1
+        version: 19.7.1
       '@commitlint/cz-commitlint':
         specifier: ^19.6.1
         version: 19.6.1(@types/node@22.10.7)(commitizen@4.3.1(@types/node@22.10.7)(typescript@5.7.3))(inquirer@9.3.7)(typescript@5.7.3)
@@ -322,8 +322,8 @@ packages:
     engines: {node: '>=v18'}
     hasBin: true
 
-  '@commitlint/config-conventional@19.6.0':
-    resolution: {integrity: sha512-DJT40iMnTYtBtUfw9ApbsLZFke1zKh6llITVJ+x9mtpHD08gsNXaIRqHTmwTZL3dNX5+WoyK7pCN/5zswvkBCQ==}
+  '@commitlint/config-conventional@19.7.1':
+    resolution: {integrity: sha512-fsEIF8zgiI/FIWSnykdQNj/0JE4av08MudLTyYHm4FlLWemKoQvPNUYU2M/3tktWcCEyq7aOkDDgtjrmgWFbvg==}
     engines: {node: '>=v18'}
 
   '@commitlint/config-validator@19.5.0':
@@ -574,8 +574,8 @@ packages:
     resolution: {integrity: sha512-93zYdMES/c1D69yZiKDBj0V24vqNzB/koF26KPaagAfd3P/4gUlh3Dys5ogAK+Exi9QyzlD8x/08Zt7wIKcDcA==}
     deprecated: Use @eslint/object-schema instead
 
-  '@inquirer/figures@1.0.9':
-    resolution: {integrity: sha512-BXvGj0ehzrngHTPTDqUoDT3NXL8U0RxUk2zJm2A66RhCEIWdtU1v6GuUqNAgArW4PQ9CinqIWyHdQgdwOj06zQ==}
+  '@inquirer/figures@1.0.10':
+    resolution: {integrity: sha512-Ey6176gZmeqZuY/W/nZiUyvmb1/qInjcpiZjXWi6nON+nxJpD1bxtSoBxNliGISae32n6OwbY+TSXPZ1CfS4bw==}
     engines: {node: '>=18'}
 
   '@isaacs/cliui@8.0.2':
@@ -3758,7 +3758,7 @@ snapshots:
       - '@types/node'
       - typescript
 
-  '@commitlint/config-conventional@19.6.0':
+  '@commitlint/config-conventional@19.7.1':
     dependencies:
       '@commitlint/types': 19.5.0
       conventional-changelog-conventionalcommits: 7.0.2
@@ -3979,7 +3979,7 @@ snapshots:
 
   '@humanwhocodes/object-schema@2.0.3': {}
 
-  '@inquirer/figures@1.0.9': {}
+  '@inquirer/figures@1.0.10': {}
 
   '@isaacs/cliui@8.0.2':
     dependencies:
@@ -5777,7 +5777,7 @@ snapshots:
 
   inquirer@9.3.7:
     dependencies:
-      '@inquirer/figures': 1.0.9
+      '@inquirer/figures': 1.0.10
       ansi-escapes: 4.3.2
       cli-width: 4.1.0
       external-editor: 3.1.0
