@@ -27,8 +27,8 @@ importers:
         specifier: ^3.16.3
         version: 3.16.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       tailwind-merge:
-        specifier: ^2.6.0
-        version: 2.6.0
+        specifier: ^3.0.1
+        version: 3.0.1
       usehooks-ts:
         specifier: ^3.1.0
         version: 3.1.0(react@18.3.1)
@@ -574,8 +574,8 @@ packages:
     resolution: {integrity: sha512-93zYdMES/c1D69yZiKDBj0V24vqNzB/koF26KPaagAfd3P/4gUlh3Dys5ogAK+Exi9QyzlD8x/08Zt7wIKcDcA==}
     deprecated: Use @eslint/object-schema instead
 
-  '@inquirer/figures@1.0.9':
-    resolution: {integrity: sha512-BXvGj0ehzrngHTPTDqUoDT3NXL8U0RxUk2zJm2A66RhCEIWdtU1v6GuUqNAgArW4PQ9CinqIWyHdQgdwOj06zQ==}
+  '@inquirer/figures@1.0.10':
+    resolution: {integrity: sha512-Ey6176gZmeqZuY/W/nZiUyvmb1/qInjcpiZjXWi6nON+nxJpD1bxtSoBxNliGISae32n6OwbY+TSXPZ1CfS4bw==}
     engines: {node: '>=18'}
 
   '@isaacs/cliui@8.0.2':
@@ -3131,8 +3131,8 @@ packages:
     resolution: {integrity: sha512-vrozgXDQwYO72vHjUb/HnFbQx1exDjoKzqx23aXEg2a9VIg2TSFZ8FmeZpTjUCFMYw7mpX4BE2SFu8wI7asYsw==}
     engines: {node: ^14.18.0 || >=16.0.0}
 
-  tailwind-merge@2.6.0:
-    resolution: {integrity: sha512-P+Vu1qXfzediirmHOC3xKGAYeZtPcV9g76X+xg2FD4tYgR71ewMA35Y3sCz3zhiN/dwefRpJX0yBcgwi1fXNQA==}
+  tailwind-merge@3.0.1:
+    resolution: {integrity: sha512-AvzE8FmSoXC7nC+oU5GlQJbip2UO7tmOhOfQyOmPhrStOGXHU08j8mZEHZ4BmCqY5dWTCo4ClWkNyRNx1wpT0g==}
 
   tailwindcss@3.4.17:
     resolution: {integrity: sha512-w33E2aCvSDP0tW9RZuNXadXlkHXqFzSkQew/aIa2i/Sj8fThxwovwlXHSPXTbAHwEIhBFXAedUhP2tueAKP8Og==}
@@ -3979,7 +3979,7 @@ snapshots:
 
   '@humanwhocodes/object-schema@2.0.3': {}
 
-  '@inquirer/figures@1.0.9': {}
+  '@inquirer/figures@1.0.10': {}
 
   '@isaacs/cliui@8.0.2':
     dependencies:
@@ -5777,7 +5777,7 @@ snapshots:
 
   inquirer@9.3.7:
     dependencies:
-      '@inquirer/figures': 1.0.9
+      '@inquirer/figures': 1.0.10
       ansi-escapes: 4.3.2
       cli-width: 4.1.0
       external-editor: 3.1.0
@@ -6645,7 +6645,7 @@ snapshots:
       '@pkgr/core': 0.1.1
       tslib: 2.8.1
 
-  tailwind-merge@2.6.0: {}
+  tailwind-merge@3.0.1: {}
 
   tailwindcss@3.4.17:
     dependencies:
