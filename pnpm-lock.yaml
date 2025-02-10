@@ -118,8 +118,8 @@ importers:
         specifier: ^5.1.0
         version: 5.1.0(eslint@8.57.1)
       eslint-plugin-react-refresh:
-        specifier: ^0.4.18
-        version: 0.4.18(eslint@8.57.1)
+        specifier: ^0.4.19
+        version: 0.4.19(eslint@8.57.1)
       eslint-plugin-require-extensions:
         specifier: ^0.1.3
         version: 0.1.3(eslint@8.57.1)
@@ -574,8 +574,8 @@ packages:
     resolution: {integrity: sha512-93zYdMES/c1D69yZiKDBj0V24vqNzB/koF26KPaagAfd3P/4gUlh3Dys5ogAK+Exi9QyzlD8x/08Zt7wIKcDcA==}
     deprecated: Use @eslint/object-schema instead
 
-  '@inquirer/figures@1.0.9':
-    resolution: {integrity: sha512-BXvGj0ehzrngHTPTDqUoDT3NXL8U0RxUk2zJm2A66RhCEIWdtU1v6GuUqNAgArW4PQ9CinqIWyHdQgdwOj06zQ==}
+  '@inquirer/figures@1.0.10':
+    resolution: {integrity: sha512-Ey6176gZmeqZuY/W/nZiUyvmb1/qInjcpiZjXWi6nON+nxJpD1bxtSoBxNliGISae32n6OwbY+TSXPZ1CfS4bw==}
     engines: {node: '>=18'}
 
   '@isaacs/cliui@8.0.2':
@@ -1839,8 +1839,8 @@ packages:
     peerDependencies:
       eslint: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0 || ^9.0.0
 
-  eslint-plugin-react-refresh@0.4.18:
-    resolution: {integrity: sha512-IRGEoFn3OKalm3hjfolEWGqoF/jPqeEYFp+C8B0WMzwGwBMvlRDQd06kghDhF0C61uJ6WfSDhEZE/sAQjduKgw==}
+  eslint-plugin-react-refresh@0.4.19:
+    resolution: {integrity: sha512-eyy8pcr/YxSYjBoqIFSrlbn9i/xvxUFa8CjzAYo9cFjgGXqq1hyjihcpZvxRLalpaWmueWR81xn7vuKmAFijDQ==}
     peerDependencies:
       eslint: '>=8.40'
 
@@ -3979,7 +3979,7 @@ snapshots:
 
   '@humanwhocodes/object-schema@2.0.3': {}
 
-  '@inquirer/figures@1.0.9': {}
+  '@inquirer/figures@1.0.10': {}
 
   '@isaacs/cliui@8.0.2':
     dependencies:
@@ -5379,7 +5379,7 @@ snapshots:
     dependencies:
       eslint: 8.57.1
 
-  eslint-plugin-react-refresh@0.4.18(eslint@8.57.1):
+  eslint-plugin-react-refresh@0.4.19(eslint@8.57.1):
     dependencies:
       eslint: 8.57.1
 
@@ -5777,7 +5777,7 @@ snapshots:
 
   inquirer@9.3.7:
     dependencies:
-      '@inquirer/figures': 1.0.9
+      '@inquirer/figures': 1.0.10
       ansi-escapes: 4.3.2
       cli-width: 4.1.0
       external-editor: 3.1.0
