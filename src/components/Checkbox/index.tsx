@@ -7,7 +7,7 @@ import { Text } from '../Text'
 interface CheckboxProps {
   id?: string
   className?: string
-  label?: string
+  label?: string | React.ReactNode
   size?: 'sm' | 'md' | 'lg'
   checked?: boolean
   note?: string
