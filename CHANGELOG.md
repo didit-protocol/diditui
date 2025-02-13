@@ -1,5 +1,11 @@
 # diditui
 
+## 1.0.45
+
+### Patch Changes
+
+- 4340c2f: allow checkbox to receive a react node as a label
+
 ## 1.0.44
 
 ### Patch Changes
