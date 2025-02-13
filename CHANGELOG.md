@@ -1,5 +1,11 @@
 # diditui
 
+## 1.0.44
+
+### Patch Changes
+
+- f1306c7: new icons
+
 ## 1.0.43
 
 ### Patch Changes
