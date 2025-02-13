@@ -76,6 +76,18 @@ import VerifySvg from '@/assets/icons/verify.svg'
 import BrushSvg from '@/assets/icons/brush.svg'
 import SmartPhoneSvg from '@/assets/icons/smart-phone.svg'
 import CameraSvg from '@/assets/icons/camera.svg'
+import ShieldSvg from '@/assets/icons/shield.svg'
+import IphoneSvg from '@/assets/icons/iphone.svg'
+import InstagramSvg from '@/assets/icons/instagram.svg'
+import BankSvg from '@/assets/icons/bank.svg'
+import InstagramCircleSvg from '@/assets/icons/instagram-circle.svg'
+import XSvg from '@/assets/icons/x.svg'
+import XCircleSvg from '@/assets/icons/x-circle.svg'
+import TiktokSvg from '@/assets/icons/tiktok.svg'
+import TiktokCircleSvg from '@/assets/icons/tiktok-circle.svg'
+import Over18Svg from '@/assets/icons/over18.svg'
+import Over21Svg from '@/assets/icons/over21.svg'
+import ShieldBoldSvg from '@/assets/icons/shield-bold.svg'
 
 type SVGIcon = FC<React.SVGProps<SVGElement>>
 
@@ -149,7 +161,20 @@ export const svgOptions: Record<IconType, SVGIcon> = {
   verify: VerifySvg,
   brush: BrushSvg,
   smartPhone: SmartPhoneSvg,
-  camera: CameraSvg
+  camera: CameraSvg,
+  shield: ShieldSvg,
+  userEdit: ProfileEditBoldSvg, // to match icon name in figma
+  iphone: IphoneSvg,
+  instagram: InstagramSvg,
+  instagramCircle: InstagramCircleSvg,
+  bank: BankSvg,
+  x: XSvg,
+  xCircle: XCircleSvg,
+  tiktok: TiktokSvg,
+  tiktokCircle: TiktokCircleSvg,
+  over18: Over18Svg,
+  over21: Over21Svg,
+  shieldBold: ShieldBoldSvg
 }
 
 const iconStyles = cva(['flex items-center justify-center'], {
