@@ -88,7 +88,8 @@ import TiktokCircleSvg from '@/assets/icons/tiktok-circle.svg'
 import Over18Svg from '@/assets/icons/over18.svg'
 import Over21Svg from '@/assets/icons/over21.svg'
 import ShieldBoldSvg from '@/assets/icons/shield-bold.svg'
-
+import EmailBoldSvg from '@/assets/icons/email-bold.svg'
+import Settings2BoldSvg from '@/assets/icons/settings2-bold.svg'
 type SVGIcon = FC<React.SVGProps<SVGElement>>
 
 export const svgOptions: Record<IconType, SVGIcon> = {
@@ -174,7 +175,9 @@ export const svgOptions: Record<IconType, SVGIcon> = {
   tiktokCircle: TiktokCircleSvg,
   over18: Over18Svg,
   over21: Over21Svg,
-  shieldBold: ShieldBoldSvg
+  shieldBold: ShieldBoldSvg,
+  emailBold: EmailBoldSvg,
+  settings2Bold: Settings2BoldSvg
 }
 
 const iconStyles = cva(['flex items-center justify-center'], {

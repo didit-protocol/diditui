@@ -85,3 +85,5 @@ export type IconType =
   | 'over18'
   | 'over21'
   | 'shieldBold'
+  | 'emailBold'
+  | 'settings2Bold'
