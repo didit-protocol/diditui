@@ -68,15 +68,17 @@ function SelectDropdownTrigger({
       type="button"
     >
       <div className="flex flex-col gap-[6px] grow overflow-hidden min-w-0">
-        <Text variant="StyledLabel" as="label" className="text-surface-md truncate w-fit">
-          {label}
-          {required && <span className="text-error text-[14px] leading-[90%]">*</span>}
-        </Text>
+        {(label || required) && (
+          <Text variant="StyledLabel" as="label" className="text-surface-md truncate w-fit">
+            {label}
+            {required && <span className="text-error text-[14px] leading-[90%]">*</span>}
+          </Text>
+        )}
 
         {!(showIcon && selectedOption.Icon) ? (
-            <Text as="span" variant="P2" className={valueClassNames}>
-              {selectedOption.label || placeholder}
-            </Text>
+          <Text as="span" variant="P2" className={valueClassNames}>
+            {selectedOption.label || placeholder}
+          </Text>
         ) : (
           <div className="flex items-center gap-2">
             <selectedOption.Icon width={16} height={16} />
