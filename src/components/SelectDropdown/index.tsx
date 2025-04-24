@@ -153,13 +153,15 @@ function SelectDropdown({
           </div>
         )}
       </div>
-      <Text
-        variant="P3"
-        as="span"
-        className={cn('text-error mt-1 pl-1', { invisible: isDropdownOpen })}
-      >
-        {errorMessage}
-      </Text>
+      {errorMessage && (
+        <Text
+          variant="P3"
+          as="span"
+          className={cn('text-error mt-1 pl-1', { invisible: isDropdownOpen })}
+        >
+          {errorMessage}
+        </Text>
+      )}
     </div>
   )
 }
