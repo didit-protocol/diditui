@@ -81,7 +81,7 @@ function SelectDropdownTrigger({
           </Text>
         ) : (
           <div className="flex items-center gap-2">
-            <selectedOption.Icon width={16} height={16} />
+            <selectedOption.Icon />
             <Text as="span" variant="P2" className={valueClassNames}>
               {selectedOption.label || placeholder}
             </Text>
