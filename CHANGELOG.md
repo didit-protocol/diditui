@@ -1,5 +1,11 @@
 # diditui
 
+## 1.0.50
+
+### Patch Changes
+
+- 4a9bc71: prevent empty error message container from affecting layout
+
 ## 1.0.49
 
 ### Patch Changes
