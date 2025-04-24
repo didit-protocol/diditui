@@ -30,6 +30,7 @@ interface SelectDropdownProps {
   showIcon?: boolean
   errorMessage?: string
   dropdownClassName?: string
+  dropdownTriggerClassName?: string
   onChange?: (value: SelectDropdownOptionType['value']) => void
   onClick?: (value?: SelectDropdownOptionType['value']) => void
 }
@@ -48,6 +49,7 @@ function SelectDropdown({
   showIcon = false,
   errorMessage = '',
   dropdownClassName = '',
+  dropdownTriggerClassName = '',
   onChange = (_value: string) => {},
   onClick = () => {}
 }: SelectDropdownProps) {
@@ -103,6 +105,7 @@ function SelectDropdown({
     <div className={selectFieldClassName} data-testid={dataTestId} onClick={handleFieldClick}>
       <div className="relative">
         <SelectDropdownTrigger
+          className={dropdownTriggerClassName}
           label={label}
           buttonRef={buttonRef as LegacyRef<HTMLButtonElement>}
           hasError={!!errorMessage}
