@@ -1,5 +1,11 @@
 # diditui
 
+## 1.0.47
+
+### Patch Changes
+
+- d232bf0: conditionally render label in select dropdown trigger to avoid unwanted styles
+
 ## 1.0.46
 
 ### Patch Changes
