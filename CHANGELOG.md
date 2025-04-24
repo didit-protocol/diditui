@@ -1,5 +1,11 @@
 # diditui
 
+## 1.0.46
+
+### Patch Changes
+
+- 75817f9: add optional icon display in select dropdown trigger
+
 ## 1.0.45
 
 ### Patch Changes
