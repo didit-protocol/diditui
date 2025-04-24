@@ -27,6 +27,7 @@ interface SelectDropdownProps {
   disabled?: boolean
   required?: boolean
   withSearch?: boolean
+  showIcon?: boolean
   errorMessage?: string
   dropdownClassName?: string
   onChange?: (value: SelectDropdownOptionType['value']) => void
@@ -44,6 +45,7 @@ function SelectDropdown({
   disabled = false,
   required = false,
   withSearch = false,
+  showIcon = false,
   errorMessage = '',
   dropdownClassName = '',
   onChange = (_value: string) => {},
@@ -110,6 +112,7 @@ function SelectDropdown({
           isDropdownOpen={isDropdownOpen}
           placeholder={placeholder}
           selectedOption={selectedOption}
+          showIcon={showIcon}
           onClick={() => setIsDropdownOpen(!isDropdownOpen)}
         />
         {isDropdownOpen && (

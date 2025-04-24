@@ -17,6 +17,7 @@ interface SelectDropdownTriggerProps {
   buttonRef?: LegacyRef<HTMLButtonElement>
   onClick: () => void
   hasError?: boolean
+  showIcon?: boolean
 }
 
 function SelectDropdownTrigger({
@@ -30,6 +31,7 @@ function SelectDropdownTrigger({
   isDropdownOpen = false,
   buttonRef = undefined,
   hasError = false,
+  showIcon = false,
   onClick
 }: SelectDropdownTriggerProps) {
   const wrapperClassNames = cn(
@@ -70,9 +72,19 @@ function SelectDropdownTrigger({
           {label}
           {required && <span className="text-error text-[14px] leading-[90%]">*</span>}
         </Text>
-        <Text as="span" variant="P2" className={valueClassNames}>
-          {selectedOption.label || placeholder}
-        </Text>
+
+        {!(showIcon && selectedOption.Icon) ? (
+            <Text as="span" variant="P2" className={valueClassNames}>
+              {selectedOption.label || placeholder}
+            </Text>
+        ) : (
+          <div className="flex items-center gap-2">
+            <selectedOption.Icon width={16} height={16} />
+            <Text as="span" variant="P2" className={valueClassNames}>
+              {selectedOption.label || placeholder}
+            </Text>
+          </div>
+        )}
       </div>
       <div className={rightButtonWrapperClassNames}>
         <Icon type="chevronDown" size="sm" />
