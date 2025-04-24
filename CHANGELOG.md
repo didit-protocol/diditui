@@ -1,5 +1,11 @@
 # diditui
 
+## 1.0.49
+
+### Patch Changes
+
+- a99e532: fix: remove hardcoded icon dimensions in select dropdown
+
 ## 1.0.48
 
 ### Patch Changes
