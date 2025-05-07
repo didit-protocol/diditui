@@ -1,5 +1,11 @@
 # diditui
 
+## 1.0.51
+
+### Patch Changes
+
+- 0d54494: allow to customize dropdown option classname and iconposition
+
 ## 1.0.50
 
 ### Patch Changes
