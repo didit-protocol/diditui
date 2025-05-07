@@ -31,6 +31,8 @@ interface SelectDropdownProps {
   errorMessage?: string
   dropdownClassName?: string
   dropdownTriggerClassName?: string
+  dropdownOptionClassName?: string
+  iconPosition?: 'left' | 'right'
   onChange?: (value: SelectDropdownOptionType['value']) => void
   onClick?: (value?: SelectDropdownOptionType['value']) => void
 }
@@ -50,6 +52,8 @@ function SelectDropdown({
   errorMessage = '',
   dropdownClassName = '',
   dropdownTriggerClassName = '',
+  dropdownOptionClassName = '',
+  iconPosition = 'left',
   onChange = (_value: string) => {},
   onClick = () => {}
 }: SelectDropdownProps) {
@@ -146,6 +150,8 @@ function SelectDropdown({
                     label={option.label}
                     value={option.value}
                     onClick={handleOptionClick}
+                    className={dropdownOptionClassName}
+                    iconPosition={iconPosition}
                   />
                 ))
               )}
