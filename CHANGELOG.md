@@ -1,5 +1,11 @@
 # diditui
 
+## 1.0.52
+
+### Patch Changes
+
+- 7699a0a: v2 icons
+
 ## 1.0.51
 
 ### Patch Changes
