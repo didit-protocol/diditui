@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+  <path d="M11.25 1.5H12.75C15 1.5 16.5 3 16.5 5.25V6.75" stroke="currentColor" stroke-width="1.125" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M1.5 6.75V5.25C1.5 3 3 1.5 5.25 1.5H6.75" stroke="currentColor" stroke-width="1.125" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M11.25 16.5H12.75C15 16.5 16.5 15 16.5 12.75V11.25" stroke="currentColor" stroke-width="1.125" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M1.5 11.25V12.75C1.5 15 3 16.5 5.25 16.5H6.75" stroke="currentColor" stroke-width="1.125" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M5 13H13.2178" stroke="currentColor" stroke-width="0.876339" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M5.39062 13L5.41117 8.057C5.41117 7.80635 5.53033 7.56806 5.72755 7.41192L8.60377 5.17257C8.89961 4.94248 9.31461 4.94248 9.61456 5.17257L12.4908 7.40781C12.6921 7.56395 12.8072 7.80224 12.8072 8.057V13" stroke="currentColor" stroke-width="0.829868" stroke-miterlimit="10" stroke-linejoin="round"/>
+  <path d="M9.51624 10.9453H8.69446C8.35342 10.9453 8.07812 11.2206 8.07812 11.5616V12.9998H10.1326V11.5616C10.1326 11.2206 9.85727 10.9453 9.51624 10.9453Z" fill="currentColor" stroke="currentColor" stroke-width="0.876339" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M8.08423 9.60999H7.26245C7.03646 9.60999 6.85156 9.42509 6.85156 9.1991V8.58276C6.85156 8.35677 7.03646 8.17188 7.26245 8.17188H8.08423C8.31022 8.17188 8.49512 8.35677 8.49512 8.58276V9.1991C8.49512 9.42509 8.31022 9.60999 8.08423 9.60999Z" fill="currentColor"/>
+  <path d="M10.9592 9.60999H10.1375C9.91146 9.60999 9.72656 9.42509 9.72656 9.1991V8.58276C9.72656 8.35677 9.91146 8.17188 10.1375 8.17188H10.9592C11.1852 8.17188 11.3701 8.35677 11.3701 8.58276V9.1991C11.3701 9.42509 11.1852 9.60999 10.9592 9.60999Z" fill="currentColor"/>
+  <path d="M12.1171 6.5686L12.1114 5.99319C12.1077 5.62914 11.8116 5.33594 11.4475 5.33594H10.2969" fill="currentColor"/>
+</svg>

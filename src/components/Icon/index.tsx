@@ -90,9 +90,27 @@ import Over21Svg from '@/assets/icons/over21.svg'
 import ShieldBoldSvg from '@/assets/icons/shield-bold.svg'
 import EmailBoldSvg from '@/assets/icons/email-bold.svg'
 import Settings2BoldSvg from '@/assets/icons/settings2-bold.svg'
+
+import AmlV2Icon from '@/assets/icons/aml-v2.svg';
+import FaceMatchingV2Icon from '@/assets/icons/face-matching-v2.svg';
+import IdVerificationV2Icon from '@/assets/icons/id-verification-v2.svg';
+import IpV2Icon from '@/assets/icons/ip-v2.svg';
+import LivenessV2Icon from '@/assets/icons/liveness-v2.svg';
+import NfcV2Icon from '@/assets/icons/nfc-v2.svg';
+import PhoneV2Icon from '@/assets/icons/phone-v2.svg';
+import PoaV2Icon from '@/assets/icons/poa-v2.svg';
+
 type SVGIcon = FC<React.SVGProps<SVGElement>>
 
 export const svgOptions: Record<IconType, SVGIcon> = {
+  amlV2: AmlV2Icon,
+  faceMatchingV2: FaceMatchingV2Icon,
+  idVerificationV2: IdVerificationV2Icon,
+  ipV2: IpV2Icon,
+  livenessV2: LivenessV2Icon,
+  nfcV2: NfcV2Icon,
+  phoneV2: PhoneV2Icon,
+  poaV2: PoaV2Icon,
   scan: ScanSvg,
   scan2: Scan2Svg,
   settings: SettingSvg,
