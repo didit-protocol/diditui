@@ -1,5 +1,11 @@
 # diditui
 
+## 1.0.54
+
+### Patch Changes
+
+- 76a2c26: fix bank icon
+
 ## 1.0.53
 
 ### Patch Changes
