@@ -1,5 +1,11 @@
 # diditui
 
+## 1.0.53
+
+### Patch Changes
+
+- b8e8bbf: new icons
+
 ## 1.0.52
 
 ### Patch Changes
