@@ -94,3 +94,5 @@ export type IconType =
   | 'nfcV2'
   | 'phoneV2'
   | 'poaV2'
+  | 'houseBold'
+  | 'receiptTextBold'

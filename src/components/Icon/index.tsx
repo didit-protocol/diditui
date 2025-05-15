@@ -99,6 +99,8 @@ import LivenessV2Icon from '@/assets/icons/liveness-v2.svg';
 import NfcV2Icon from '@/assets/icons/nfc-v2.svg';
 import PhoneV2Icon from '@/assets/icons/phone-v2.svg';
 import PoaV2Icon from '@/assets/icons/poa-v2.svg';
+import HouseBoldIcon from '@/assets/icons/bold/house.svg';
+import ReceiptTextBoldIcon from '@/assets/icons/bold/receipt-text.svg';
 
 type SVGIcon = FC<React.SVGProps<SVGElement>>
 
@@ -195,7 +197,9 @@ export const svgOptions: Record<IconType, SVGIcon> = {
   over21: Over21Svg,
   shieldBold: ShieldBoldSvg,
   emailBold: EmailBoldSvg,
-  settings2Bold: Settings2BoldSvg
+  settings2Bold: Settings2BoldSvg,
+  houseBold: HouseBoldIcon,
+  receiptTextBold: ReceiptTextBoldIcon
 }
 
 const iconStyles = cva(['flex items-center justify-center'], {
