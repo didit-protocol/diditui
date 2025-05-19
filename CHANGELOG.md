@@ -1,5 +1,11 @@
 # diditui
 
+## 1.0.55
+
+### Patch Changes
+
+- eaca9d0: search status icon
+
 ## 1.0.54
 
 ### Patch Changes
