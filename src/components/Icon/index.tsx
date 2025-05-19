@@ -101,6 +101,7 @@ import PhoneV2Icon from '@/assets/icons/phone-v2.svg';
 import PoaV2Icon from '@/assets/icons/poa-v2.svg';
 import HouseBoldIcon from '@/assets/icons/bold/house.svg';
 import ReceiptTextBoldIcon from '@/assets/icons/bold/receipt-text.svg';
+import SearchStatusBoldIcon from '@/assets/icons/bold/search-status.svg';
 
 type SVGIcon = FC<React.SVGProps<SVGElement>>
 
@@ -199,7 +200,8 @@ export const svgOptions: Record<IconType, SVGIcon> = {
   emailBold: EmailBoldSvg,
   settings2Bold: Settings2BoldSvg,
   houseBold: HouseBoldIcon,
-  receiptTextBold: ReceiptTextBoldIcon
+  receiptTextBold: ReceiptTextBoldIcon,
+  searchStatusBold: SearchStatusBoldIcon
 }
 
 const iconStyles = cva(['flex items-center justify-center'], {

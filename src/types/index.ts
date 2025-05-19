@@ -96,3 +96,4 @@ export type IconType =
   | 'poaV2'
   | 'houseBold'
   | 'receiptTextBold'
+  | 'searchStatusBold'
