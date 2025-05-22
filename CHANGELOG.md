@@ -1,5 +1,11 @@
 # diditui
 
+## 1.0.57
+
+### Patch Changes
+
+- 595f7da: style disabled option
+
 ## 1.0.56
 
 ### Patch Changes
