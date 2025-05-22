@@ -9,8 +9,9 @@ interface SelectDropdownOptionProps {
   id?: string
   className?: string
   dataTestId?: string
-  onClick?: (value: string) => void
   iconPosition?: 'left' | 'right'
+  disabled?: boolean
+  onClick?: (value: string) => void
 }
 
 function SelectDropdownOption({
@@ -21,6 +22,7 @@ function SelectDropdownOption({
   dataTestId = '',
   className = '',
   iconPosition = 'left',
+  disabled = false,
   onClick = () => {}
 }: SelectDropdownOptionProps) {
   const handleClick = useCallback(() => {
@@ -42,6 +44,7 @@ function SelectDropdownOption({
         id={id}
         type="button"
         onClick={handleClick}
+        disabled={disabled}
       >
         {Icon && iconPosition === 'left' && <span>{<Icon />}</span>}
         <Text variant="P3" as="span">

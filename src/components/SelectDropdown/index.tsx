@@ -14,6 +14,7 @@ interface SelectDropdownOptionType {
   label: string
   value: string
   Icon?: FC<SVGProps<SVGSVGElement>> | null
+  disabled?: boolean
 }
 
 interface SelectDropdownProps {
@@ -152,6 +153,7 @@ function SelectDropdown({
                     onClick={handleOptionClick}
                     className={dropdownOptionClassName}
                     iconPosition={iconPosition}
+                    disabled={option.disabled}
                   />
                 ))
               )}
