@@ -1,5 +1,11 @@
 # diditui
 
+## 1.0.56
+
+### Patch Changes
+
+- 5b27dd7: allow disabled options for dropdown select
+
 ## 1.0.55
 
 ### Patch Changes
