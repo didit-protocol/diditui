@@ -31,7 +31,8 @@ function SelectDropdownOption({
 
   const selectFieldOptionClassnames = cn(
     'flex w-full items-center gap-2 px-4 py-3 text-surface-hi',
-    'hover:bg-surface-ulo/60 border-b border-surface-ulo',
+    !disabled && 'hover:bg-surface-ulo/60',
+    'border-b border-surface-ulo',
     'transition-all duration-300',
     className
   )
@@ -47,7 +48,7 @@ function SelectDropdownOption({
         disabled={disabled}
       >
         {Icon && iconPosition === 'left' && <span>{<Icon />}</span>}
-        <Text variant="P3" as="span">
+        <Text variant="P3" as="span" className={cn(disabled && 'text-surface-md')}>
           {label}
         </Text>
         {Icon && iconPosition === 'right' && <span>{<Icon />}</span>}
