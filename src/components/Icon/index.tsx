@@ -102,6 +102,7 @@ import PoaV2Icon from '@/assets/icons/poa-v2.svg';
 import HouseBoldIcon from '@/assets/icons/bold/house.svg';
 import ReceiptTextBoldIcon from '@/assets/icons/bold/receipt-text.svg';
 import SearchStatusBoldIcon from '@/assets/icons/bold/search-status.svg';
+import CameraLinearIcon from "@/assets/icons/linear/camera.svg";
 
 type SVGIcon = FC<React.SVGProps<SVGElement>>
 
@@ -201,7 +202,8 @@ export const svgOptions: Record<IconType, SVGIcon> = {
   settings2Bold: Settings2BoldSvg,
   houseBold: HouseBoldIcon,
   receiptTextBold: ReceiptTextBoldIcon,
-  searchStatusBold: SearchStatusBoldIcon
+  searchStatusBold: SearchStatusBoldIcon,
+  cameraLinear: CameraLinearIcon
 }
 
 const iconStyles = cva(['flex items-center justify-center'], {

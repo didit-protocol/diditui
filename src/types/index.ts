@@ -71,6 +71,7 @@ export type IconType =
   | 'brush'
   | 'smartPhone'
   | 'camera'
+  | 'cameraLinear'
   | 'shield'
   | 'userEdit'
   | 'iphone'
