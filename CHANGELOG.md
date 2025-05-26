@@ -1,5 +1,11 @@
 # diditui
 
+## 1.0.58
+
+### Patch Changes
+
+- 2e162bf: added camera linear icon
+
 ## 1.0.57
 
 ### Patch Changes
