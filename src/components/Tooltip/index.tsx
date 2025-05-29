@@ -7,10 +7,17 @@ interface TooltipProps {
   label: string
   children: React.ReactNode
   className?: string
+  tooltipClassName?: string
   direction?: 'top' | 'bottom' | 'left' | 'right'
 }
 
-function Tooltip({ label, children, direction = 'top', className }: TooltipProps) {
+function Tooltip({
+  label,
+  children,
+  direction = 'top',
+  className,
+  tooltipClassName
+}: TooltipProps) {
   const [isVisible, setIsVisible] = useState(false)
   const triggerRef = useRef<HTMLDivElement>(null)
   const tooltipRef = useRef<HTMLDivElement>(null)
@@ -55,7 +62,8 @@ function Tooltip({ label, children, direction = 'top', className }: TooltipProps
   const wrapperClassNames = cn(
     'absolute z-10 px-3 py-2 text-background text-sm bg-surface-hi',
     'rounded-xl shadow-sm whitespace-nowrap transition-opacity duration-300',
-    { hidden: !isVisible }
+    { hidden: !isVisible },
+    tooltipClassName
   )
 
   const arrowClassNames = cn([

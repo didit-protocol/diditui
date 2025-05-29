@@ -91,18 +91,18 @@ import ShieldBoldSvg from '@/assets/icons/shield-bold.svg'
 import EmailBoldSvg from '@/assets/icons/email-bold.svg'
 import Settings2BoldSvg from '@/assets/icons/settings2-bold.svg'
 
-import AmlV2Icon from '@/assets/icons/aml-v2.svg';
-import FaceMatchingV2Icon from '@/assets/icons/face-matching-v2.svg';
-import IdVerificationV2Icon from '@/assets/icons/id-verification-v2.svg';
-import IpV2Icon from '@/assets/icons/ip-v2.svg';
-import LivenessV2Icon from '@/assets/icons/liveness-v2.svg';
-import NfcV2Icon from '@/assets/icons/nfc-v2.svg';
-import PhoneV2Icon from '@/assets/icons/phone-v2.svg';
-import PoaV2Icon from '@/assets/icons/poa-v2.svg';
-import HouseBoldIcon from '@/assets/icons/bold/house.svg';
-import ReceiptTextBoldIcon from '@/assets/icons/bold/receipt-text.svg';
-import SearchStatusBoldIcon from '@/assets/icons/bold/search-status.svg';
-import CameraLinearIcon from "@/assets/icons/linear/camera.svg";
+import AmlV2Icon from '@/assets/icons/aml-v2.svg'
+import FaceMatchingV2Icon from '@/assets/icons/face-matching-v2.svg'
+import IdVerificationV2Icon from '@/assets/icons/id-verification-v2.svg'
+import IpV2Icon from '@/assets/icons/ip-v2.svg'
+import LivenessV2Icon from '@/assets/icons/liveness-v2.svg'
+import NfcV2Icon from '@/assets/icons/nfc-v2.svg'
+import PhoneV2Icon from '@/assets/icons/phone-v2.svg'
+import PoaV2Icon from '@/assets/icons/poa-v2.svg'
+import HouseBoldIcon from '@/assets/icons/bold/house.svg'
+import ReceiptTextBoldIcon from '@/assets/icons/bold/receipt-text.svg'
+import SearchStatusBoldIcon from '@/assets/icons/bold/search-status.svg'
+import CameraLinearIcon from '@/assets/icons/linear/camera.svg'
 
 type SVGIcon = FC<React.SVGProps<SVGElement>>
 
