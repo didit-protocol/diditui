@@ -1,5 +1,11 @@
 # diditui
 
+## 1.0.59
+
+### Patch Changes
+
+- 7b425c6: fix errors
+
 ## 1.0.58
 
 ### Patch Changes
