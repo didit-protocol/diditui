@@ -1,5 +1,11 @@
 # diditui
 
+## 1.0.60
+
+### Patch Changes
+
+- 417f309: fix
+
 ## 1.0.59
 
 ### Patch Changes
