@@ -1,5 +1,11 @@
 # diditui
 
+## 1.0.59
+
+### Patch Changes
+
+- f973756: fix tooltip
+
 ## 1.0.58
 
 ### Patch Changes
