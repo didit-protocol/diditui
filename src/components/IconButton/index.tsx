@@ -11,8 +11,11 @@ import { Spinner } from '../Spinner'
 const iconButtonStyles = cva(['flex items-center justify-center', 'rounded-full border'], {
   variants: {
     variant: {
-      default: 'bg-surface-ulo text-surface-hi',
-      primary: 'bg-primary/10 text-primary'
+      default: 'bg-surface-ulo text-surface-hi border border-transparent',
+      primary: 'bg-primary/10 text-primary border border-primary/20',
+      success: 'bg-success/10 text-success border border-success/20',
+      error: 'bg-error/10 text-error border border-error/20',
+      warning: 'bg-warning/10 text-warning border border-warning/20'
     },
     size: {
       xs: 'p-[8px]',

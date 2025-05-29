@@ -1,0 +1,5 @@
+---
+'diditui': patch
+---
+
+fix tooltip

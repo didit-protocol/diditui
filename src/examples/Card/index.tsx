@@ -33,7 +33,12 @@ function CardExample() {
           </Text>
         </div>
         <CheckBox label="Checkbox" checked={true} onToggle={() => {}} disabled />
-        <CheckBox label={<p style={{ color: 'red' }}>Checkbox in a react node</p>} checked={true} onToggle={() => {}} disabled />
+        <CheckBox
+          label={<p style={{ color: 'red' }}>Checkbox in a react node</p>}
+          checked={true}
+          onToggle={() => {}}
+          disabled
+        />
       </div>
     </Card>
   )
