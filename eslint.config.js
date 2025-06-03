@@ -1,27 +1,51 @@
-module.exports = {
-  root: true,
-  env: { browser: true, es2020: true },
-  extends: [
-    'eslint:recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:react-hooks/recommended',
-    'plugin:storybook/recommended',
-    "prettier"
-  ],
-  plugins: ['react-refresh'],
-  parser: '@typescript-eslint/parser',
-  ignorePatterns: [
-    "node_modules",
-    '.eslintrc.cjs',
-    'dist',
-    ".changeset",
-  ],
+import { defineConfig, globalIgnores } from "eslint/config";
+import globals from "globals";
+import { fixupConfigRules } from "@eslint/compat";
+import reactRefresh from "eslint-plugin-react-refresh";
+import tsParser from "@typescript-eslint/parser";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+import js from "@eslint/js";
+import { FlatCompat } from "@eslint/eslintrc";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const compat = new FlatCompat({
+  baseDirectory: __dirname,
+  recommendedConfig: js.configs.recommended,
+  allConfig: js.configs.all
+});
+
+export default defineConfig([{
+  languageOptions: {
+    globals: {
+      ...globals.browser,
+    },
+
+    parser: tsParser,
+  },
+
+  extends: fixupConfigRules(compat.extends(
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:storybook/recommended",
+    "prettier",
+  )),
+
+  plugins: {
+    "react-refresh": reactRefresh,
+  },
+
   "rules": {
-    // Core
     "func-style": ["error", "declaration"],
     "newline-before-return": "error",
     "one-var": ["error", "never"],
-    "no-console": ["error", { "allow": ["warn", "info"] }],
+
+    "no-console": ["error", {
+      "allow": ["warn", "info"],
+    }],
+
     "curly": "error",
     "sort-imports": "off",
     "sort-keys": "off",
@@ -43,8 +67,10 @@ module.exports = {
     "no-use-before-define": "off",
     "require-atomic-updates": "off",
 
-    // Typescript
-    "@typescript-eslint/no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
+    "@typescript-eslint/no-unused-vars": ["error", {
+      "argsIgnorePattern": "^_",
+    }],
+
     "@typescript-eslint/dot-notation": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "@typescript-eslint/explicit-function-return-type": "off",
@@ -71,6 +97,7 @@ module.exports = {
     "@typescript-eslint/no-confusing-void-expression": "off",
     "@typescript-eslint/prefer-nullish-coalescing": "off",
     "@typescript-eslint/no-unnecessary-condition": "off",
-    "@typescript-eslint/no-unsafe-argument": "off"
-  }
-}
+    "@typescript-eslint/no-unsafe-argument": "off",
+    // "@typescript-eslint/no-empty-object-type": "off"
+  },
+}, globalIgnores(["**/node_modules", "**/.eslintrc.cjs", "**/dist", "**/.changeset"])]);

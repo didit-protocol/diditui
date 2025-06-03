@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/ban-types */
 import React, { JSX } from 'react'
 
 export type PropsOf<C extends keyof JSX.IntrinsicElements | React.JSXElementConstructor<unknown>> =
@@ -17,7 +16,7 @@ type AsProp<C extends React.ElementType> = {
  * (`OverrideProps`), ensuring that any duplicates are overridden by the overriding
  * set of props.
  */
-export type ExtendableProps<ExtendedProps = {}, OverrideProps = {}> = OverrideProps &
+export type ExtendableProps<ExtendedProps = object, OverrideProps = object> = OverrideProps &
   Omit<ExtendedProps, keyof OverrideProps>
 
 /**
@@ -25,7 +24,7 @@ export type ExtendableProps<ExtendedProps = {}, OverrideProps = {}> = OverridePr
  * props like children, className & style work, as well as element-specific
  * attributes like aria roles. The component (`C`) must be passed in.
  */
-export type InheritableElementProps<C extends React.ElementType, Props = {}> = ExtendableProps<
+export type InheritableElementProps<C extends React.ElementType, Props = object> = ExtendableProps<
   PropsOf<C>,
   Props
 >
@@ -36,12 +35,12 @@ export type InheritableElementProps<C extends React.ElementType, Props = {}> = E
  */
 export type PolymorphicComponentProps<
   C extends React.ElementType,
-  Props = {}
+  Props = object
 > = InheritableElementProps<C, Props & AsProp<C>>
 
 export type PolymorphicRef<C extends React.ElementType> = React.ComponentPropsWithRef<C>['ref']
 
 export type PolymorphicComponentPropsWithRef<
   C extends React.ElementType,
-  Props = {}
+  Props = object
 > = PolymorphicComponentProps<C, Props> & { ref?: PolymorphicRef<C> }
