@@ -1,5 +1,11 @@
 # diditui
 
+## 1.0.61
+
+### Patch Changes
+
+- 54f518d: more icons
+
 ## 1.0.60
 
 ### Patch Changes
