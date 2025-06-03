@@ -21,8 +21,8 @@ const config: StorybookConfig = {
         projects: [path.join(projectRoot, 'tsconfig.json')]
       })
     )
-    
-return config
+
+    return config
   }
 }
 

@@ -1,6 +1,6 @@
 {
   "name": "diditui",
-  "version": "1.0.60",
+  "version": "1.0.61",
   "type": "module",
   "files": [
     "dist/**/*",
@@ -33,8 +33,8 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "lint:fix": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0 --fix",
     "typecheck": "tsc --noEmit",
-    "prettier": "prettier --check .",
-    "prettier:format": "prettier --write .",
+    "prettier": "prettier --check ./src",
+    "prettier:format": "prettier --write ./src",
     "format": "pnpm prettier:format; pnpm lint:fix",
     "build:clean": "rm -rf dist",
     "CI": "pnpm lint; pnpm typecheck; pnpm build",
