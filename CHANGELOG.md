@@ -1,5 +1,11 @@
 # diditui
 
+## 1.1.0
+
+### Minor Changes
+
+- e292891: upgrade to eslint@9 and storybook@9
+
 ## 1.0.61
 
 ### Patch Changes
