@@ -90,6 +90,8 @@ import Over21Svg from '@/assets/icons/over21.svg'
 import ShieldBoldSvg from '@/assets/icons/shield-bold.svg'
 import EmailBoldSvg from '@/assets/icons/email-bold.svg'
 import Settings2BoldSvg from '@/assets/icons/settings2-bold.svg'
+import CircleSlashSvg from '@/assets/icons/linear/circle-slash.svg'
+import DataSvg from '@/assets/icons/linear/data.svg'
 
 import AmlV2Icon from '@/assets/icons/aml-v2.svg'
 import FaceMatchingV2Icon from '@/assets/icons/face-matching-v2.svg'
@@ -203,7 +205,9 @@ export const svgOptions: Record<IconType, SVGIcon> = {
   houseBold: HouseBoldIcon,
   receiptTextBold: ReceiptTextBoldIcon,
   searchStatusBold: SearchStatusBoldIcon,
-  cameraLinear: CameraLinearIcon
+  cameraLinear: CameraLinearIcon,
+  circleSlash: CircleSlashSvg,
+  data: DataSvg
 }
 
 const iconStyles = cva(['flex items-center justify-center'], {

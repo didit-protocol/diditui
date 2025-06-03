@@ -98,3 +98,5 @@ export type IconType =
   | 'houseBold'
   | 'receiptTextBold'
   | 'searchStatusBold'
+  | 'circleSlash'
+  | 'data'
