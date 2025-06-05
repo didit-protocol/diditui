@@ -1,23 +1,58 @@
 'use client'
 
-import OriginalReactModal, { Props as ReactModalProps } from 'react-modal'
+import OriginalReactModal, { Aria, Classes, OnAfterOpenCallback } from 'react-modal'
 import { IconButton } from '../IconButton'
 import { cn } from '@/utils'
-import { useEffect } from 'react'
+import {
+  ComponentPropsWithRef,
+  KeyboardEvent,
+  MouseEvent,
+  ReactElement,
+  ReactNode,
+  useEffect
+} from 'react'
 
-interface Props extends ReactModalProps {
+interface Props {
   withBorder?: boolean
   appElementId?: string
-  contentLabel?: ReactModalProps['contentLabel']
-  className?: ReactModalProps['className']
-  overlayClassName?: ReactModalProps['overlayClassName']
-  children?: ReactModalProps['children']
-  onRequestClose?: ReactModalProps['onRequestClose']
+
+  testId?: string | undefined
+  id?: string | undefined
+  children?: ReactNode
+  isOpen: boolean
+  portalClassName?: string | undefined
+  bodyOpenClassName?: string | null | undefined
+  htmlOpenClassName?: string | null | undefined
+  className?: string | Classes | undefined
+  overlayClassName?: string | Classes | undefined
+  appElement?: HTMLElement | HTMLElement[] | HTMLCollection | NodeList | undefined
+  onAfterOpen?: OnAfterOpenCallback | undefined
+  onAfterClose?(): void
+  onRequestClose?(event: MouseEvent | KeyboardEvent): void
+  closeTimeoutMS?: number | undefined
+  ariaHideApp?: boolean | undefined
+  shouldFocusAfterRender?: boolean | undefined
+  shouldCloseOnOverlayClick?: boolean | undefined
+  shouldCloseOnEsc?: boolean | undefined
+  shouldReturnFocusAfterClose?: boolean | undefined
+  preventScroll?: boolean | undefined
+  parentSelector?(): HTMLElement
+  aria?: Aria | undefined
+  data?: unknown
+  role?: string | null | undefined
+  contentLabel?: string | undefined
+  contentRef?: ((instance: HTMLDivElement) => void) | undefined
+  overlayRef?: ((instance: HTMLDivElement) => void) | undefined
+  overlayElement?:
+    | ((props: ComponentPropsWithRef<'div'>, contentEl: ReactElement) => ReactElement)
+    | undefined
+  contentElement?:
+    | ((props: ComponentPropsWithRef<'div'>, children: ReactNode) => ReactElement)
+    | undefined
 }
 
 function Modal({
   children,
-  contentLabel = 'modal',
   className,
   overlayClassName,
   withBorder = false,
@@ -54,7 +89,6 @@ function Modal({
       closeTimeoutMS={300}
       className={contentClassName}
       overlayClassName={overlayClassNameBase}
-      contentLabel={contentLabel}
       onRequestClose={onRequestClose}
       {...props}
     >
