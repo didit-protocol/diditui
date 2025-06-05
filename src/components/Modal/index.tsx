@@ -1,13 +1,18 @@
 'use client'
 
-import ReactModal from 'react-modal'
+import OriginalReactModal, { Props as ReactModalProps } from 'react-modal'
 import { IconButton } from '../IconButton'
 import { cn } from '@/utils'
 import { useEffect } from 'react'
 
-interface Props extends ReactModal.Props {
+interface Props extends ReactModalProps {
   withBorder?: boolean
   appElementId?: string
+  contentLabel?: ReactModalProps['contentLabel']
+  className?: ReactModalProps['className']
+  overlayClassName?: ReactModalProps['overlayClassName']
+  children?: ReactModalProps['children']
+  onRequestClose?: ReactModalProps['onRequestClose']
 }
 
 function Modal({
@@ -22,7 +27,7 @@ function Modal({
 }: Props) {
   useEffect(() => {
     if (typeof window !== 'undefined') {
-      ReactModal.setAppElement(appElementId)
+      OriginalReactModal.setAppElement(appElementId)
     }
   }, [appElementId])
 
@@ -45,7 +50,7 @@ function Modal({
   ])
 
   return (
-    <ReactModal
+    <OriginalReactModal
       closeTimeoutMS={300}
       className={contentClassName}
       overlayClassName={overlayClassNameBase}
@@ -62,7 +67,7 @@ function Modal({
         />
         {children}
       </div>
-    </ReactModal>
+    </OriginalReactModal>
   )
 }
 
