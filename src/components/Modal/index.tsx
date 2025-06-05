@@ -5,30 +5,16 @@ import { IconButton } from '../IconButton'
 import { cn } from '@/utils'
 import { useEffect } from 'react'
 
-interface Props {
-  id?: string
-  testId?: string
-  className?: string
-  children: React.ReactNode
-  isOpen: boolean
+interface Props extends ReactModal.Props {
   withBorder?: boolean
-  contentLabel?: string
-  overlayClassName?: string
-  role?: string
-  shouldCloseOnOverlayClick?: boolean
-  shouldCloseOnEsc?: boolean
-  shouldReturnFocusAfterClose?: boolean
   appElementId?: string
-  onRequestClose: () => void
-  onAfterClose?: () => void
-  onAfterOpen?: () => void
 }
 
 function Modal({
   children,
   contentLabel = 'modal',
-  overlayClassName,
   className,
+  overlayClassName,
   withBorder = false,
   appElementId = '#__next',
   onRequestClose,
