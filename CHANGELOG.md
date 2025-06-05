@@ -1,5 +1,11 @@
 # diditui
 
+## 1.1.2
+
+### Patch Changes
+
+- debbb8e: fix modal type
+
 ## 1.1.1
 
 ### Patch Changes
