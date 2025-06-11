@@ -1,5 +1,11 @@
 # diditui
 
+## 1.1.4
+
+### Patch Changes
+
+- b7df920: remove space from input
+
 ## 1.1.3
 
 ### Patch Changes
