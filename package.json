@@ -105,7 +105,7 @@
     "@eslint/compat": "^1.2.9",
     "@eslint/eslintrc": "^3.3.1",
     "@eslint/js": "^9.28.0",
-    "@manypkg/cli": "^0.23.0",
+    "@manypkg/cli": "^0.24.0",
     "@storybook/addon-docs": "^9.0.4",
     "@storybook/addon-links": "^9.0.4",
     "@storybook/addon-onboarding": "^9.0.4",
