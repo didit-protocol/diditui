@@ -115,9 +115,11 @@ function Input({
           )}
         </div>
       </div>
-      <Text variant="P3" as="span" className="text-error mt-1 pl-1">
-        {error}
-      </Text>
+      {error && (
+        <Text variant="P3" as="span" className="text-error mt-1 pl-1">
+          {error}
+        </Text>
+      )}
     </div>
   )
 }
