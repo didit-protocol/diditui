@@ -1,5 +1,11 @@
 # diditui
 
+## 1.1.3
+
+### Patch Changes
+
+- 1629790: fix types of modal
+
 ## 1.1.2
 
 ### Patch Changes
