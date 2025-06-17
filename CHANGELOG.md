@@ -1,5 +1,11 @@
 # diditui
 
+## 1.1.6
+
+### Patch Changes
+
+- 9b9482c: add past button to input
+
 ## 1.1.5
 
 ### Patch Changes
