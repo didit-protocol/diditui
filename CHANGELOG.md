@@ -1,5 +1,17 @@
 # diditui
 
+## 1.1.5
+
+### Patch Changes
+
+- 4c8b501: didit animated logo compatibility with old iphone devices
+
+## 1.1.4
+
+### Patch Changes
+
+- b7df920: remove space from input
+
 ## 1.1.3
 
 ### Patch Changes
