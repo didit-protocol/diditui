@@ -29,6 +29,9 @@ const meta: Meta<typeof Input> = {
     },
     showCopyButton: {
       control: 'boolean'
+    },
+    showPasteButton: {
+      control: 'boolean'
     }
   },
   parameters: {
@@ -50,6 +53,7 @@ export const Default: Story = {
     required: true,
     showClearButton: true,
     showCopyButton: false,
+    showPasteButton: false,
     onCopyClick: () => {}
   }
 }

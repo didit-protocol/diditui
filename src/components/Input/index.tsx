@@ -17,6 +17,7 @@ type InputProps = ComponentProps<'input'> & {
   required?: boolean
   showClearButton?: boolean
   showCopyButton?: boolean
+  showPasteButton?: boolean
   onValueChange?: (v: string) => void
   onCopyClick?: () => void
 }
@@ -31,6 +32,7 @@ function Input({
   required,
   showClearButton = true,
   showCopyButton = false,
+  showPasteButton = false,
   type = 'text',
   onValueChange = () => {},
   onCopyClick,
@@ -40,6 +42,7 @@ function Input({
   const [isFocused, setIsFocused] = useState(false)
   const isClearButtonVisible = showClearButton && value && !showCopyButton
   const isCopyButtonVisible = showCopyButton && value
+  const isPasteButtonVisible = showPasteButton && !value
 
   const wrapperClassNames = cn(
     'w-full min-h-[68px] py-4 px-5 cursor-text rounded-3xl',
@@ -64,7 +67,7 @@ function Input({
   const rightButtonWrapperClassNames = cn([
     'size-8 flex justify-center align-items-center hover:opacity-80',
     'text-surface-md',
-    { invisible: !isClearButtonVisible && !isCopyButtonVisible }
+    { invisible: !isClearButtonVisible && !isCopyButtonVisible && !isPasteButtonVisible }
   ])
 
   return (
@@ -110,6 +113,21 @@ function Input({
                 }}
               >
                 <Icon type="copy" size="sm" />
+              </button>
+            </Tooltip>
+          )}
+          {isPasteButtonVisible && (
+            <Tooltip label="Paste">
+              <button
+                onClick={() => {
+                  navigator.clipboard.readText().then(text => {
+                    onValueChange(text)
+                  })
+                }}
+              >
+                <Text variant="StyledLabel" as="span" className="text-[9px] m-0 text-primary">
+                  PASTE
+                </Text>
               </button>
             </Tooltip>
           )}

@@ -41,6 +41,7 @@ function InputExample() {
         value={email}
         onValueChange={handleValueChange}
         error={error}
+        showCopyButton
       />
       <Input
         label="Password"
@@ -49,6 +50,7 @@ function InputExample() {
         onValueChange={handlePasswordValueChange}
         error={passwordError}
         type="password"
+        showPasteButton
       />
     </div>
   )
