@@ -1,5 +1,12 @@
 # diditui
 
+## 1.1.8
+
+### Patch Changes
+
+- ef4ea03: allow custom classname when option is selected
+- 5850807: fix focus on search mini (causing ui to break in some browsers)
+
 ## 1.1.7
 
 ### Patch Changes
