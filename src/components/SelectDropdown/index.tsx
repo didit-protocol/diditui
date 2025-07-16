@@ -1,6 +1,6 @@
 'use client'
 
-import { FC, LegacyRef, SVGProps, useCallback, useMemo, useRef, useState } from 'react'
+import { FC, LegacyRef, ReactNode, SVGProps, useCallback, useMemo, useRef, useState } from 'react'
 import { useKeyPress, useOnClickOutside } from '@/hooks'
 
 import { SearchMini } from '@/components/SearchMini'
@@ -34,6 +34,7 @@ interface SelectDropdownProps {
   dropdownTriggerClassName?: string
   dropdownOptionClassName?: string
   iconPosition?: 'left' | 'right'
+  labelIcon?: ReactNode | null
   onChange?: (value: SelectDropdownOptionType['value']) => void
   onClick?: (value?: SelectDropdownOptionType['value']) => void
 }
@@ -55,6 +56,7 @@ function SelectDropdown({
   dropdownTriggerClassName = '',
   dropdownOptionClassName = '',
   iconPosition = 'left',
+  labelIcon = null,
   onChange = (_value: string) => {},
   onClick = () => {}
 }: SelectDropdownProps) {
@@ -122,6 +124,7 @@ function SelectDropdown({
           selectedOption={selectedOption}
           showIcon={showIcon}
           onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+          labelIcon={labelIcon}
         />
         {isDropdownOpen && (
           <div ref={divRef as LegacyRef<HTMLDivElement>} className={dropdownClassNames}>

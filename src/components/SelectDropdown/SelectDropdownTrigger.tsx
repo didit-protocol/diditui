@@ -1,4 +1,4 @@
-import { LegacyRef } from 'react'
+import { LegacyRef, ReactNode } from 'react'
 
 import { SelectDropdownOptionType } from './index'
 import { Icon } from '@/components/Icon'
@@ -18,6 +18,7 @@ interface SelectDropdownTriggerProps {
   onClick: () => void
   hasError?: boolean
   showIcon?: boolean
+  labelIcon?: ReactNode | null
 }
 
 function SelectDropdownTrigger({
@@ -32,6 +33,7 @@ function SelectDropdownTrigger({
   buttonRef = undefined,
   hasError = false,
   showIcon = false,
+  labelIcon = null,
   onClick
 }: SelectDropdownTriggerProps) {
   const wrapperClassNames = cn(
@@ -68,6 +70,7 @@ function SelectDropdownTrigger({
       type="button"
     >
       <div className="flex flex-col gap-[6px] grow overflow-hidden min-w-0">
+        {labelIcon && labelIcon}
         {(label || required) && (
           <Text variant="StyledLabel" as="label" className="text-surface-md truncate w-fit">
             {label}
