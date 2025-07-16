@@ -55,8 +55,8 @@ importers:
         specifier: ^3.3.1
         version: 3.3.1
       '@eslint/js':
-        specifier: ^9.28.0
-        version: 9.28.0
+        specifier: ^9.31.0
+        version: 9.31.0
       '@manypkg/cli':
         specifier: ^0.23.0
         version: 0.23.0
@@ -242,6 +242,10 @@ packages:
 
   '@babel/runtime@7.27.4':
     resolution: {integrity: sha512-t3yaEOuGu9NlIZ+hIeGbBjFtZT7j2cb2tg0fuaJKeGotchRjjLfrBA9Kwf8quhpP1EUuxModQg04q/mBwyg8uA==}
+    engines: {node: '>=6.9.0'}
+
+  '@babel/runtime@7.27.6':
+    resolution: {integrity: sha512-vbavdySgbTTrmFE+EsiqUTzlOr5bzlnJtUv9PynGCAKvfQqjIXbvFdumPM/GxMDfyuGMJaJAU6TO4zc1Jf1i8Q==}
     engines: {node: '>=6.9.0'}
 
   '@babel/template@7.27.2':
@@ -580,6 +584,10 @@ packages:
 
   '@eslint/js@9.28.0':
     resolution: {integrity: sha512-fnqSjGWd/CoIp4EXIxWVK/sHA6DOHN4+8Ix2cX5ycOY7LG0UY8nHCU5pIp2eaE1Mc7Qd8kHspYNzYXT2ojPLzg==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+
+  '@eslint/js@9.31.0':
+    resolution: {integrity: sha512-LOm5OVt7D4qiKCqoiPbA7LWmI+tbw1VbTUowBcUMgQSuM6poJufkFkYDcQpo5KfgD39TnNySV26QjOh7VFpSyw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
   '@eslint/object-schema@2.1.6':
@@ -3336,6 +3344,8 @@ snapshots:
 
   '@babel/runtime@7.27.4': {}
 
+  '@babel/runtime@7.27.6': {}
+
   '@babel/template@7.27.2':
     dependencies:
       '@babel/code-frame': 7.27.1
@@ -3752,6 +3762,8 @@ snapshots:
       - supports-color
 
   '@eslint/js@9.28.0': {}
+
+  '@eslint/js@9.31.0': {}
 
   '@eslint/object-schema@2.1.6': {}
 
@@ -4188,7 +4200,7 @@ snapshots:
   '@testing-library/dom@10.4.0':
     dependencies:
       '@babel/code-frame': 7.27.1
-      '@babel/runtime': 7.27.4
+      '@babel/runtime': 7.27.6
       '@types/aria-query': 5.0.4
       aria-query: 5.3.0
       chalk: 4.1.2
