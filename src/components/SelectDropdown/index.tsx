@@ -33,6 +33,7 @@ interface SelectDropdownProps {
   dropdownClassName?: string
   dropdownTriggerClassName?: string
   dropdownOptionClassName?: string
+  dropdownSelectedOptionClassName?: string
   iconPosition?: 'left' | 'right'
   labelIcon?: ReactNode | null
   onChange?: (value: SelectDropdownOptionType['value']) => void
@@ -55,6 +56,7 @@ function SelectDropdown({
   dropdownClassName = '',
   dropdownTriggerClassName = '',
   dropdownOptionClassName = '',
+  dropdownSelectedOptionClassName = '',
   iconPosition = 'left',
   labelIcon = null,
   onChange = (_value: string) => {},
@@ -154,7 +156,10 @@ function SelectDropdown({
                     label={option.label}
                     value={option.value}
                     onClick={handleOptionClick}
-                    className={dropdownOptionClassName}
+                    className={cn(
+                      dropdownOptionClassName,
+                      value === option.value && dropdownSelectedOptionClassName
+                    )}
                     iconPosition={iconPosition}
                     disabled={option.disabled}
                   />
