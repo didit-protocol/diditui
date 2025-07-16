@@ -1,5 +1,11 @@
 # diditui
 
+## 1.1.7
+
+### Patch Changes
+
+- 95f4e9e: added the possibility of having an icon in the label of the dropdown
+
 ## 1.1.6
 
 ### Patch Changes
