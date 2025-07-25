@@ -36,6 +36,7 @@ interface SelectDropdownProps {
   dropdownSelectedOptionClassName?: string
   iconPosition?: 'left' | 'right'
   labelIcon?: ReactNode | null
+  noOptionsMessage?: string
   onChange?: (value: SelectDropdownOptionType['value']) => void
   onClick?: (value?: SelectDropdownOptionType['value']) => void
 }
@@ -59,6 +60,7 @@ function SelectDropdown({
   dropdownSelectedOptionClassName = '',
   iconPosition = 'left',
   labelIcon = null,
+  noOptionsMessage = 'No options',
   onChange = (_value: string) => {},
   onClick = () => {}
 }: SelectDropdownProps) {
@@ -145,7 +147,7 @@ function SelectDropdown({
             <ul className="[&>*:last-child]:border-none">
               {!filtredOptions.length ? (
                 <Text as="p" variant="P2" className="truncate p-4 text-center">
-                  No options
+                  {noOptionsMessage}
                 </Text>
               ) : (
                 filtredOptions.map((option, idx) => (
