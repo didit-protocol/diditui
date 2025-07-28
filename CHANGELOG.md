@@ -1,5 +1,11 @@
 # diditui
 
+## 1.1.9
+
+### Patch Changes
+
+- 87f8ba2: added the possibility of modifying modal wrapper class
+
 ## 1.1.8
 
 ### Patch Changes
