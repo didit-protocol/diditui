@@ -15,7 +15,7 @@ import {
 interface Props {
   withBorder?: boolean
   appElementId?: string
-
+  wrapperClassName?: string | Classes | undefined
   testId?: string | undefined
   id?: string | undefined
   children?: ReactNode
@@ -55,6 +55,7 @@ function Modal({
   children,
   className,
   overlayClassName,
+  wrapperClassName,
   withBorder = false,
   appElementId = '#__next',
   onRequestClose,
@@ -73,7 +74,8 @@ function Modal({
   ])
 
   const contentClassName = cn([
-    'font-inter size-full flex items-end justify-center md:items-center overflow-visible'
+    'font-inter size-full flex items-end justify-center md:items-center overflow-visible',
+    wrapperClassName
   ])
 
   const contentClassNameCard = cn([
