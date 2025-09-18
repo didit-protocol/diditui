@@ -100,8 +100,6 @@ import IpV2Icon from '@/assets/icons/ip-v2.svg'
 import LivenessV2Icon from '@/assets/icons/liveness-v2.svg'
 import NfcV2Icon from '@/assets/icons/nfc-v2.svg'
 import PhoneV2Icon from '@/assets/icons/phone-v2.svg'
-import EmailV2Icon from '@/assets/icons/email-v2.svg'
-import QuestionnaireV2Icon from '@/assets/icons/questionnaire-v2.svg'
 import PoaV2Icon from '@/assets/icons/poa-v2.svg'
 import HouseBoldIcon from '@/assets/icons/bold/house.svg'
 import ReceiptTextBoldIcon from '@/assets/icons/bold/receipt-text.svg'
@@ -118,8 +116,6 @@ export const svgOptions: Record<IconType, SVGIcon> = {
   livenessV2: LivenessV2Icon,
   nfcV2: NfcV2Icon,
   phoneV2: PhoneV2Icon,
-  emailV2: EmailV2Icon,
-  questionnaireV2: QuestionnaireV2Icon,
   poaV2: PoaV2Icon,
   scan: ScanSvg,
   scan2: Scan2Svg,
