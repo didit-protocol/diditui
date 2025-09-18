@@ -1,5 +1,11 @@
 # diditui
 
+## 1.2.0
+
+### Minor Changes
+
+- 41d967b: add new icons
+
 ## 1.1.9
 
 ### Patch Changes
