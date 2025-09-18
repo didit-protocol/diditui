@@ -94,6 +94,8 @@ export type IconType =
   | 'livenessV2'
   | 'nfcV2'
   | 'phoneV2'
+  | 'emailV2'
+  | 'questionnaireV2'
   | 'poaV2'
   | 'houseBold'
   | 'receiptTextBold'
