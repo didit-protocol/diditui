@@ -114,7 +114,7 @@
     "@types/node": "^22.10.6",
     "@types/qrcode": "^1.5.5",
     "@types/react": "^19.0.7",
-    "@types/react-dom": "^19.0.3",
+    "@types/react-dom": "^19.1.11",
     "@types/react-modal": "^3.16.3",
     "@typescript-eslint/eslint-plugin": "^8.33.1",
     "@typescript-eslint/parser": "^8.33.1",
