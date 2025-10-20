@@ -131,7 +131,7 @@
     "husky": "^9.1.7",
     "postcss": "^8.5.1",
     "prettier": "^3.4.2",
-    "rollup-plugin-visualizer": "^5.14.0",
+    "rollup-plugin-visualizer": "^6.0.5",
     "storybook": "^9.0.4",
     "tailwindcss": "^3.4.17",
     "typescript": "^5.7.3",
