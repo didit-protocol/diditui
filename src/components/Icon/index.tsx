@@ -4,6 +4,7 @@ import { cn } from '@/utils'
 import { cva, VariantProps } from 'class-variance-authority'
 import { ComponentProps, FC } from 'react'
 import { IconType } from '@/types/index.js'
+export type { IconType }
 
 // -- Svg's-------------------------------- //
 import ScanSvg from '@/assets/icons/scan.svg'
