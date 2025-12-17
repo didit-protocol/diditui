@@ -33,7 +33,7 @@ function SearchMini({
   useEffect(() => {
     if (immediateFocus) {
       inputRef?.current?.focus({
-        preventScroll: true,
+        preventScroll: true
       })
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps

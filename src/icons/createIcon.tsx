@@ -33,6 +33,6 @@ export function createIcon(SvgComponent: FC<React.SVGProps<SVGElement>>, display
     }
   )
   IconComponent.displayName = displayName
+
   return IconComponent
 }
-

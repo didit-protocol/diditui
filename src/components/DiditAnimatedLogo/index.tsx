@@ -3,12 +3,8 @@
 import { cn } from '@/utils'
 import { cva, VariantProps } from 'class-variance-authority'
 
-
 const diditAnimatedLogoStyles = cva(
-  [
-    'relative flex items-center justify-center overflow-hidden',
-    'rounded-full md:w-[1-px]'
-  ],
+  ['relative flex items-center justify-center overflow-hidden', 'rounded-full md:w-[1-px]'],
   {
     variants: {
       size: {
@@ -40,12 +36,18 @@ function DiditAnimatedLogo({
   backgroundClassName,
   gradientColors = { from: '#493dd1', via: '#2a57f6', to: '#9ecffb' }
 }: DiditAnimatedLogoProps) {
-  const borderClassNames = cn('p-3.5 w-[150%] h-[120%] absolute -top-[10%] -left-1/4 rounded-full', {
-    'animate-spin': animate
-  })
+  const borderClassNames = cn(
+    'p-3.5 w-[150%] h-[120%] absolute -top-[10%] -left-1/4 rounded-full',
+    {
+      'animate-spin': animate
+    }
+  )
 
   return (
-    <div className={diditAnimatedLogoStyles({ size })} style={{ transform: 'translate3d(0, 0, 0)', backfaceVisibility: 'hidden' }}>
+    <div
+      className={diditAnimatedLogoStyles({ size })}
+      style={{ transform: 'translate3d(0, 0, 0)', backfaceVisibility: 'hidden' }}
+    >
       <div
         className={borderClassNames}
         style={{
