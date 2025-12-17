@@ -1,5 +1,11 @@
 # diditui
 
+## 1.2.1
+
+### Patch Changes
+
+- aeb3814: optimize exports
+
 ## 1.2.0
 
 ### Minor Changes
