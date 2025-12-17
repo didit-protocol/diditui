@@ -1,0 +1,5 @@
+---
+'diditui': patch
+---
+
+optimize exports

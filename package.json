@@ -2,18 +2,134 @@
   "name": "diditui",
   "version": "1.2.0",
   "type": "module",
+  "sideEffects": [
+    "*.css"
+  ],
   "files": [
     "dist/**/*",
     "tailwind.config.js"
   ],
-  "main": "dist/diditui.umd.js",
-  "module": "dist/diditui.js",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/diditui.js",
-      "require": "./dist/diditui.cjs"
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./ActionButton": {
+      "types": "./dist/components/ActionButton/index.d.ts",
+      "import": "./dist/components/ActionButton/index.js",
+      "require": "./dist/components/ActionButton/index.cjs"
+    },
+    "./Button": {
+      "types": "./dist/components/Button/index.d.ts",
+      "import": "./dist/components/Button/index.js",
+      "require": "./dist/components/Button/index.cjs"
+    },
+    "./Card": {
+      "types": "./dist/components/Card/index.d.ts",
+      "import": "./dist/components/Card/index.js",
+      "require": "./dist/components/Card/index.cjs"
+    },
+    "./Checkbox": {
+      "types": "./dist/components/Checkbox/index.d.ts",
+      "import": "./dist/components/Checkbox/index.js",
+      "require": "./dist/components/Checkbox/index.cjs"
+    },
+    "./CopyValue": {
+      "types": "./dist/components/CopyValue/index.d.ts",
+      "import": "./dist/components/CopyValue/index.js",
+      "require": "./dist/components/CopyValue/index.cjs"
+    },
+    "./DiditAnimatedLogo": {
+      "types": "./dist/components/DiditAnimatedLogo/index.d.ts",
+      "import": "./dist/components/DiditAnimatedLogo/index.js",
+      "require": "./dist/components/DiditAnimatedLogo/index.cjs"
+    },
+    "./Icon": {
+      "types": "./dist/components/Icon/index.d.ts",
+      "import": "./dist/components/Icon/index.js",
+      "require": "./dist/components/Icon/index.cjs"
+    },
+    "./IconButton": {
+      "types": "./dist/components/IconButton/index.d.ts",
+      "import": "./dist/components/IconButton/index.js",
+      "require": "./dist/components/IconButton/index.cjs"
+    },
+    "./Input": {
+      "types": "./dist/components/Input/index.d.ts",
+      "import": "./dist/components/Input/index.js",
+      "require": "./dist/components/Input/index.cjs"
+    },
+    "./Modal": {
+      "types": "./dist/components/Modal/index.d.ts",
+      "import": "./dist/components/Modal/index.js",
+      "require": "./dist/components/Modal/index.cjs"
+    },
+    "./QrCode": {
+      "types": "./dist/components/QrCode/index.d.ts",
+      "import": "./dist/components/QrCode/index.js",
+      "require": "./dist/components/QrCode/index.cjs"
+    },
+    "./SearchInput": {
+      "types": "./dist/components/SearchInput/index.d.ts",
+      "import": "./dist/components/SearchInput/index.js",
+      "require": "./dist/components/SearchInput/index.cjs"
+    },
+    "./SearchMini": {
+      "types": "./dist/components/SearchMini/index.d.ts",
+      "import": "./dist/components/SearchMini/index.js",
+      "require": "./dist/components/SearchMini/index.cjs"
+    },
+    "./SelectDropdown": {
+      "types": "./dist/components/SelectDropdown/index.d.ts",
+      "import": "./dist/components/SelectDropdown/index.js",
+      "require": "./dist/components/SelectDropdown/index.cjs"
+    },
+    "./Spinner": {
+      "types": "./dist/components/Spinner/index.d.ts",
+      "import": "./dist/components/Spinner/index.js",
+      "require": "./dist/components/Spinner/index.cjs"
+    },
+    "./StatusLabel": {
+      "types": "./dist/components/StatusLabel/index.d.ts",
+      "import": "./dist/components/StatusLabel/index.js",
+      "require": "./dist/components/StatusLabel/index.cjs"
+    },
+    "./Text": {
+      "types": "./dist/components/Text/index.d.ts",
+      "import": "./dist/components/Text/index.js",
+      "require": "./dist/components/Text/index.cjs"
+    },
+    "./Toggle": {
+      "types": "./dist/components/Toggle/index.d.ts",
+      "import": "./dist/components/Toggle/index.js",
+      "require": "./dist/components/Toggle/index.cjs"
+    },
+    "./Tooltip": {
+      "types": "./dist/components/Tooltip/index.d.ts",
+      "import": "./dist/components/Tooltip/index.js",
+      "require": "./dist/components/Tooltip/index.cjs"
+    },
+    "./UserCard": {
+      "types": "./dist/components/UserCard/index.d.ts",
+      "import": "./dist/components/UserCard/index.js",
+      "require": "./dist/components/UserCard/index.cjs"
+    },
+    "./hooks": {
+      "types": "./dist/hooks/index.d.ts",
+      "import": "./dist/hooks/index.js",
+      "require": "./dist/hooks/index.cjs"
+    },
+    "./utils": {
+      "types": "./dist/utils/index.d.ts",
+      "import": "./dist/utils/index.js",
+      "require": "./dist/utils/index.cjs"
     },
     "./tailwind": {
+      "types": "./dist/tailwind.d.ts",
       "import": "./dist/tailwind.js",
       "require": "./dist/tailwind.cjs"
     },
@@ -76,6 +192,10 @@
     "node": "20.14.0",
     "pnpm": "9.1.3"
   },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
   "peerDependenciesMeta": {
     "react": {
       "optional": true
@@ -91,10 +211,6 @@
     "react-modal": "^3.16.3",
     "tailwind-merge": "^2.6.0",
     "usehooks-ts": "^3.1.0"
-  },
-  "peerDependencies": {
-    "react": ">=18",
-    "react-dom": ">=18"
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.11",
