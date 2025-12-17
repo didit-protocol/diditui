@@ -37,6 +37,7 @@ export default defineConfig({
         'components/UserCard/index': path.resolve(__dirname, 'src/components/UserCard/index.tsx'),
         'hooks/index': path.resolve(__dirname, 'src/hooks/index.ts'),
         'utils/index': path.resolve(__dirname, 'src/utils/index.ts'),
+        'types/index': path.resolve(__dirname, 'src/types/index.ts'),
       },
       formats: ['es', 'cjs'],
       cssFileName: 'style'
