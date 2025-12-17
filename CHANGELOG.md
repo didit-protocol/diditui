@@ -1,5 +1,12 @@
 # diditui
 
+## 1.2.2
+
+### Patch Changes
+
+- 43e96e4: added types to export
+- 0e55131: added icontype export to icon component
+
 ## 1.2.1
 
 ### Patch Changes
