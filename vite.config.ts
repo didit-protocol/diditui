@@ -38,6 +38,7 @@ export default defineConfig({
         'hooks/index': path.resolve(__dirname, 'src/hooks/index.ts'),
         'utils/index': path.resolve(__dirname, 'src/utils/index.ts'),
         'types/index': path.resolve(__dirname, 'src/types/index.ts'),
+        'icons/index': path.resolve(__dirname, 'src/icons/index.ts'),
       },
       formats: ['es', 'cjs'],
       cssFileName: 'style'
