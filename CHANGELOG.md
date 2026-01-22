@@ -1,5 +1,11 @@
 # diditui
 
+## 1.2.4
+
+### Patch Changes
+
+- 215d3b3: added color prop tu spinner
+
 ## 1.2.3
 
 ### Patch Changes
