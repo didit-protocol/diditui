@@ -1,5 +1,11 @@
 # diditui
 
+## 1.2.6
+
+### Patch Changes
+
+- 55d5050: added missing export
+
 ## 1.2.5
 
 ### Patch Changes
