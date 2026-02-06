@@ -1,5 +1,11 @@
 # diditui
 
+## 1.2.5
+
+### Patch Changes
+
+- 00ff55a: added health insurance icon and updated passport icon
+
 ## 1.2.4
 
 ### Patch Changes
