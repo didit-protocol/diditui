@@ -103,3 +103,4 @@ export type IconType =
   | 'searchStatusBold'
   | 'circleSlash'
   | 'data'
+  | 'residencePermit'
