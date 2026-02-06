@@ -1,5 +1,11 @@
 # diditui
 
+## 1.2.7
+
+### Patch Changes
+
+- 1424ded: added residence permit icon
+
 ## 1.2.6
 
 ### Patch Changes
