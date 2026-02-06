@@ -24,6 +24,7 @@ import CloseSvg from '@/assets/icons/close.svg'
 import CarSvg from '@/assets/icons/car.svg'
 import IdCardSvg from '@/assets/icons/id-card.svg'
 import PassportSvg from '@/assets/icons/passport.svg'
+import HealthInsuranceSvg from '@/assets/icons/health-insurance.svg'
 import CloseCircleSvg from '@/assets/icons/close-circle.svg'
 import CloseCircleBoldSvg from '@/assets/icons/close-circle-bold.svg'
 import CheckCircleSvg from '@/assets/icons/check-circle.svg'
@@ -139,6 +140,7 @@ export const svgOptions: Record<IconType, SVGIcon> = {
   idCard: IdCardSvg,
   car: CarSvg,
   passport: PassportSvg,
+  healthInsurance: HealthInsuranceSvg,
   closeCircle: CloseCircleSvg,
   checkCircle: CheckCircleSvg,
   closeCircleBold: CloseCircleBoldSvg,

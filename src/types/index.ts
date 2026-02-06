@@ -1,6 +1,7 @@
 export * from './react'
 
 export type IconType =
+  | 'healthInsurance'
   | 'settings'
   | 'info'
   | 'arrowRight'
