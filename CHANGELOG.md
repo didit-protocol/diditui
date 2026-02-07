@@ -1,5 +1,12 @@
 # diditui
 
+## 1.3.0
+
+### Minor Changes
+
+- updated dl and id icons
+- updated dl and id icons
+
 ## 1.2.7
 
 ### Patch Changes
