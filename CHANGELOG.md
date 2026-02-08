@@ -1,5 +1,11 @@
 # diditui
 
+## 1.3.1
+
+### Patch Changes
+
+- fix id-card and car icon colors to use currentColor instead of hardcoded color for whitelabel support
+
 ## 1.3.0
 
 ### Minor Changes
