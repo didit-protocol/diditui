@@ -1,5 +1,11 @@
 # diditui
 
+## 1.3.2
+
+### Patch Changes
+
+- ea20a65: update age estimation icons to get colors from parent
+
 ## 1.3.1
 
 ### Patch Changes
