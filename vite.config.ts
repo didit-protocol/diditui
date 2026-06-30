@@ -46,7 +46,8 @@ export default defineConfig({
     rollupOptions: {
       external: ['react', 'react-dom', 'react/jsx-runtime', 'qrcode', 'react-modal'],
       output: {
-        preserveModules: false,
+        preserveModules: true,
+        preserveModulesRoot: 'src',
         globals: {
           react: 'React',
           'react-dom': 'ReactDOM',
