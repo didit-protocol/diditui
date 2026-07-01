@@ -1,5 +1,0 @@
----
-'diditui': patch
----
-
-split icons
