@@ -1,5 +1,11 @@
 # diditui
 
+## 1.3.4
+
+### Patch Changes
+
+- 98f7483: removal of icon component this is the cause of loading all icons just when only one is required
+
 ## 1.3.3
 
 ### Patch Changes
