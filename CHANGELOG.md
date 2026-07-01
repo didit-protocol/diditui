@@ -1,5 +1,11 @@
 # diditui
 
+## 1.3.3
+
+### Patch Changes
+
+- a288c3f: split icons
+
 ## 1.3.2
 
 ### Patch Changes
