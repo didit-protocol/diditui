@@ -1,9 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 
 import { StatusLabel } from './index'
-import { svgOptions } from '../Icon'
-
-const icons = Object.keys(svgOptions)
+import { WifiIcon } from '@/icons'
 
 const meta: Meta<typeof StatusLabel> = {
   title: 'Components/StatusLabel',
@@ -18,10 +16,6 @@ const meta: Meta<typeof StatusLabel> = {
     },
     withIcon: {
       control: 'boolean'
-    },
-    icon: {
-      control: 'select',
-      options: icons
     }
   },
   parameters: {
@@ -39,6 +33,6 @@ export const Default: Story = {
     variant: 'default',
     label: 'Active',
     withIcon: false,
-    icon: 'wifi'
+    icon: WifiIcon
   }
 }

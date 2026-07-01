@@ -2,7 +2,7 @@
 
 import { cn } from '@/utils'
 import { ComponentProps, useRef, useState } from 'react'
-import { Icon } from '../Icon'
+import { SearchIcon, CloseCircleBoldIcon } from '@/icons'
 import { Text } from '../Text'
 
 type SearchInputProps = ComponentProps<'input'> & {
@@ -68,7 +68,7 @@ function SearchInput({
     <div className="w-full overflow-hidden">
       <div className={wrapperClassNames} onClick={() => inputRef.current?.focus()}>
         <div className={leftIconClassNames}>
-          <Icon type="search" size="sm" />
+          <SearchIcon size="sm" />
         </div>
         <div className="flex flex-col gap-[6px] grow overflow-hidden min-w-0">
           <Text
@@ -92,7 +92,7 @@ function SearchInput({
           />
         </div>
         <button className={clearButtonClassNames} onClick={() => onValueChange('')}>
-          <Icon type="closeCircleBold" size="sm" className="text-surface-mdlo" />
+          <CloseCircleBoldIcon size="sm" className="text-surface-mdlo" />
         </button>
       </div>
       <Text variant="P3" as="span" className="text-error mt-1">

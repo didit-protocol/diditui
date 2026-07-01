@@ -1,9 +1,10 @@
 import { Card, CheckBox, IconButton, Text } from '@/components'
+import { CloseIcon } from '@/icons'
 
 function CardExample() {
   return (
     <Card className="w-[391px]" padding="md" shadow>
-      <IconButton icon="close" size="xs" className="ml-auto" />
+      <IconButton icon={CloseIcon} size="xs" className="ml-auto" />
       <Text variant="H4" as="h4" className="p-10" align="center">
         What is included in Didit’s Identity verification solution?
       </Text>

@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 
 import { Button } from '.'
+import { ArrowRightIcon } from '@/icons'
 
 const meta: Meta<typeof Button> = {
   title: 'Components/Button',
@@ -30,7 +31,7 @@ export const Default: Story = {
     children: 'Click me!',
     variant: 'primary',
     size: 'md',
-    icon: 'arrowRight',
+    icon: ArrowRightIcon,
     disabled: false,
     isLoading: false,
     animate: false

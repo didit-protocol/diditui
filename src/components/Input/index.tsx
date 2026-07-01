@@ -2,16 +2,14 @@
 
 import { cn } from '@/utils'
 import { ComponentProps, useRef, useState } from 'react'
-import { IconType } from '@/types'
 import { Text } from '../Text'
 import { Tooltip } from '../Tooltip'
-import { Icon } from '../Icon'
+import { CopyIcon } from '@/icons'
 
 type InputProps = ComponentProps<'input'> & {
   label: string
   placeholder: string
   value: string
-  icon?: IconType
   diabled?: boolean
   error?: string
   required?: boolean
@@ -112,7 +110,7 @@ function Input({
                   onCopyClick?.()
                 }}
               >
-                <Icon type="copy" size="sm" />
+                <CopyIcon size="sm" />
               </button>
             </Tooltip>
           )}

@@ -2,10 +2,9 @@
 
 import { cn } from '@/utils'
 import { cva, VariantProps } from 'class-variance-authority'
-import { ComponentProps } from 'react'
+import { ComponentProps, ComponentType } from 'react'
 import { Text } from '../Text'
-import { Icon } from '../Icon'
-import { IconType } from '@/types'
+import { CheckCircleBoldIcon, WarningBoldIcon, CloseCircleBoldIcon, InfoIcon, RefreshIcon, IconComponentProps } from '@/icons'
 
 const statusLabelStyles = cva(
   [
@@ -36,18 +35,18 @@ const statusLabelStyles = cva(
 type StatusLabelProps = ComponentProps<'div'> &
   VariantProps<typeof statusLabelStyles> & {
     label: string
-    icon?: IconType
+    icon?: ComponentType<IconComponentProps>
     withIcon?: boolean
   }
 
-const iconMap: Record<string, IconType | undefined> = {
-  success: 'checkCircleBold',
-  warning: 'warningBold',
-  error: 'closeCircleBold',
-  default: 'info',
-  soft: 'info',
-  primary: 'refresh',
-  accent: 'info',
+const iconMap: Record<string, ComponentType<IconComponentProps> | undefined> = {
+  success: CheckCircleBoldIcon,
+  warning: WarningBoldIcon,
+  error: CloseCircleBoldIcon,
+  default: InfoIcon,
+  soft: InfoIcon,
+  primary: RefreshIcon,
+  accent: InfoIcon,
   '': undefined
 }
 
@@ -59,14 +58,14 @@ function StatusLabel({
   className,
   ...props
 }: StatusLabelProps) {
-  const selectedIcon = withIcon ? iconMap[variant || ''] : icon
+  const SelectedIcon = withIcon ? iconMap[variant || ''] : icon
 
   return (
     <div
-      className={cn(statusLabelStyles({ variant, withIcon: !!selectedIcon, className }))}
+      className={cn(statusLabelStyles({ variant, withIcon: !!SelectedIcon, className }))}
       {...props}
     >
-      {selectedIcon && <Icon className="shrink-0" type={selectedIcon} size="xs" />}
+      {SelectedIcon && <SelectedIcon className="shrink-0" size="xs" />}
       <Text
         className="text-inherit text-[9px] truncate whitespace-nowrap"
         variant="StyledLabel"

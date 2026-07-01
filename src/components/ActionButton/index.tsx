@@ -1,9 +1,8 @@
 'use client'
 
 import { cn } from '@/utils'
-import { ComponentProps } from 'react'
-import { Icon } from '../Icon'
-import { IconType } from '@/types'
+import { ComponentProps, ComponentType } from 'react'
+import { IconComponentProps } from '@/icons'
 import { Spinner } from '../Spinner'
 import { cva, VariantProps } from 'class-variance-authority'
 import { Text } from '../Text'
@@ -89,12 +88,12 @@ const actionButtonStyles = cva(
 
 type ActionButtonProps = ComponentProps<'button'> &
   VariantProps<typeof actionButtonStyles> & {
-    icon?: IconType
+    icon?: ComponentType<IconComponentProps>
   }
 
 function ActionButton({
   variant = 'default',
-  icon,
+  icon: Icon,
   isLoading = false,
   isActive = false,
   disabled,
@@ -105,7 +104,7 @@ function ActionButton({
   const buttonClassNames = cn(
     actionButtonStyles({ variant, isLoading, disabled, isActive, className }),
     {
-      'pr-[9px]': !!icon || isLoading
+      'pr-[9px]': !!Icon || isLoading
     }
   )
 
@@ -116,7 +115,7 @@ function ActionButton({
 
   return (
     <button className={buttonClassNames} {...props}>
-      {icon && !isLoading && <Icon type={icon} size="xs" className={iconClassNames} />}
+      {Icon && !isLoading && <Icon size="xs" className={iconClassNames} />}
       {isLoading && <Spinner size="xs" variant={variant === 'soft' ? 'default' : variant} />}
       <Text as="span" className="truncate" variant="Label4">
         {children}

@@ -21,7 +21,6 @@ export default defineConfig({
         'components/Checkbox/index': path.resolve(__dirname, 'src/components/Checkbox/index.tsx'),
         'components/CopyValue/index': path.resolve(__dirname, 'src/components/CopyValue/index.tsx'),
         'components/DiditAnimatedLogo/index': path.resolve(__dirname, 'src/components/DiditAnimatedLogo/index.tsx'),
-        'components/Icon/index': path.resolve(__dirname, 'src/components/Icon/index.tsx'),
         'components/IconButton/index': path.resolve(__dirname, 'src/components/IconButton/index.tsx'),
         'components/Input/index': path.resolve(__dirname, 'src/components/Input/index.tsx'),
         'components/Modal/index': path.resolve(__dirname, 'src/components/Modal/index.tsx'),

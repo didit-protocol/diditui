@@ -2,6 +2,7 @@
 
 import OriginalReactModal, { Aria, Classes, OnAfterOpenCallback } from 'react-modal'
 import { IconButton } from '../IconButton'
+import { CloseIcon } from '@/icons'
 import { cn } from '@/utils'
 import {
   ComponentPropsWithRef,
@@ -97,7 +98,7 @@ function Modal({
       <div className={contentClassNameCard}>
         <IconButton
           className="absolute right-6 top-6"
-          icon="close"
+          icon={CloseIcon}
           size="xs"
           onClick={onRequestClose}
         />

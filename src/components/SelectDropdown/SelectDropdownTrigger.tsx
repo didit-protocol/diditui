@@ -1,7 +1,7 @@
 import { LegacyRef, ReactNode } from 'react'
 
 import { SelectDropdownOptionType } from './index'
-import { Icon } from '@/components/Icon'
+import { ChevronDownIcon } from '@/icons'
 import { cn } from '@/utils'
 import { Text } from '@/components/Text'
 
@@ -92,7 +92,7 @@ function SelectDropdownTrigger({
         )}
       </div>
       <div className={rightButtonWrapperClassNames}>
-        <Icon type="chevronDown" size="sm" />
+        <ChevronDownIcon size="sm" />
       </div>
     </button>
   )

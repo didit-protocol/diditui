@@ -3,7 +3,7 @@
 import { cn } from '@/utils'
 import { useEffect, useRef, useState } from 'react'
 import { useDebounceCallback } from 'usehooks-ts'
-import { Icon } from '../Icon'
+import { SearchIcon } from '@/icons'
 
 const DEBOUNCE_VALUE_TIME = 500
 
@@ -57,7 +57,7 @@ function SearchMini({
   return (
     <div className={searcherClassName} id={id}>
       <div className={iconClassName}>
-        <Icon size="sm" type="search" />
+        <SearchIcon size="sm" />
       </div>
       <input
         disabled={disabled}

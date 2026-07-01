@@ -1,10 +1,9 @@
 'use client'
 
-import { IconType } from '@/types'
+import { IconComponentProps } from '@/icons'
 import { cn } from '@/utils'
 import { cva, VariantProps } from 'class-variance-authority'
-import { ComponentProps } from 'react'
-import { Icon } from '../Icon'
+import { ComponentProps, ComponentType } from 'react'
 import { Text } from '../Text'
 import { Spinner } from '../Spinner'
 
@@ -44,13 +43,13 @@ const iconButtonStyles = cva(['flex items-center justify-center', 'rounded-full 
 
 type IconButtonProps = ComponentProps<'button'> &
   VariantProps<typeof iconButtonStyles> & {
-    icon?: IconType
+    icon?: ComponentType<IconComponentProps>
     label?: string
     isLoading?: boolean
   }
 
 function IconButton({
-  icon = 'scan',
+  icon: Icon,
   label,
   isLoading,
   size,
@@ -78,7 +77,7 @@ function IconButton({
         {isLoading ? (
           <Spinner size={size} variant={variant} />
         ) : (
-          <Icon className="text-inherit" type={icon} size={size} />
+          Icon && <Icon className="text-inherit" size={size} />
         )}
       </div>
       {label && (

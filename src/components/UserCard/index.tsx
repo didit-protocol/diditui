@@ -3,7 +3,7 @@
 import { cn } from '@/utils'
 import { ComponentProps } from 'react'
 import { Text } from '../Text'
-import { Icon } from '../Icon'
+import { DiditIcon } from '@/icons'
 
 type UserCardProps = ComponentProps<'div'> & {
   name: string
@@ -24,7 +24,7 @@ function UserCard({ name, label, avatar, radius = 'full', className, ...props }:
     <div className={cn('flex items-center gap-3', className)} {...props}>
       <div className={avatarClassNames}>
         {!avatar ? (
-          <Icon type="didit" className="size-full object-cover" />
+          <DiditIcon className="size-full object-cover" />
         ) : (
           <img src={avatar} alt="avatar" className="size-full object-cover" />
         )}

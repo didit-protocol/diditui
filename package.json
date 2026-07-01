@@ -48,11 +48,6 @@
       "import": "./dist/components/DiditAnimatedLogo/index.js",
       "require": "./dist/components/DiditAnimatedLogo/index.cjs"
     },
-    "./Icon": {
-      "types": "./dist/components/Icon/index.d.ts",
-      "import": "./dist/components/Icon/index.js",
-      "require": "./dist/components/Icon/index.cjs"
-    },
     "./IconButton": {
       "types": "./dist/components/IconButton/index.d.ts",
       "import": "./dist/components/IconButton/index.js",

@@ -1,9 +1,8 @@
 'use client'
 
 import { cn } from '@/utils'
-import { ComponentProps } from 'react'
-import { Icon } from '../Icon'
-import { IconType } from '@/types'
+import { ComponentProps, ComponentType } from 'react'
+import { IconComponentProps } from '@/icons'
 import { Spinner } from '../Spinner'
 import { cva, VariantProps } from 'class-variance-authority'
 
@@ -60,13 +59,13 @@ const buttonStyles = cva(
 
 type ButtonProps = ComponentProps<'button'> &
   VariantProps<typeof buttonStyles> & {
-    icon?: IconType
+    icon?: ComponentType<IconComponentProps>
   }
 
 function Button({
   size = 'md',
   variant = 'default',
-  icon,
+  icon: Icon,
   isLoading = false,
   animate = false,
   disabled,
@@ -105,7 +104,7 @@ function Button({
   const textClassName = cn([
     'text-sm font-medium leading-[90%] tracking-tight w-full text-center z-30',
     'text-inherit',
-    { 'mr-[32px]': !!icon }
+    { 'mr-[32px]': !!Icon }
   ])
 
   const iconSize = variant === 'primary' ? 'xs' : 'sm'
@@ -116,9 +115,9 @@ function Button({
       {...props}
     >
       <span className={textClassName}>{children}</span>
-      {icon && !isLoading && (
+      {Icon && !isLoading && (
         <div className={iconWrapperClassNames}>
-          <Icon type={icon} size={disabled ? 'sm' : iconSize} />
+          <Icon size={disabled ? 'sm' : iconSize} />
         </div>
       )}
       {isLoading && (

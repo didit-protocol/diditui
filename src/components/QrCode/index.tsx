@@ -1,16 +1,15 @@
 'use client'
 
 import { cn } from '@/utils'
-import { ComponentProps, useMemo } from 'react'
-import { Icon } from '../Icon'
+import { ComponentProps, ComponentType, useMemo } from 'react'
 import { QrCodeUtil } from './generator'
-import { IconType } from '@/types'
+import { IconComponentProps } from '@/icons'
 
 type QrCodeProps = ComponentProps<'div'> & {
   uri: string
   size?: 'sm' | 'md' | 'lg' | 'xl' | number
   color?: string
-  iconName?: IconType
+  icon?: ComponentType<IconComponentProps>
 }
 
 const iconSizeMap = {
@@ -20,9 +19,9 @@ const iconSizeMap = {
   xl: 320
 }
 
-function QrCode({ uri, size = 'md', color, iconName, className, ...props }: QrCodeProps) {
+function QrCode({ uri, size = 'md', color, icon: Icon, className, ...props }: QrCodeProps) {
   const svgSize = typeof size === 'number' ? size : iconSizeMap[size]
-  const logoSize = iconName ? svgSize / 4 : undefined
+  const logoSize = Icon ? svgSize / 4 : undefined
   const dots = useMemo(
     () => QrCodeUtil.generate(uri, svgSize, color, logoSize),
     [uri, svgSize, color, logoSize]
@@ -44,7 +43,7 @@ function QrCode({ uri, size = 'md', color, iconName, className, ...props }: QrCo
 
   return (
     <div className={divClassNames} {...props}>
-      {iconName && <Icon type={iconName} className={iconClassNames} />}
+      {Icon && <Icon className={iconClassNames} />}
       <svg width={svgSize} height={svgSize}>
         {dots}
       </svg>

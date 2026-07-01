@@ -1,18 +1,12 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 
 import { IconButton } from '.'
-import { svgOptions } from '../Icon'
-
-const icons = Object.keys(svgOptions)
+import { ScanIcon } from '@/icons'
 
 const meta: Meta<typeof IconButton> = {
   title: 'Components/IconButton',
   component: IconButton,
   argTypes: {
-    icon: {
-      control: 'select',
-      options: icons
-    },
     size: {
       control: 'select',
       options: ['xs', 'sm', 'md', 'lg']
@@ -41,7 +35,7 @@ type Story = StoryObj<typeof meta>
 export const Default: Story = {
   args: {
     variant: 'default',
-    icon: 'scan',
+    icon: ScanIcon,
     size: 'sm',
     label: 'Scan QR Code',
     isLoading: false

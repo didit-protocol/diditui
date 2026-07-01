@@ -4,7 +4,7 @@ import { cn } from '@/utils'
 import { cva, VariantProps } from 'class-variance-authority'
 import { ComponentProps, useCallback, useState } from 'react'
 import { Text } from '../Text'
-import { Icon } from '../Icon'
+import { CopyIcon, EyeIcon, EyeSlashIcon } from '@/icons'
 import { Tooltip } from '../Tooltip'
 
 const copyValueStyles = cva(
@@ -56,17 +56,17 @@ function CopyValue({ label, value, isSecret, className, onCopy, ...props }: Copy
       {isSecret && (
         <Tooltip label={isHidden ? 'Show' : 'Hide'}>
           <button onClick={() => setIsHidden(prev => !prev)}>
-            <Icon
-              className="text-inherit group-hover:text-foreground"
-              type={isHidden ? 'eye' : 'eyeSlash'}
-              size="sm"
-            />
+            {isHidden ? (
+              <EyeIcon className="text-inherit group-hover:text-foreground" size="sm" />
+            ) : (
+              <EyeSlashIcon className="text-inherit group-hover:text-foreground" size="sm" />
+            )}
           </button>
         </Tooltip>
       )}
       <Tooltip label="Copy">
         <button onClick={handleCopy}>
-          <Icon className="text-inherit group-hover:text-foreground" type="copy" size="sm" />
+          <CopyIcon className="text-inherit group-hover:text-foreground" size="sm" />
         </button>
       </Tooltip>
     </div>
