@@ -60,7 +60,7 @@ export default defineConfig({
   plugins: [
     react(),
     dts({
-      outDir: 'dist',
+      outDirs: 'dist',
       include: ['src/**/*.ts', 'src/**/*.tsx'],
       exclude: ['src/**/*.stories.tsx'],
       entryRoot: 'src',
